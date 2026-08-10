@@ -293,6 +293,78 @@ chão de fábrica, com a máquina parada. Essa checagem custa uma linha e evita 
 
 ---
 
+## R6 — Voltas por grupo de espulas, medidas e guardadas
+
+**Decidido nesta rodada.** Substitui a fórmula de 516 células descrita na Parte 5.
+
+### O que a regra é
+
+Numa trançadeira, espulas com quantidades diferentes de fios esvaziam em ritmos
+diferentes. Para **todas terminarem juntas**, cada grupo é enchido com um número de
+voltas próprio. Esse número é **medido na produção** — não é dedutível do número de fios.
+
+> Prova: se o fator fosse a razão de fios, 2 fios → 1 fio daria ×2 (2.400 voltas). A
+> planilha usa ×1,25 (1.500).
+
+### O modelo
+
+Como o valor é medido, ele é **guardado onde foi medido**: em cada grupo de espulas da
+estrutura (R4). Acrescenta-se **uma coluna**:
+
+**Tabela `estrutura_trancadeira`** *(estendendo R4)*
+
+| campo | tipo | exemplo |
+|---|---|---|
+| `referencia` | texto | ATAC M15101 5334 |
+| `codigo_fio` | texto | 5334 |
+| `espulas` | número | 24 |
+| `fios_por_espula` | número | 2 |
+| **`voltas`** | número | **1200** |
+
+O produto do exemplo vira:
+
+| fio | espulas | fios/espula | voltas |
+|---|---|---|---|
+| 5334 | 24 | 2 | **1.200** |
+| 5334 | 24 | 1 | **1.500** |
+
+E o espulador lê exatamente isso, sem cascata e sem fator.
+
+### O que desaparece
+
+| Some | Porque |
+|---|---|
+| As **516 fórmulas** com `SE` aninhado de 12 níveis | o valor está guardado, não calculado |
+| A lista `$C$2:$C$13` | não há mais lookup |
+| A incoerência `QUOCIENTE` × `MULT` | não há mais multiplicação a fazer |
+| A terceira linha com `1.875` para um grupo de 0 espulas | grupo inexistente não tem linha |
+| O modelo fora da lista passando com fator 1, em silêncio | ver abaixo |
+
+### O silêncio vira aviso
+
+Hoje, um produto cujo modelo não esteja entre os 12 recebe **as mesmas voltas em todos os
+grupos** — exatamente o que a regra existe para evitar — e nada avisa.
+
+No modelo novo, `voltas` é um campo do cadastro. Se estiver vazio num produto de
+trançadeira com mais de um grupo de espulas, o sistema **avisa ao cadastrar e destaca no
+relatório**:
+
+> ⚠️ *As voltas deste grupo não foram medidas. As espulas não vão terminar juntas.*
+
+Isso transforma o "erro de preenchimento" reconhecido pelo usuário de **defeito
+silencioso** em **pendência visível**.
+
+### Migração
+
+Ao importar, as voltas de cada grupo saem do que a planilha calcula hoje: primeira linha
+do bloco = valor base; demais = base × fator do modelo. Assim o cadastro nasce com os
+mesmos números que estão em uso.
+
+**Atenção na conversão dos 12 modelos:** para `M6034`, usar `×1,2` e **não**
+`QUOCIENTE(…;0,833)` — a menos que o truncamento seja intencional. Ver Parte 5.3(c).
+
+---
+
 ## Pendências que afetam estes requisitos
 
 - **O que são os 25%?** Perda de processo, margem de segurança ou decisão comercial.

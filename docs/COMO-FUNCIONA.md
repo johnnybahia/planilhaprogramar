@@ -818,3 +818,104 @@ separadores, e o total de fios passa a ser calculado — não digitado.
 E como as máquinas de 16, 32 e 48 fusos podem mudar, o número de fusos vira **cadastro de
 máquina**, não número fixo em fórmula. Um modelo novo de 64 fusos entra como um registro,
 sem tocar em cálculo nenhum.
+
+---
+
+# Parte 5 — O alinhamento das espulas
+
+## 5.1 O problema físico
+
+Numa trançadeira, cada espula pode carregar **1, 2, 3, 4 ou mais fios**. Um mesmo produto
+costuma misturar: parte das espulas com 2 fios, parte com 1.
+
+Espulas com quantidades diferentes de fios **esvaziam em ritmos diferentes**. Se todas
+forem enchidas com o mesmo número de voltas, umas acabam antes das outras, e a máquina
+para para troca parcial.
+
+A solução é encher cada grupo com um número de voltas **diferente e proporcional**, de
+modo que **todas terminem juntas**. Quantas voltas cada grupo precisa é algo que
+**se mede na produção** — não se calcula.
+
+## 5.2 A fórmula que faz isso
+
+Na coluna `H` do `RELATÓRIO TRANÇADEIRAS`, em **516 células**:
+
+```excel
+=SE(M25=$C$2;QUOCIENTE(H25;0,833);
+ SE(M25=$C$3;MULT(H25;1,235);
+ ... 12 modelos ...
+ H25))
+```
+
+Ela lê o **modelo** do produto (coluna `M`), procura na lista `$C$2:$C$13` e aplica o
+fator correspondente ao valor da **linha de cima**. É uma cascata.
+
+### Conferido com dados reais — `ATAC M15101 5334`, fator 1,25
+
+| Linha | Espulas | Fios | Voltas | |
+|---|---|---|---|---|
+| 25 | 24 | **2** | **1.200** | base |
+| 26 | 24 | **1** | 1.500 | ×1,25 |
+| 27 | 0 | 0 | 1.875 | ×1,25 |
+| 28 | 24 | **2** | **9,19148936170131** | a sobra (do `MENOR`) |
+| 29 | 24 | 1 | 11,4893617021266 | ×1,25 |
+| 30 | 0 | 0 | 14,3617021276583 | ×1,25 |
+
+Isso explica finalmente o **bloco de 6 linhas**: são **dois grupos de 3**. O primeiro
+trata das máquinas que rodam cheias; o segundo, da última máquina, que roda só a sobra.
+Dentro de cada grupo, uma linha por conjunto de espulas.
+
+O espulador lê: *"encha 24 espulas de 2 fios com 1.200 voltas, e 24 espulas de 1 fio com
+1.500 voltas — assim acabam juntas."*
+
+### O fator é medido, não deduzido
+
+Se ele fosse a razão entre os fios, 2 fios → 1 fio daria **×2** (2.400 voltas). A planilha
+usa **×1,25** (1.500). Confirma que o valor vem de medição na produção, como descrito.
+
+## 5.3 Quatro fragilidades nessa construção
+
+### a) Metade dado, metade código
+
+A **lista de modelos** está em células (`C2:C13`), mas os **fatores** estão dentro da
+fórmula. Incluir um 13º modelo exige editar o `SE` aninhado em **516 células**.
+
+### b) Modelo fora da lista passa sem ajuste, em silêncio
+
+O último argumento é `H25` — sem fator. Um produto cujo modelo não esteja entre os 12
+recebe **as mesmas voltas em todos os grupos de espulas**, que é exatamente a situação
+que a fórmula existe para evitar. E nada na tela indica isso.
+
+O usuário reconhece que a lista pode estar incompleta ("se tem fórmulas faltando é erro
+meu no preenchimento"). **É por isso que o silêncio é o problema, não a lacuna:** um
+cadastro incompleto deveria avisar, não produzir número plausível e errado.
+
+### c) `QUOCIENTE` onde deveria haver `MULT`
+
+`1/0,833 = 1,2005`. Ou seja, **M6034 e M13745 significam a mesma coisa: ×1,2.** Mas
+M6034 usa `QUOCIENTE`, que é divisão inteira e trunca:
+
+| Voltas | `QUOCIENTE(H;0,833)` | `MULT(H;1,2)` | Perda |
+|---|---|---|---|
+| 1.200 | 1.440 | 1.440,00 | — |
+| 9,19148936 | **11** | 11,0298 | 0,0298 |
+| 838,468085 | **1.006** | 1.006,1617 | 0,1617 |
+
+Nas máquinas cheias não faz diferença. Nas **linhas de sobra**, que são fracionárias por
+natureza, ele descarta a parte decimal — sempre para menos — e o erro se propaga pelas
+duas multiplicações seguintes.
+
+### d) A terceira linha calcula para um grupo que não existe
+
+No exemplo, o terceiro conjunto tem **0 espulas e 0 fios**, mas a cascata ainda produz
+`1.875` e `14,36`. São números sem significado num relatório que vai para o chão de
+fábrica.
+
+## 5.4 Pergunta em aberto
+
+O fator está ligado ao **modelo** (`M15101`), não à referência. Isso funciona enquanto
+todos os produtos de um mesmo modelo tiverem a mesma distribuição de espulas e fios — o
+que é verdade na amostra, onde todo `M15101` usa 24×2 + 24×1.
+
+**Isso é garantido?** Se dois produtos do mesmo modelo puderem ter distribuições
+diferentes, eles precisariam de fatores diferentes e hoje receberiam o mesmo.
