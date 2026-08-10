@@ -291,6 +291,14 @@ if (ocupados > modelo.fusos) {
 Hoje nada impede cadastrar uma ficha que não cabe na máquina — o erro só apareceria no
 chão de fábrica, com a máquina parada. Essa checagem custa uma linha e evita isso.
 
+### Verificado nos dados
+
+Somando as espulas dos três grupos em 220 produtos de trançadeira exportados:
+**220 cabem numa máquina conhecida**, e **217 (98,6%) somam exatamente 16, 32 ou 48**.
+
+A regra já é seguida na prática — só não é verificada por nada. Implementar a checagem
+não muda o comportamento de nenhum produto atual; apenas impede o próximo erro.
+
 ---
 
 ## R6 — Voltas por grupo de espulas, medidas e guardadas

@@ -1149,3 +1149,67 @@ RELATÓRIO!Q = voltas na espula ──────┐   │
 Com o ciclo fechado, **o lado das trançadeiras está inteiramente mapeado**: entrada,
 cadastros, cálculo de metros, consumo de fio, conversão para voltas, simulação,
 alinhamento de espulas e montagem do relatório.
+
+---
+
+# Parte 7 — A ficha de trançadeira, resolvida
+
+Com a reexportação (999 linhas em vez de 60), a dúvida sobre as colunas `H`, `I` e `J`
+está encerrada. Exemplo real, `ATAC M16063 252/100`:
+
+```
+B=12  C=4  D=252      → grupo 1: 12 espulas × 4 fios, cor 252
+E=2   F=2  G=100      → grupo 2:  2 espulas × 2 fios, cor 100
+H=M16063              → modelo
+I=(vazio)             → largura
+J=(vazio)             → não é lido por nenhuma fórmula
+K=2   L=1  M=252      → grupo 3:  2 espulas × 1 fio,  cor 252
+N=600                 → voltas na espula
+O=280                 → produção em metros
+```
+
+**São três grupos, confirmado com dados.** O layout bate exatamente com o que o relatório
+lê (índices 2-4, 5-7 e 11-13 para os grupos; 8 e 9 para modelo e largura). A conclusão da
+Parte 6.1, tirada só das fórmulas, se sustenta.
+
+E casa com a anotação do próprio cabeçalho do relatório: `B3 = "M16063 2 e 1 fios"` —
+este modelo realmente mistura grupos com contagens de fios diferentes.
+
+| | |
+|---|---|
+| Espulas | 12 + 2 + 2 = **16** |
+| Fios | 12×4 + 2×2 + 2×1 = **54** |
+
+## 7.1 Correção: como distinguir os dois layouts
+
+Eu vinha separando tear de trançadeira por *"tem cor na coluna D"*. **Está errado** — esse
+teste classifica como trançadeira produtos de tear como `ATAC M10107 1183/1P 5MM`, que
+usam `B`/`C` e `D`/`E` como pares (quantidade, cor).
+
+O discriminador correto está em `N` e `O`:
+
+| | `N` | `O` |
+|---|---|---|
+| **Trançadeira** | número (voltas na espula) | número (produção em metros) |
+| **Tear** | largura (`5MM`, `9MM`) | `OK` / `ERRADO` (verificador) |
+
+Reclassificando as 998 linhas: **228 trançadeira, 759 tear, 12 indefinidas**.
+
+## 7.2 A restrição de fusos se confirma nos dados
+
+Somando as espulas dos três grupos (`B + E + K`) de cada produto de trançadeira:
+
+| Espulas | Produtos | |
+|---|---|---|
+| **16** | 114 | exato |
+| 24 | 1 | cabe em 32 |
+| **32** | 94 | exato |
+| 35 | 2 | cabe em 48 |
+| **48** | 9 | exato |
+
+**220 de 220 cabem numa máquina conhecida**, e **217 (98,6%) somam exatamente** 16, 32 ou
+48 fusos.
+
+Isso valida a restrição do **R5** com dados reais, e mostra que ela não é teórica: a
+regra já é seguida na prática, só não é verificada por nada. Os 3 produtos que somam 24 e
+35 usam máquina maior com fusos ociosos — pode ser legítimo, vale conferir.
