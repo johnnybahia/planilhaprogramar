@@ -27,40 +27,47 @@ Clientes que hoje usam peças: **PAQUETÁ ITAPAJÉ, PAQUETÁ PENTECOSTE, PAQUET�
 
 ---
 
-## R2 — Percentual de reposição
+## R2 — Percentuais adicionais de produção
 
 **Decidido nesta rodada.**
 
 | Decisão | Escolha |
 |---|---|
-| Onde fica o percentual | **Um valor global**, numa tela de configuração |
+| Onde ficam os percentuais | **Valores globais**, numa tela de configuração |
 | Produção e fio | **O mesmo percentual** — o fio é consequência dos metros |
+| Como combinam | **Um ou outro, nunca acumulam** |
 | No relatório | **Separado**: base, adicional e total |
 | Vale para | **Teares e trançadeiras**, igualmente |
 
 ### Configuração
 
-**Tabela `configuracao`**
+**Tabela `configuracao`** — dois percentuais globais, editáveis numa tela:
 
-| campo | tipo | padrão |
-|---|---|---|
-| `percentual_reposicao` | número (%) | `25` |
+| campo | tipo | padrão | quando se aplica |
+|---|---|---|---|
+| `percentual_producao_normal` | número (%) | `0` | pedidos comuns |
+| `percentual_reposicao` | número (%) | `25` | pedidos marcados como reposição |
 
-Um único valor, editável numa tela. Hoje ele está fixo dentro da fórmula como `1,25`.
+> Com `percentual_producao_normal = 0`, o resultado de um pedido comum é **idêntico ao da
+> planilha atual**. O campo só altera número quando alguém o preenche de propósito.
 
 ### No pedido
 
-**Campo `reposicao`** — sim/não, por pedido. Quando ligado, aplica o percentual global.
+**Campo `reposicao`** — sim/não. É ele que escolhe **qual** dos dois percentuais entra.
 
 ### O cálculo
 
 ```js
-const fatorUnidade   = cliente.unidade === 'PECA' ? 1 : 2;
-const fatorReposicao = pedido.reposicao ? 1 + config.percentual_reposicao / 100 : 1;
+const fatorUnidade = cliente.unidade === 'PECA' ? 1 : 2;
 
-const metrosBase     = pedido.quantidade * produto.tamanho_m * fatorUnidade;
-const metrosAdicional= metrosBase * (fatorReposicao - 1);
-const metrosTotal    = metrosBase + metrosAdicional;
+// um ou outro, nunca os dois
+const percentual = pedido.reposicao
+  ? config.percentual_reposicao
+  : config.percentual_producao_normal;
+
+const metrosBase      = pedido.quantidade * produto.tamanho_m * fatorUnidade;
+const metrosAdicional = metrosBase * (percentual / 100);
+const metrosTotal     = metrosBase + metrosAdicional;
 ```
 
 E o consumo de fio segue os metros, como hoje:
@@ -71,6 +78,17 @@ consumoBase      = metrosBase      * peso_da_cor;   // kg
 consumoAdicional = metrosAdicional * peso_da_cor;   // kg
 consumoTotal     = metrosTotal     * peso_da_cor;   // kg
 ```
+
+### Fatores resultantes
+
+| Cliente | Reposição | Percentual aplicado | Fator total |
+|---|---|---|---|
+| Pares (padrão) | não | normal = 0 | **2,00** ← igual a hoje |
+| Pares (padrão) | não | normal = 5 | 2,10 |
+| Pares (padrão) | sim | reposição = 25 | **2,50** ← igual a hoje |
+| Peças (Paquetá) | não | normal = 0 | **1,00** ← igual a hoje |
+| Peças (Paquetá) | não | normal = 5 | 1,05 |
+| Peças (Paquetá) | sim | reposição = 25 | 1,25 ← hoje daria 1,00 |
 
 ### O que isso corrige
 
@@ -103,15 +121,42 @@ em vez de achar e alterar `1,25` dentro de fórmulas em duas abas.
 
 ### No relatório
 
-As três grandezas aparecem separadas, em metros e em quilos por cor:
+As três grandezas aparecem separadas, em metros e em quilos por cor. **O rótulo da linha
+do meio acompanha a origem do percentual**, para não chamar de reposição o que não é:
 
 ```
-FITA MFP 101 15MM
-  Pedido      1.000,0 m     3,10 kg  (cor 100/1)
-  Reposição     250,0 m     0,78 kg
-  ─────────────────────────────────
-  Total       1.250,0 m     3,88 kg
+FITA MFP 101 15MM — pedido de reposição
+  Pedido           1.000,0 m     3,10 kg  (cor 100/1)
+  Reposição 25%      250,0 m     0,78 kg
+  ──────────────────────────────────────
+  Total            1.250,0 m     3,88 kg
+
+
+FITA MFP 101 15MM — pedido comum, com adicional global de 5%
+  Pedido           1.000,0 m     3,10 kg  (cor 100/1)
+  Adicional 5%        50,0 m     0,16 kg
+  ──────────────────────────────────────
+  Total            1.050,0 m     3,26 kg
 ```
+
+Quando o percentual aplicado for `0`, a linha do adicional **não aparece** — o relatório
+fica igual ao de hoje.
+
+### Arredondamento
+
+Os pesos de fio são números muito pequenos (`0,0031` kg/m) multiplicados por milhares de
+metros, e o resultado é arredondado para exibição. Conferindo os exemplos acima, o
+adicional de 5% dá exatamente `0,155` kg — que arredonda para `0,16` com a regra decimal
+normal, mas para `0,15` se o cálculo usar ponto flutuante binário, porque `0,155` não tem
+representação exata em binário.
+
+Para um relatório que orienta compra de fio, essa diferença não pode depender de acaso:
+
+- somar e arredondar com **aritmética decimal** (não `float`), com arredondamento
+  **meio para cima**;
+- arredondar **só na exibição**, nunca nos valores intermediários;
+- somar as parcelas antes de arredondar o total, para o total nunca divergir da soma das
+  linhas mostradas.
 
 ---
 
