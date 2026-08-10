@@ -13,6 +13,8 @@ contém**: as fórmulas, a estrutura e as regras, extraídas em arquivos de text
 | Se você quer… | Leia |
 |---|---|
 | **Entender como a planilha funciona** | [`docs/ANALISE-PLANILHA.md`](docs/ANALISE-PLANILHA.md) ← comece aqui |
+| Como o sistema funciona hoje, em detalhe | [`docs/COMO-FUNCIONA.md`](docs/COMO-FUNCIONA.md) |
+| O que vamos construir | [`docs/REQUISITOS.md`](docs/REQUISITOS.md) |
 | Exportar a planilha para o Git | [`docs/COMO-EXPORTAR.md`](docs/COMO-EXPORTAR.md) |
 | Entender o que as macros fazem | [`docs/ENTENDIMENTO-VBA.md`](docs/ENTENDIMENTO-VBA.md) |
 | Saber para onde o sistema vai | [`docs/ARQUITETURA-ALVO.md`](docs/ARQUITETURA-ALVO.md) |
