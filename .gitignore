@@ -1,0 +1,40 @@
+# ---------------------------------------------------------------------------
+# Arquivos do Excel
+# ---------------------------------------------------------------------------
+# A planilha original tem ~36 MB. O GitHub avisa a partir de 50 MB e recusa
+# acima de 100 MB, e um binario grande incha o historico a cada salvamento.
+#
+# Em vez do arquivo, versionamos o que ele CONTEM: rode a macro
+# ferramentas/ExportarPlanilha.bas e commite a pasta docs/planilha/.
+# Instrucoes em docs/COMO-EXPORTAR.md.
+#
+# Se algum dia for mesmo necessario versionar o binario, use Git LFS
+# (git lfs track "*.xlsm") em vez de remover estas linhas.
+*.xlsm
+*.xlsx
+*.xlsb
+*.xls
+*.xltx
+*.xltm
+*.csv.xlsx
+
+# Arquivos temporarios que o Excel cria enquanto a planilha esta aberta
+~$*
+*.tmp
+
+# Pasta gerada pela macro exportadora, caso ela rode dentro do repositorio.
+# O conteudo dela deve ser copiado para docs/planilha/, que E versionado.
+_exportacao/
+
+# ---------------------------------------------------------------------------
+# Sistema operacional
+# ---------------------------------------------------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---------------------------------------------------------------------------
+# Editores
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
