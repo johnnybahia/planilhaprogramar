@@ -985,3 +985,119 @@ grupo de **0 espulas**.
 
 A lógica de "não mostrar grupo vazio" já existe na planilha; só não foi aplicada à
 coluna que mais importa para o espulador.
+
+---
+
+# Parte 6 — O que o arquivo `aba programar trançadeiras.xlsx` revelou
+
+O usuário exportou a aba `RELATÓRIO TRANÇADEIRAS` como arquivo separado (1.859 linhas).
+Os **valores** vieram como `#N/A`, porque as referências às outras abas quebraram na
+extração — mas as **fórmulas ficaram intactas**, e é nelas que está a informação.
+
+## 6.1 São três grupos de espulas, não quatro
+
+Mapeando as fórmulas do bloco, cada meio-bloco lê **três** grupos da ficha técnica:
+
+| Linha | Espulas | Fios | Cor | Índices da ficha |
+|---|---|---|---|---|
+| 19 | `J19` | `K19` | `L19` | 2, 3, 4 → `B`,`C`,`D` |
+| 20 | `J20` | `K20` | `L20` | 5, 6, 7 → `E`,`F`,`G` |
+| 21 | `J21` | `K21` | `L21` | **11, 12, 13** → `K`,`L`,`M` |
+
+Os índices **8 e 9** não vão para um quarto grupo: vão para `M19` e `N19`, que são o
+**modelo** (usado na busca do fator) e a **largura**.
+
+```excel
+M19 = VLOOKUP(B19; 'DADOS DOS PRODUTOS'!A:M; 8; 0)    ← modelo
+N19 = VLOOKUP(B19; 'DADOS DOS PRODUTOS'!A:M; 9; 0)    ← largura
+```
+
+E o índice **10** — a coluna `J` da ficha — **não é lido por nenhuma fórmula da pasta**.
+
+> **Correção ao que ficou registrado na Parte 5.** O usuário indicou que a ficha tem 4
+> espaços para 4 cores. As fórmulas mostram que o relatório de hoje exibe **3**. O que
+> parece ter acontecido: as colunas `H` e `I`, que seriam a quarta trinca, foram
+> reaproveitadas para modelo e largura, e sobrou a coluna `J` órfã.
+>
+> **Consequência prática:** hoje, um produto que precise de um quarto grupo de espulas
+> não tem onde ser exibido. Isso não muda o requisito — o R6 já prevê número ilimitado de
+> grupos —, mas muda o diagnóstico: não é uma capacidade ociosa esperando uso, é uma
+> capacidade que **não existe**.
+
+## 6.2 A guarda de grupo vazio está deslocada uma linha
+
+```excel
+G20 = IF(J20>0; G19; " ")           ← olha o PRÓPRIO grupo (J20)
+H21 = IF(M20=$C$2; …; H20)          ← olha o grupo ANTERIOR (via M20)
+M20 = IF(J20>0; M19; " ")
+```
+
+A coluna `G` pergunta *"este grupo tem espulas?"*. A coluna `H` pergunta, indiretamente,
+*"o grupo anterior tem espulas?"*.
+
+É por isso que a linha 27 do exemplo mostra `G` em branco (grupo vazio, correto) e
+`H = 1.875` (calculado, incorreto): `H21` foi liberado porque o **grupo 2** tem espulas,
+sem nunca verificar o grupo 3.
+
+## 6.3 ⚠️ `CONT.SE` e `MENOR` medem a mesma coisa em intervalos diferentes
+
+As duas metades do cálculo de tempo olham larguras distintas da aba de planejamento:
+
+```excel
+W19 = COUNTIF('Planejamento Trançadeira'!C1:APM1; 'Planejamento Trançadeira'!A1)
+H22 = SMALL ('Planejamento Trançadeira'!C1:FJ1 ; COUNTIF(…C1:FJ1;0)+1)
+                                          ↑↑↑
+```
+
+| | Intervalo | Períodos |
+|---|---|---|
+| `CONT.SE` (períodos completos) | `C:APM` | **551** |
+| `MENOR` (a sobra) | `C:FJ` | **82** |
+
+**O `MENOR` enxerga 15% do que o `CONT.SE` conta**, e isso vale em todos os blocos
+conferidos.
+
+Enquanto a demanda couber em 82 períodos, os dois concordam. Acima disso, o intervalo do
+`MENOR` não contém nenhum zero — a produção ainda não terminou ali —, e a fórmula devolve
+o menor valor **daquele trecho**, que não é a sobra final. O número sai errado, sem aviso.
+
+```
+teto:  82 períodos × 1.200 voltas = 98.400 voltas ≈ 38.540 m por item
+```
+
+O maior item observado na `Programação` tem **23.483 m** — 50 períodos. A margem é de
+apenas **1,6×**. Um pedido 64% maior que o maior de hoje já cai na faixa errada.
+
+Vale notar que o `Módulo17`, que gerou essas fórmulas, escreve `C:FJ`; e o `CONT.SE` da
+coluna `W` foi escrito à mão com `C:APM`. As duas larguras nunca foram reconciliadas.
+
+## 6.4 A coluna `Confirmado` está quebrada de duas formas
+
+Confirmado agora em todos os blocos:
+
+```excel
+S19 = IF(B19  ="";"";VLOOKUP(B19  ; …A:O; 16; 0))   ← linha 1 do bloco: referência relativa
+S20 = IF($B$19="";"";VLOOKUP($B$19; …A:O; 16; 0))   ← linhas 2 a 6: TRAVADA na linha 19
+S26 = IF($B$19="";"";VLOOKUP($B$19; …A:O; 16; 0))   ← bloco 2, ainda apontando para B19
+```
+
+1. **Índice 16 num intervalo `A:O`**, que tem 15 colunas → erro em toda célula.
+2. **`$B$19` travado**: em 5 das 6 linhas de **todos** os blocos, a busca é sempre pelo
+   produto do **primeiro** bloco.
+
+## 6.5 O cabeçalho documenta o próprio problema
+
+```
+B2 = "M18006 3 fios"
+B3 = "M16063 2 e 1 fios"
+```
+
+São anotações do próprio usuário sobre quantos fios cada modelo usa. E **`M18006` não
+está na lista `C2:C13`** — a lista de modelos com fator.
+
+Ou seja: existe um modelo de **3 fios** anotado no cabeçalho que, ao ser programado,
+recebe as mesmas voltas em todos os grupos de espulas, porque não tem fator cadastrado.
+É exatamente o "erro de preenchimento" mencionado pelo usuário — e ele está documentado,
+por escrito, a quatro linhas de distância da lista que o corrigiria.
+
+Reforça o requisito do R6: campo obrigatório com aviso, em vez de silêncio.
