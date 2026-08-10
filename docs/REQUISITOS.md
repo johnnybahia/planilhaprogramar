@@ -354,6 +354,33 @@ relatório**:
 Isso transforma o "erro de preenchimento" reconhecido pelo usuário de **defeito
 silencioso** em **pendência visível**.
 
+### Sem número fixo de grupos
+
+A ficha de hoje reserva **4 trincas de colunas** (`B`–`M`) para até 4 cores com
+quantidades de fios diferentes — uma parte das espulas com 2 fios, outra com 1, outra
+com 3, e assim por diante. Até hoje nenhum produto usou as quatro, mas a capacidade
+precisa existir.
+
+**No sistema novo não há número fixo.** `estrutura_trancadeira` é uma tabela: um produto
+com 2 grupos tem 2 linhas, um com 7 grupos tem 7. O relatório renderiza **uma linha por
+grupo existente** — nem uma a mais, nem uma a menos.
+
+Isso resolve, de uma vez, três limitações da estrutura atual:
+
+| Hoje | Depois |
+|---|---|
+| A ficha comporta 4 grupos, mas o relatório só tem **3 linhas** por meio-bloco | tantas linhas quantos grupos |
+| O grupo 3 é lido para `M19`/`N19`, colunas rotuladas *Referência* e *Largura* | cada grupo na sua linha |
+| A **cor do grupo 3** (índice 10 da ficha) **não é lida por nenhuma fórmula** | nenhum campo órfão |
+| A terceira linha calcula voltas para um grupo de 0 espulas | grupo inexistente não gera linha |
+
+> **A conferir:** o cabeçalho da ficha rotula apenas `COR1`, `COR 2` e `COR 3`, e nas
+> linhas de trançadeira a coluna `H` guarda o modelo — não as espulas do grupo 3. Ou seja,
+> ou a quarta trinca está incompleta, ou `H` e `I` acumulam duas funções. Como nenhum
+> produto usa mais de 2 grupos hoje, os dados não desempatam. **Isso não bloqueia o
+> modelo novo** — que não tem grupos fixos —, mas precisa ser decidido na migração, para
+> saber de onde ler cada grupo.
+
 ### Migração
 
 Ao importar, as voltas de cada grupo saem do que a planilha calcula hoje: primeira linha
