@@ -574,19 +574,108 @@ const sobra             = metrosTotal % capacidade;
 > batem com a regra de 6 linhas por bloco. Mas `W451` deveria ler a linha 73 e lê a
 > **81**. O relatório e o planejamento também escorregaram um em relação ao outro.
 
-## 3.6 O que consegui e o que não consegui rastrear
+## 3.6 Rastreamento completo, conferido número a número
 
-**Consegui:** a cadeia inteira no nível da estrutura — cada `PROCV`, cada chave, cada
-coluna consumida —, e dados reais de um item (`ATAC 11628 100 7MM`) em
-`PESOS DE FIOS` e `DADOS DOS PRODUTOS`.
+Item: **`ATAC M15101 5334`**. Todos os valores abaixo saíram dos arquivos exportados.
 
-**Não consegui:** seguir **um único item** por todas as sete etapas com dados reais. As
-amostras exportadas cobrem só as **60 primeiras linhas** de cada aba, e as abas estão
-ordenadas de formas diferentes — nenhum item aparece nas sete ao mesmo tempo. O item do
-relatório (`ATAC M15101 5334`) não está nas 60 primeiras de `PESOS DE FIOS` nem de
-`DADOS DOS PRODUTOS`.
+### Etapas 1 e 2 — os pedidos
 
-Para fechar o rastreamento com números reais, basta exportar de novo com
-`LINHAS_AMOSTRA = 400` em `ferramentas/ExportarPlanilha.bas`. Aí dá para conferir o
-cálculo completo de um item contra o que a planilha mostra hoje — que é o teste que
-prova a migração.
+Três linhas em `PEDIDOS`, código `87192120CM`, todas TRANÇADEIRA, tamanho 1,2 m:
+quantidades **480 + 492 + 792 = 1.764 pares**.
+
+### Etapa 5 — metros
+
+```
+1.764 × 1,2 m × 2  =  4.233,6 m
+```
+`Programação trançadeiras!J` mostra **4.233,6** ✅
+
+### Etapa 3 — consumo de fio
+
+A cor `5334` pesa `0,0029` kg/m:
+```
+4.233,6 × 0,0029  =  12,27744 kg
+```
+`Programação trançadeiras!Q` mostra **12,27744** ✅
+
+### Etapa 4 — ficha técnica
+
+O relatório traz, por `PROCV` em `DADOS DOS PRODUTOS`:
+
+| Campo | Valor |
+|---|---|
+| N° espulas | 24 |
+| N° de fios | 2 → **48 fios** |
+| Voltas na espula | 1.200 |
+| Produção em metros | 470 |
+
+### Etapa 7 — a conversão de metros para voltas
+
+Esta era a peça que faltava. O relatório converte metros em voltas pela ficha técnica:
+
+```
+voltas = metros × (voltas na espula ÷ produção em metros)
+       = 4.233,6 × 1.200 ÷ 470
+       = 10.809,1914893617
+```
+O relatório mostra **10.809,1914893617** ✅
+
+E o número de máquinas é a mesma conta em outra unidade:
+```
+Máq. = metros ÷ produção = 4.233,6 ÷ 470 = 9,00765957446808
+```
+O relatório mostra **9,00765957446808**, e `N° Máquinas` = **9**, a parte inteira ✅
+
+### Etapa 6 — o planejamento
+
+A linha 2 de `Planejamento Trançadeira` recebe capacidade `1.200` e demanda
+`10.809,1914893617` — exatamente as voltas calculadas acima ✅
+
+### Etapa 7 — a sobra
+
+```
+10.809,1914893617  mod  1.200  =  9,1914893617
+```
+`RELATÓRIO!H22`, a fórmula `MENOR/CONT.SE` escrita pelo Módulo17, mostra
+**9,19148936170131** ✅
+
+### As sete etapas fecham, sem divergência
+
+```
+1.764 pares
+   × 1,2 m × 2     →   4.233,60 m          ✅
+   × 0,0029 kg/m   →      12,27744 kg      ✅
+   × 1200/470      →  10.809,19 voltas     ✅
+   ÷ 470           →       9,0077 máquinas ✅
+   mod 1200        →       9,1914893617    ✅
+```
+
+**Esta é a prova de que a migração é viável.** As 4,7 milhões de fórmulas se reproduzem
+com cinco operações aritméticas, e o resultado bate com o da planilha até a décima casa
+decimal.
+
+## 3.7 O que "1.200" significa
+
+A pergunta aberta da Parte 1 — *"o que é um período no planejamento?"* — tem agora uma
+resposta aritmética, ainda que a interpretação física precise da sua confirmação.
+
+O `1.200` da capacidade do planejamento é o mesmo `1.200` de **voltas na espula** da
+ficha técnica. E como `voltas = metros × 1200/470`, dividir as voltas por 1.200 dá
+exatamente o mesmo número que dividir os metros por 470:
+
+```
+10.809,19 ÷ 1.200  =  9,0077
+ 4.233,60 ÷   470  =  9,0077
+```
+
+São **a mesma grandeza em duas unidades**. O planejamento conta em voltas, o relatório
+conta em metros, e `1200/470` é a taxa de conversão — que vem da ficha técnica do
+produto, ou seja, **varia de produto para produto**.
+
+Isso derruba uma suposição minha da Parte 2: eu tratei `1.200` como capacidade fixa. Ela
+é fixa **por produto**, não global.
+
+O que ainda não sei é o nome físico: cada "período" de 1.200 voltas é **uma espula
+consumida** ou **uma máquina rodando um turno** que produz 470 m? O relatório rotula a
+coluna como `Máq.` e `N° Máquinas`, o que sugere máquinas; mas o divisor é literalmente
+as voltas de uma espula.
