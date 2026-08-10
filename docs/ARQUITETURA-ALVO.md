@@ -69,6 +69,17 @@ Por isso a macro exportadora grava **as duas versões** de cada fórmula (`A1-PT
 
 ## Perguntas que só a exportação pode responder
 
+> ✅ **A exportação foi feita e respondeu quase todas.** As respostas estão em
+> [`ANALISE-PLANILHA.md`](ANALISE-PLANILHA.md). Em resumo: as 164 colunas eram na verdade
+> **1.103**, e são um laço de simulação que equivale a `demanda % capacidade`;
+> `Programação` é um filtro por tipo de máquina sobre `PEDIDOS`; as cores **não** carregam
+> regra de negócio. Restam abertas as perguntas listadas no fim daquele documento.
+>
+> Confirmação sobre o dimensionamento: os dados reais (~2.437 pedidos, ~15.824 produtos,
+> 137+322 linhas de planejamento) cabem folgadamente no Google Planilhas. O que estourava
+> o Excel eram 4 colunas preenchidas até a linha 1.048.576, que não vão existir no sistema
+> novo.
+
 Nenhuma delas dá para responder lendo o VBA. São o motivo de a extração vir primeiro.
 
 1. **O que são as 164 colunas (C:FJ) do planejamento?**

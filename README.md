@@ -12,6 +12,7 @@ contém**: as fórmulas, a estrutura e as regras, extraídas em arquivos de text
 
 | Se você quer… | Leia |
 |---|---|
+| **Entender como a planilha funciona** | [`docs/ANALISE-PLANILHA.md`](docs/ANALISE-PLANILHA.md) ← comece aqui |
 | Exportar a planilha para o Git | [`docs/COMO-EXPORTAR.md`](docs/COMO-EXPORTAR.md) |
 | Entender o que as macros fazem | [`docs/ENTENDIMENTO-VBA.md`](docs/ENTENDIMENTO-VBA.md) |
 | Saber para onde o sistema vai | [`docs/ARQUITETURA-ALVO.md`](docs/ARQUITETURA-ALVO.md) |
@@ -29,7 +30,21 @@ contém**: as fórmulas, a estrutura e as regras, extraídas em arquivos de text
     └── planilha/                ← destino dos arquivos exportados
 ```
 
+## Situação
+
+A exportação foi feita: **4.733.724 fórmulas** da planilha estão descritas em 1,5 MB de
+texto neste repositório (arquivos `00_*` a `99_*`). A leitura completa está em
+[`docs/ANALISE-PLANILHA.md`](docs/ANALISE-PLANILHA.md).
+
+Três pontos que a análise encontrou:
+
+- **`PEDIDOS` responde por 89% de todas as fórmulas** e pelos 36 MB do arquivo — quatro
+  colunas preenchidas até a linha 1.048.576.
+- **As 151.385 fórmulas de `Planejamento Trançadeira` calculam um resto de divisão.**
+  Verificado numericamente contra os dados reais.
+- **A aba `Relação de referencias` está 100% quebrada** (`=#REF!`) e alimenta o relatório
+  de teares através de `CONSUMO`, mascarada por `SEERRO`.
+
 ## Próximo passo
 
-Rodar `ExportarTudo` e commitar o resultado em `docs/planilha/`. Sem isso, as fórmulas —
-que são a lógica real do sistema — continuam invisíveis para quem não abre o arquivo.
+Responder as perguntas em aberto no fim da análise e então modelar os dados.

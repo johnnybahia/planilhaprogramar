@@ -1,5 +1,16 @@
 # O que os 18 módulos VBA fazem
 
+> ⚠️ **Escrito antes da exportação da planilha.** As conclusões sobre os módulos em si
+> continuam válidas e foram confirmadas, mas as deduções sobre a estrutura da planilha
+> (número de abas, largura do planejamento, significado das cores) estavam incompletas —
+> o VBA só mostrava uma fatia do sistema. As correções estão em
+> [`ANALISE-PLANILHA.md`](ANALISE-PLANILHA.md), que é a fonte atual.
+>
+> A exportação confirmou: os Módulos **2, 8, 13 e 14 estão em uso**, ligados a botões nas
+> abas `PEDIDOS` e `RELATÓRIO TRANÇADEIRAS`. E apareceu uma macro que **não está neste
+> repositório**: `copiarDados`, no módulo `EstaPasta_de_trabalho`, no botão
+> "GERAR ITENS NOVOS" da aba `PESOS DE FIOS`.
+
 Análise dos arquivos `Módulo1.bas` … `Módulo18.bas` que estão na raiz do repositório.
 
 **Conclusão principal:** dos 18 módulos, apenas **4** carregam regra de negócio de
