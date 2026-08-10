@@ -1,0 +1,3757 @@
+================================================================
+FORMULAS DA ABA: RELATÓRIO TRANÇADEIRAS
+================================================================
+
+Total de celulas com formula : 16.604
+Padroes distintos (R1C1)     : 462
+
+Como ler este arquivo:
+  R1C1  = o padrao da formula. Igual para toda celula copiada.
+          R = linha atual, C = coluna atual. R[-1] = uma linha acima.
+  A1-PT = a formula como aparece no Excel em portugues.
+  A1-EN = a mesma formula com os nomes de funcao em ingles.
+          E esta que serve para o Google Sheets e para programacao.
+
+----------------------------------------------------------------
+Ocorrencias : 1.548
+Primeira    : N20
+Ultima      : O792
+R1C1        : =R[-1]C
+A1-PT       : =N19
+A1-EN       : =N19
+
+----------------------------------------------------------------
+Ocorrencias : 881
+Primeira    : X924
+Ultima      : X1804
+Distribuicao: linhas consecutivas de 924 a 1804
+R1C1        : ='Programação trançadeiras'!R[-713]C[-21]
+A1-PT       : ='Programação trançadeiras'!C211
+A1-EN       : ='Programação trançadeiras'!C211
+
+----------------------------------------------------------------
+Ocorrencias : 785
+Primeira    : X2
+Ultima      : X792
+R1C1        : ='Programação trançadeiras'!R[1]C[-21]
+A1-PT       : ='Programação trançadeiras'!C3
+A1-EN       : ='Programação trançadeiras'!C3
+
+----------------------------------------------------------------
+Ocorrencias : 774
+Primeira    : P19
+Ultima      : P792
+Distribuicao: linhas consecutivas de 19 a 792
+R1C1        : =IF(RC[-9]>0,TRUE,FALSE)
+A1-PT       : =SE(G19>0;VERDADEIRO;FALSO)
+A1-EN       : =IF(G19>0,TRUE,FALSE)
+
+----------------------------------------------------------------
+Ocorrencias : 645
+Primeira    : S20
+Ultima      : S792
+R1C1        : =IF(R19C2="","",VLOOKUP(R19C2,'DADOS DOS PRODUTOS'!R1C1:R9999C15,16,0))
+A1-PT       : =SE($B$19="";"";PROCV($B$19;'DADOS DOS PRODUTOS'!$A$1:$O$9999;16;0))
+A1-EN       : =IF($B$19="","",VLOOKUP($B$19,'DADOS DOS PRODUTOS'!$A$1:$O$9999,16,0))
+
+----------------------------------------------------------------
+Ocorrencias : 516
+Primeira    : H20
+Ultima      : H792
+R1C1        : =IF(R[-1]C[5]=R2C3,QUOTIENT(R[-1]C,0.833),IF(R[-1]C[5]=R3C3,PRODUCT(R[-1]C,1.235),IF(R[-1]C[5]=R4C3,PRODUCT(R[-1]C,0.75),IF(R[-1]C[5]=R5C3,PRODUCT(R[-1]C,1.38),IF(R[-1]C[5]=R6C3,PRODUCT(R[-1]C,1.292),IF(R[-1]C[5]=R7C3,PRODUCT(R[-1]C,1.292),IF(R[-1]C[5]=R8C3,PRODUCT(R[-1]C,0.391),IF(R[-1]C[5]=R9C3,PRODUCT(R[-1]C,1.2),IF(R[-1]C[5]=R10C3,PRODUCT(R[-1]C,1.25),IF(R[-1]C[5]=R11C3,PRODUCT(R[-1]C,1.25),IF(R[-1]C[5]=R12C3,PRODUCT(R[-1]C,1.25),IF(R[-1]C[5]=R13C3,PRODUCT(R[-1]C,1.25),R[-1]C))))))))))))
+A1-PT       : =SE(M19=$C$2;QUOCIENTE(H19;0,833);SE(M19=$C$3;MULT(H19;1,235);SE(M19=$C$4;MULT(H19;0,75);SE(M19=$C$5;MULT(H19;1,38);SE(M19=$C$6;MULT(H19;1,292);SE(M19=$C$7;MULT(H19;1,292);SE(M19=$C$8;MULT(H19;0,391);SE(M19=$C$9;MULT(H19;1,2);SE(M19=$C$10;MULT(H19;1,25);SE(M19=$C$11;MULT(H19;1,25);SE(M19=$C$12;MULT(H19;1,25);SE(M19=$C$13;MULT(H19;1,25);H19))))))))))))
+A1-EN       : =IF(M19=$C$2,QUOTIENT(H19,0.833),IF(M19=$C$3,PRODUCT(H19,1.235),IF(M19=$C$4,PRODUCT(H19,0.75),IF(M19=$C$5,PRODUCT(H19,1.38),IF(M19=$C$6,PRODUCT(H19,1.292),IF(M19=$C$7,PRODUCT(H19,1.292),IF(M19=$C$8,PRODUCT(H19,0.391),IF(M19=$C$9,PRODUCT(H19,1.2),IF(M19=$C$10,PRODUCT(H19,1.25),IF(M19=$C$11,PRODUCT(H19,1.25),IF(M19=$C$12,PRODUCT(H19,1.25),IF(M19=$C$13,PRODUCT(H19,1.25),H19))))))))))))
+
+----------------------------------------------------------------
+Ocorrencias : 516
+Primeira    : O21
+Ultima      : R791
+R1C1        : =R[-2]C
+A1-PT       : =O19
+A1-EN       : =O19
+
+----------------------------------------------------------------
+Ocorrencias : 516
+Primeira    : G20
+Ultima      : G792
+R1C1        : =IF(RC[3]>0,R[-1]C," ")
+A1-PT       : =SE(J20>0;G19;" ")
+A1-EN       : =IF(J20>0,G19," ")
+
+----------------------------------------------------------------
+Ocorrencias : 454
+Primeira    : AA1528
+Ultima      : AB1754
+R1C1        : =IFERROR(R[-805]C[-13],"")
+A1-PT       : =SEERRO(N723;"")
+A1-EN       : =IFERROR(N723,"")
+
+----------------------------------------------------------------
+Ocorrencias : 344
+Primeira    : H924
+Ultima      : L924
+R1C1        : =IFERROR(INDEX(R1266C27:R3402C27, SMALL(IF(MATCH(IF(R1266C27:R3402C27="","",R1266C27:R3402C27), IF(R1266C27:R3402C27="","",R1266C27:R3402C27),0)= ROW(INDIRECT("1:"&ROWS(R1266C27:R3402C27))), MATCH(IF(R1266C27:R3402C27="","",R1266C27:R3402C27), IF(R1266C27:R3402C27="","",R1266C27:R3402C27),0),""), ROW(INDIRECT("1:"&ROWS(R1266C27:R3402C27))))),"")
+A1-PT       : =SEERRO(ÍNDICE($AA$1266:$AA$3402; MENOR(SE(CORRESP(SE($AA$1266:$AA$3402="";"";$AA$1266:$AA$3402); SE($AA$1266:$AA$3402="";"";$AA$1266:$AA$3402);0)= LIN(INDIRETO("1:"&LINS($AA$1266:$AA$3402))); CORRESP(SE($AA$1266:$AA$3402="";"";$AA$1266:$AA$3402); SE($AA$1266:$AA$3402="";"";$AA$1266:$AA$3402);0);""); LIN(INDIRETO("1:"&LINS($AA$1266:$AA$3402)))));"")
+A1-EN       : =IFERROR(INDEX($AA$1266:$AA$3402, SMALL(IF(MATCH(IF($AA$1266:$AA$3402="","",$AA$1266:$AA$3402), IF($AA$1266:$AA$3402="","",$AA$1266:$AA$3402),0)= ROW(INDIRECT("1:"&ROWS($AA$1266:$AA$3402))), MATCH(IF($AA$1266:$AA$3402="","",$AA$1266:$AA$3402), IF($AA$1266:$AA$3402="","",$AA$1266:$AA$3402),0),""), ROW(INDIRECT("1:"&ROWS($AA$1266:$AA$3402))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 343
+Primeira    : I924
+Ultima      : I1266
+Distribuicao: linhas consecutivas de 924 a 1266
+R1C1        : =SUMIFS(R1266C28:R2901C28,R1266C27:R2901C27,RC[-1])
+A1-PT       : =SOMASES($AB$1266:$AB$2901;$AA$1266:$AA$2901;H924)
+A1-EN       : =SUMIFS($AB$1266:$AB$2901,$AA$1266:$AA$2901,H924)
+
+----------------------------------------------------------------
+Ocorrencias : 343
+Primeira    : G924
+Ultima      : G1266
+Distribuicao: linhas consecutivas de 924 a 1266
+R1C1        : =IFERROR(RC[2],0)
+A1-PT       : =SEERRO(I924;0)
+A1-EN       : =IFERROR(I924,0)
+
+----------------------------------------------------------------
+Ocorrencias : 262
+Primeira    : AA1397
+Ultima      : AB1527
+R1C1        : =IFERROR(R[-604]C[-15],"")
+A1-PT       : =SEERRO(L793;"")
+A1-EN       : =IFERROR(L793,"")
+
+----------------------------------------------------------------
+Ocorrencias : 262
+Primeira    : I793
+Ultima      : Q923
+R1C1        : ='Programação trançadeiras'!R[-790]C[3]
+A1-PT       : ='Programação trançadeiras'!L3
+A1-EN       : ='Programação trançadeiras'!L3
+
+----------------------------------------------------------------
+Ocorrencias : 262
+Primeira    : H793
+Ultima      : L923
+R1C1        : ='Programação trançadeiras'!R[-790]C[1]
+A1-PT       : ='Programação trançadeiras'!I3
+A1-EN       : ='Programação trançadeiras'!I3
+
+----------------------------------------------------------------
+Ocorrencias : 262
+Primeira    : AA1266
+Ultima      : AB1396
+R1C1        : =IFERROR(R[-473]C[-18],"")
+A1-PT       : =SEERRO(I793;"")
+A1-EN       : =IFERROR(I793,"")
+
+----------------------------------------------------------------
+Ocorrencias : 258
+Primeira    : F19
+Ultima      : F790
+Distribuicao: uma a cada 3 linhas, de 19 a 790
+R1C1        : =RC[-4]
+A1-PT       : =B19
+A1-EN       : =B19
+
+----------------------------------------------------------------
+Ocorrencias : 258
+Primeira    : T19
+Ultima      : T790
+Distribuicao: uma a cada 3 linhas, de 19 a 790
+R1C1        : =IFERROR(RC[-7],0)
+A1-PT       : =SEERRO(M19;0)
+A1-EN       : =IFERROR(M19,0)
+
+----------------------------------------------------------------
+Ocorrencias : 258
+Primeira    : J20
+Ultima      : J791
+Distribuicao: uma a cada 3 linhas, de 20 a 791
+R1C1        : =IF(R[-1]C2="","",VLOOKUP(R[-1]C2,'DADOS DOS PRODUTOS'!R1C1:R10000C13,5,0))
+A1-PT       : =SE($B19="";"";PROCV($B19;'DADOS DOS PRODUTOS'!$A$1:$M$10000;5;0))
+A1-EN       : =IF($B19="","",VLOOKUP($B19,'DADOS DOS PRODUTOS'!$A$1:$M$10000,5,0))
+
+----------------------------------------------------------------
+Ocorrencias : 258
+Primeira    : K20
+Ultima      : K791
+Distribuicao: uma a cada 3 linhas, de 20 a 791
+R1C1        : =IF(R[-1]C2="","",VLOOKUP(R[-1]C2,'DADOS DOS PRODUTOS'!R1C1:R10000C13,6,0))
+A1-PT       : =SE($B19="";"";PROCV($B19;'DADOS DOS PRODUTOS'!$A$1:$M$10000;6;0))
+A1-EN       : =IF($B19="","",VLOOKUP($B19,'DADOS DOS PRODUTOS'!$A$1:$M$10000,6,0))
+
+----------------------------------------------------------------
+Ocorrencias : 258
+Primeira    : L20
+Ultima      : L791
+Distribuicao: uma a cada 3 linhas, de 20 a 791
+R1C1        : =IF(R[-1]C2="","",VLOOKUP(R[-1]C2,'DADOS DOS PRODUTOS'!R1C1:R10000C13,7,0))
+A1-PT       : =SE($B19="";"";PROCV($B19;'DADOS DOS PRODUTOS'!$A$1:$M$10000;7;0))
+A1-EN       : =IF($B19="","",VLOOKUP($B19,'DADOS DOS PRODUTOS'!$A$1:$M$10000,7,0))
+
+----------------------------------------------------------------
+Ocorrencias : 258
+Primeira    : J19
+Ultima      : J790
+Distribuicao: uma a cada 3 linhas, de 19 a 790
+R1C1        : =IF(RC2="","",VLOOKUP(RC2,'DADOS DOS PRODUTOS'!R1C1:R10000C13,2,0))
+A1-PT       : =SE($B19="";"";PROCV($B19;'DADOS DOS PRODUTOS'!$A$1:$M$10000;2;0))
+A1-EN       : =IF($B19="","",VLOOKUP($B19,'DADOS DOS PRODUTOS'!$A$1:$M$10000,2,0))
+
+----------------------------------------------------------------
+Ocorrencias : 258
+Primeira    : K19
+Ultima      : K790
+Distribuicao: uma a cada 3 linhas, de 19 a 790
+R1C1        : =IF(RC2="","",VLOOKUP(RC2,'DADOS DOS PRODUTOS'!R1C1:R10000C13,3,0))
+A1-PT       : =SE($B19="";"";PROCV($B19;'DADOS DOS PRODUTOS'!$A$1:$M$10000;3;0))
+A1-EN       : =IF($B19="","",VLOOKUP($B19,'DADOS DOS PRODUTOS'!$A$1:$M$10000,3,0))
+
+----------------------------------------------------------------
+Ocorrencias : 258
+Primeira    : J21
+Ultima      : J792
+Distribuicao: uma a cada 3 linhas, de 21 a 792
+R1C1        : =IF(R[-2]C2="","",VLOOKUP(R[-2]C2,'DADOS DOS PRODUTOS'!R1C1:R10000C13,11,0))
+A1-PT       : =SE($B19="";"";PROCV($B19;'DADOS DOS PRODUTOS'!$A$1:$M$10000;11;0))
+A1-EN       : =IF($B19="","",VLOOKUP($B19,'DADOS DOS PRODUTOS'!$A$1:$M$10000,11,0))
+
+----------------------------------------------------------------
+Ocorrencias : 258
+Primeira    : K21
+Ultima      : K792
+Distribuicao: uma a cada 3 linhas, de 21 a 792
+R1C1        : =IF(R[-2]C2="","",VLOOKUP(R[-2]C2,'DADOS DOS PRODUTOS'!R1C1:R10000C13,12,0))
+A1-PT       : =SE($B19="";"";PROCV($B19;'DADOS DOS PRODUTOS'!$A$1:$M$10000;12;0))
+A1-EN       : =IF($B19="","",VLOOKUP($B19,'DADOS DOS PRODUTOS'!$A$1:$M$10000,12,0))
+
+----------------------------------------------------------------
+Ocorrencias : 258
+Primeira    : L21
+Ultima      : L792
+Distribuicao: uma a cada 3 linhas, de 21 a 792
+R1C1        : =IF(R[-2]C2="","",VLOOKUP(R[-2]C2,'DADOS DOS PRODUTOS'!R1C1:R10000C13,13,0))
+A1-PT       : =SE($B19="";"";PROCV($B19;'DADOS DOS PRODUTOS'!$A$1:$M$10000;13;0))
+A1-EN       : =IF($B19="","",VLOOKUP($B19,'DADOS DOS PRODUTOS'!$A$1:$M$10000,13,0))
+
+----------------------------------------------------------------
+Ocorrencias : 258
+Primeira    : L19
+Ultima      : L790
+Distribuicao: uma a cada 3 linhas, de 19 a 790
+R1C1        : =IF(RC2="","",VLOOKUP(RC2,'DADOS DOS PRODUTOS'!R1C1:R10000C13,4,0))
+A1-PT       : =SE($B19="";"";PROCV($B19;'DADOS DOS PRODUTOS'!$A$1:$M$10000;4;0))
+A1-EN       : =IF($B19="","",VLOOKUP($B19,'DADOS DOS PRODUTOS'!$A$1:$M$10000,4,0))
+
+----------------------------------------------------------------
+Ocorrencias : 258
+Primeira    : Q22
+Ultima      : R792
+R1C1        : =R[-3]C
+A1-PT       : =Q19
+A1-EN       : =Q19
+
+----------------------------------------------------------------
+Ocorrencias : 210
+Primeira    : AA1755
+Ultima      : AB1859
+R1C1        : =IFERROR(R[-936]C[-11],"")
+A1-PT       : =SEERRO(P819;"")
+A1-EN       : =IFERROR(P819,"")
+
+----------------------------------------------------------------
+Ocorrencias : 131
+Primeira    : U793
+Ultima      : U923
+Distribuicao: linhas consecutivas de 793 a 923
+R1C1        : =R9C11
+A1-PT       : =$K$9
+A1-EN       : =$K$9
+
+----------------------------------------------------------------
+Ocorrencias : 131
+Primeira    : G793
+Ultima      : G923
+Distribuicao: linhas consecutivas de 793 a 923
+R1C1        : =IFERROR(RC[3],0)
+A1-PT       : =SEERRO(J793;0)
+A1-EN       : =IFERROR(J793,0)
+
+----------------------------------------------------------------
+Ocorrencias : 131
+Primeira    : J793
+Ultima      : J923
+Distribuicao: linhas consecutivas de 793 a 923
+R1C1        : ='Programação trançadeiras'!R[-790]C[7]
+A1-PT       : ='Programação trançadeiras'!Q3
+A1-EN       : ='Programação trançadeiras'!Q3
+
+----------------------------------------------------------------
+Ocorrencias : 131
+Primeira    : M793
+Ultima      : M923
+Distribuicao: linhas consecutivas de 793 a 923
+R1C1        : ='Programação trançadeiras'!R[-790]C[5]
+A1-PT       : ='Programação trançadeiras'!R3
+A1-EN       : ='Programação trançadeiras'!R3
+
+----------------------------------------------------------------
+Ocorrencias : 131
+Primeira    : N793
+Ultima      : N923
+Distribuicao: linhas consecutivas de 793 a 923
+R1C1        : ='Programação trançadeiras'!R[-790]C
+A1-PT       : ='Programação trançadeiras'!N3
+A1-EN       : ='Programação trançadeiras'!N3
+
+----------------------------------------------------------------
+Ocorrencias : 131
+Primeira    : O793
+Ultima      : O923
+Distribuicao: linhas consecutivas de 793 a 923
+R1C1        : ='Programação trançadeiras'!R[-790]C[4]
+A1-PT       : ='Programação trançadeiras'!S3
+A1-EN       : ='Programação trançadeiras'!S3
+
+----------------------------------------------------------------
+Ocorrencias : 131
+Primeira    : P793
+Ultima      : P923
+Distribuicao: linhas consecutivas de 793 a 923
+R1C1        : ='Programação trançadeiras'!R[-790]C[-1]
+A1-PT       : ='Programação trançadeiras'!O3
+A1-EN       : ='Programação trançadeiras'!O3
+
+----------------------------------------------------------------
+Ocorrencias : 131
+Primeira    : R793
+Ultima      : R923
+Distribuicao: linhas consecutivas de 793 a 923
+R1C1        : =CONCATENATE(R3C7," ",R4C7," ",R5C7," ",R6C7," ",R7C7," ",R8C7," ",R9C7," ",R10C7," ",R11C7," ",R12C7," ",R13C7," ",R14C7," ",R15C7," ",R16C7," ",R4C8)
+A1-PT       : =CONCATENAR($G$3;" ";$G$4;" ";$G$5;" ";$G$6;" ";$G$7;" ";$G$8;" ";$G$9;" ";$G$10;" ";$G$11;" ";$G$12;" ";$G$13;" ";$G$14;" ";$G$15;" ";$G$16;" ";$H$4)
+A1-EN       : =CONCATENATE($G$3," ",$G$4," ",$G$5," ",$G$6," ",$G$7," ",$G$8," ",$G$9," ",$G$10," ",$G$11," ",$G$12," ",$G$13," ",$G$14," ",$G$15," ",$G$16," ",$H$4)
+
+----------------------------------------------------------------
+Ocorrencias : 131
+Primeira    : S793
+Ultima      : S923
+Distribuicao: linhas consecutivas de 793 a 923
+R1C1        : ='Programação trançadeiras'!R[-790]C[-9]
+A1-PT       : ='Programação trançadeiras'!J3
+A1-EN       : ='Programação trançadeiras'!J3
+
+----------------------------------------------------------------
+Ocorrencias : 131
+Primeira    : X793
+Ultima      : X923
+Distribuicao: linhas consecutivas de 793 a 923
+R1C1        : ='Programação trançadeiras'!R[-611]C[-21]
+A1-PT       : ='Programação trançadeiras'!C182
+A1-EN       : ='Programação trançadeiras'!C182
+
+----------------------------------------------------------------
+Ocorrencias : 131
+Primeira    : T793
+Ultima      : T923
+Distribuicao: linhas consecutivas de 793 a 923
+R1C1        : =R3C15
+A1-PT       : =$O$3
+A1-EN       : =$O$3
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : Q19
+Ultima      : Q787
+Distribuicao: uma a cada 6 linhas, de 19 a 787
+R1C1        : =IF(RC[-15]="","",VLOOKUP(RC[-15],'DADOS DOS PRODUTOS'!R1C1:R9999C14,14,0))
+A1-PT       : =SE(B19="";"";PROCV(B19;'DADOS DOS PRODUTOS'!$A$1:$N$9999;14;0))
+A1-EN       : =IF(B19="","",VLOOKUP(B19,'DADOS DOS PRODUTOS'!$A$1:$N$9999,14,0))
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : R19
+Ultima      : R787
+Distribuicao: uma a cada 6 linhas, de 19 a 787
+R1C1        : =IF(RC[-16]="","",VLOOKUP(RC[-16],'DADOS DOS PRODUTOS'!R1C1:R9999C15,15,0))
+A1-PT       : =SE(B19="";"";PROCV(B19;'DADOS DOS PRODUTOS'!$A$1:$O$9999;15;0))
+A1-EN       : =IF(B19="","",VLOOKUP(B19,'DADOS DOS PRODUTOS'!$A$1:$O$9999,15,0))
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : S19
+Ultima      : S787
+Distribuicao: uma a cada 6 linhas, de 19 a 787
+R1C1        : =IF(RC[-17]="","",VLOOKUP(RC[-17],'DADOS DOS PRODUTOS'!R1C1:R9999C15,16,0))
+A1-PT       : =SE(B19="";"";PROCV(B19;'DADOS DOS PRODUTOS'!$A$1:$O$9999;16;0))
+A1-EN       : =IF(B19="","",VLOOKUP(B19,'DADOS DOS PRODUTOS'!$A$1:$O$9999,16,0))
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : E19
+Ultima      : E787
+Distribuicao: uma a cada 6 linhas, de 19 a 787
+R1C1        : =RC[-1]/RC[12]
+A1-PT       : =D19/Q19
+A1-EN       : =D19/Q19
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : M21
+Ultima      : M789
+Distribuicao: uma a cada 6 linhas, de 21 a 789
+R1C1        : =IF(RC[-3]>0,R[-2]C," ")
+A1-PT       : =SE(J21>0;M19;" ")
+A1-EN       : =IF(J21>0,M19," ")
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : V19
+Ultima      : V787
+Distribuicao: uma a cada 6 linhas, de 19 a 787
+R1C1        : =LEFT(RC[-20],4)
+A1-PT       : =ESQUERDA(B19;4)
+A1-EN       : =LEFT(B19,4)
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : B22
+Ultima      : B790
+Distribuicao: uma a cada 6 linhas, de 22 a 790
+R1C1        : =IF(RC[6]>0,R[-3]C," ")
+A1-PT       : =SE(H22>0;B19;" ")
+A1-EN       : =IF(H22>0,B19," ")
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : M22
+Ultima      : M790
+Distribuicao: uma a cada 6 linhas, de 22 a 790
+R1C1        : =IF(RC[-3]>0,R[-3]C," ")
+A1-PT       : =SE(J22>0;M19;" ")
+A1-EN       : =IF(J22>0,M19," ")
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : M19
+Ultima      : M787
+Distribuicao: uma a cada 6 linhas, de 19 a 787
+R1C1        : =IF(RC[-11]="","",VLOOKUP(RC[-11],'DADOS DOS PRODUTOS'!R1C1:R10000C13,8,0))
+A1-PT       : =SE(B19="";"";PROCV(B19;'DADOS DOS PRODUTOS'!$A$1:$M$10000;8;0))
+A1-EN       : =IF(B19="","",VLOOKUP(B19,'DADOS DOS PRODUTOS'!$A$1:$M$10000,8,0))
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : M23
+Ultima      : M791
+Distribuicao: uma a cada 6 linhas, de 23 a 791
+R1C1        : =IF(RC[-3]>0,R[-4]C," ")
+A1-PT       : =SE(J23>0;M19;" ")
+A1-EN       : =IF(J23>0,M19," ")
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : Q23
+Ultima      : Q791
+Distribuicao: uma a cada 6 linhas, de 23 a 791
+R1C1        : =R[-4]C
+A1-PT       : =Q19
+A1-EN       : =Q19
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : M24
+Ultima      : M792
+Distribuicao: uma a cada 6 linhas, de 24 a 792
+R1C1        : =IF(RC[-3]>0,R[-5]C," ")
+A1-PT       : =SE(J24>0;M19;" ")
+A1-EN       : =IF(J24>0,M19," ")
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : Q24
+Ultima      : Q792
+Distribuicao: uma a cada 6 linhas, de 24 a 792
+R1C1        : =R[-5]C
+A1-PT       : =Q19
+A1-EN       : =Q19
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : G19
+Ultima      : G787
+Distribuicao: uma a cada 6 linhas, de 19 a 787
+R1C1        : =IF(RC[1]<RC[10],1,RC[16])
+A1-PT       : =SE(H19<Q19;1;W19)
+A1-EN       : =IF(H19<Q19,1,W19)
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : H19
+Ultima      : H787
+Distribuicao: uma a cada 6 linhas, de 19 a 787
+R1C1        : =IF(RC[-4]>RC[9],RC[9],IF(RC[-4]<RC[9],RC[-4],RC[-4]))
+A1-PT       : =SE(D19>Q19;Q19;SE(D19<Q19;D19;D19))
+A1-EN       : =IF(D19>Q19,Q19,IF(D19<Q19,D19,D19))
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : N19
+Ultima      : N787
+Distribuicao: uma a cada 6 linhas, de 19 a 787
+R1C1        : =IF(RC[-12]="","",VLOOKUP(RC[-12],'DADOS DOS PRODUTOS'!R1C1:R10000C13,9,0))
+A1-PT       : =SE(B19="";"";PROCV(B19;'DADOS DOS PRODUTOS'!$A$1:$M$10000;9;0))
+A1-EN       : =IF(B19="","",VLOOKUP(B19,'DADOS DOS PRODUTOS'!$A$1:$M$10000,9,0))
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : O19
+Ultima      : O787
+Distribuicao: uma a cada 6 linhas, de 19 a 787
+R1C1        : =RC[-12]
+A1-PT       : =C19
+A1-EN       : =C19
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : G22
+Ultima      : G790
+Distribuicao: uma a cada 6 linhas, de 22 a 790
+R1C1        : =IF(RC[1]>0,1," ")
+A1-PT       : =SE(H22>0;1;" ")
+A1-EN       : =IF(H22>0,1," ")
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : M20
+Ultima      : M788
+Distribuicao: uma a cada 6 linhas, de 20 a 788
+R1C1        : =IF(RC[-3]>0,R[-1]C," ")
+A1-PT       : =SE(J20>0;M19;" ")
+A1-EN       : =IF(J20>0,M19," ")
+
+----------------------------------------------------------------
+Ocorrencias : 129
+Primeira    : D19
+Ultima      : D787
+Distribuicao: uma a cada 6 linhas, de 19 a 787
+R1C1        : =(RC[13]*RC[-1])/RC[14]
+A1-PT       : =(Q19*C19)/R19
+A1-EN       : =(Q19*C19)/R19
+
+----------------------------------------------------------------
+Ocorrencias : 17
+Primeira    : V2
+Ultima      : V18
+Distribuicao: linhas consecutivas de 2 a 18
+R1C1        : ='Programação trançadeiras'!R[1]C[-18]
+A1-PT       : ='Programação trançadeiras'!D3
+A1-EN       : ='Programação trançadeiras'!D3
+
+----------------------------------------------------------------
+Ocorrencias : 14
+Primeira    : G3
+Ultima      : G16
+Distribuicao: linhas consecutivas de 3 a 16
+R1C1        : =IFERROR(INDEX(R2C24:R1995C24, SMALL(IF(MATCH(IF(R2C24:R1995C24="","",R2C24:R1995C24), IF(R2C24:R1995C24="","",R2C24:R1995C24),0)= ROW(INDIRECT("1:"&ROWS(R2C24:R1995C24))), MATCH(IF(R2C24:R1995C24="","",R2C24:R1995C24), IF(R2C24:R1995C24="","",R2C24:R1995C24),0),""), ROW(INDIRECT("1:"&ROWS(R2C24:R1995C24))))),"")
+A1-PT       : =SEERRO(ÍNDICE($X$2:$X$1995; MENOR(SE(CORRESP(SE($X$2:$X$1995="";"";$X$2:$X$1995); SE($X$2:$X$1995="";"";$X$2:$X$1995);0)= LIN(INDIRETO("1:"&LINS($X$2:$X$1995))); CORRESP(SE($X$2:$X$1995="";"";$X$2:$X$1995); SE($X$2:$X$1995="";"";$X$2:$X$1995);0);""); LIN(INDIRETO("1:"&LINS($X$2:$X$1995)))));"")
+A1-EN       : =IFERROR(INDEX($X$2:$X$1995, SMALL(IF(MATCH(IF($X$2:$X$1995="","",$X$2:$X$1995), IF($X$2:$X$1995="","",$X$2:$X$1995),0)= ROW(INDIRECT("1:"&ROWS($X$2:$X$1995))), MATCH(IF($X$2:$X$1995="","",$X$2:$X$1995), IF($X$2:$X$1995="","",$X$2:$X$1995),0),""), ROW(INDIRECT("1:"&ROWS($X$2:$X$1995))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 6
+Primeira    : X21
+Ultima      : X539
+R1C1        : ='Programação trançadeiras'!RC[-21]
+A1-PT       : ='Programação trançadeiras'!C21
+A1-EN       : ='Programação trançadeiras'!C21
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B193
+Ultima      : C193
+R1C1        : ='Programação trançadeiras'!R[-161]C[7]
+A1-PT       : ='Programação trançadeiras'!I32
+A1-EN       : ='Programação trançadeiras'!I32
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B199
+Ultima      : C199
+R1C1        : ='Programação trançadeiras'!R[-166]C[7]
+A1-PT       : ='Programação trançadeiras'!I33
+A1-EN       : ='Programação trançadeiras'!I33
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B205
+Ultima      : C205
+R1C1        : ='Programação trançadeiras'!R[-171]C[7]
+A1-PT       : ='Programação trançadeiras'!I34
+A1-EN       : ='Programação trançadeiras'!I34
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B211
+Ultima      : C211
+R1C1        : ='Programação trançadeiras'!R[-176]C[7]
+A1-PT       : ='Programação trançadeiras'!I35
+A1-EN       : ='Programação trançadeiras'!I35
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B217
+Ultima      : C217
+R1C1        : ='Programação trançadeiras'!R[-181]C[7]
+A1-PT       : ='Programação trançadeiras'!I36
+A1-EN       : ='Programação trançadeiras'!I36
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B223
+Ultima      : C223
+R1C1        : ='Programação trançadeiras'!R[-186]C[7]
+A1-PT       : ='Programação trançadeiras'!I37
+A1-EN       : ='Programação trançadeiras'!I37
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B229
+Ultima      : C229
+R1C1        : ='Programação trançadeiras'!R[-191]C[7]
+A1-PT       : ='Programação trançadeiras'!I38
+A1-EN       : ='Programação trançadeiras'!I38
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B235
+Ultima      : C235
+R1C1        : ='Programação trançadeiras'!R[-196]C[7]
+A1-PT       : ='Programação trançadeiras'!I39
+A1-EN       : ='Programação trançadeiras'!I39
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B241
+Ultima      : C241
+R1C1        : ='Programação trançadeiras'!R[-201]C[7]
+A1-PT       : ='Programação trançadeiras'!I40
+A1-EN       : ='Programação trançadeiras'!I40
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B247
+Ultima      : C247
+R1C1        : ='Programação trançadeiras'!R[-206]C[7]
+A1-PT       : ='Programação trançadeiras'!I41
+A1-EN       : ='Programação trançadeiras'!I41
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B253
+Ultima      : C253
+R1C1        : ='Programação trançadeiras'!R[-211]C[7]
+A1-PT       : ='Programação trançadeiras'!I42
+A1-EN       : ='Programação trançadeiras'!I42
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B259
+Ultima      : C259
+R1C1        : ='Programação trançadeiras'!R[-216]C[7]
+A1-PT       : ='Programação trançadeiras'!I43
+A1-EN       : ='Programação trançadeiras'!I43
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B265
+Ultima      : C265
+R1C1        : ='Programação trançadeiras'!R[-221]C[7]
+A1-PT       : ='Programação trançadeiras'!I44
+A1-EN       : ='Programação trançadeiras'!I44
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B271
+Ultima      : C271
+R1C1        : ='Programação trançadeiras'!R[-226]C[7]
+A1-PT       : ='Programação trançadeiras'!I45
+A1-EN       : ='Programação trançadeiras'!I45
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B277
+Ultima      : C277
+R1C1        : ='Programação trançadeiras'!R[-231]C[7]
+A1-PT       : ='Programação trançadeiras'!I46
+A1-EN       : ='Programação trançadeiras'!I46
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B283
+Ultima      : C283
+R1C1        : ='Programação trançadeiras'!R[-236]C[7]
+A1-PT       : ='Programação trançadeiras'!I47
+A1-EN       : ='Programação trançadeiras'!I47
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B289
+Ultima      : C289
+R1C1        : ='Programação trançadeiras'!R[-241]C[7]
+A1-PT       : ='Programação trançadeiras'!I48
+A1-EN       : ='Programação trançadeiras'!I48
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B295
+Ultima      : C295
+R1C1        : ='Programação trançadeiras'!R[-246]C[7]
+A1-PT       : ='Programação trançadeiras'!I49
+A1-EN       : ='Programação trançadeiras'!I49
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B301
+Ultima      : C301
+R1C1        : ='Programação trançadeiras'!R[-251]C[7]
+A1-PT       : ='Programação trançadeiras'!I50
+A1-EN       : ='Programação trançadeiras'!I50
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B307
+Ultima      : C307
+R1C1        : ='Programação trançadeiras'!R[-256]C[7]
+A1-PT       : ='Programação trançadeiras'!I51
+A1-EN       : ='Programação trançadeiras'!I51
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B313
+Ultima      : C313
+R1C1        : ='Programação trançadeiras'!R[-261]C[7]
+A1-PT       : ='Programação trançadeiras'!I52
+A1-EN       : ='Programação trançadeiras'!I52
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B319
+Ultima      : C319
+R1C1        : ='Programação trançadeiras'!R[-266]C[7]
+A1-PT       : ='Programação trançadeiras'!I53
+A1-EN       : ='Programação trançadeiras'!I53
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B325
+Ultima      : C325
+R1C1        : ='Programação trançadeiras'!R[-271]C[7]
+A1-PT       : ='Programação trançadeiras'!I54
+A1-EN       : ='Programação trançadeiras'!I54
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B331
+Ultima      : C331
+R1C1        : ='Programação trançadeiras'!R[-276]C[7]
+A1-PT       : ='Programação trançadeiras'!I55
+A1-EN       : ='Programação trançadeiras'!I55
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B337
+Ultima      : C337
+R1C1        : ='Programação trançadeiras'!R[-281]C[7]
+A1-PT       : ='Programação trançadeiras'!I56
+A1-EN       : ='Programação trançadeiras'!I56
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B343
+Ultima      : C343
+R1C1        : ='Programação trançadeiras'!R[-286]C[7]
+A1-PT       : ='Programação trançadeiras'!I57
+A1-EN       : ='Programação trançadeiras'!I57
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B349
+Ultima      : C349
+R1C1        : ='Programação trançadeiras'!R[-291]C[7]
+A1-PT       : ='Programação trançadeiras'!I58
+A1-EN       : ='Programação trançadeiras'!I58
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B355
+Ultima      : C355
+R1C1        : ='Programação trançadeiras'!R[-296]C[7]
+A1-PT       : ='Programação trançadeiras'!I59
+A1-EN       : ='Programação trançadeiras'!I59
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B361
+Ultima      : C361
+R1C1        : ='Programação trançadeiras'!R[-301]C[7]
+A1-PT       : ='Programação trançadeiras'!I60
+A1-EN       : ='Programação trançadeiras'!I60
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B367
+Ultima      : C367
+R1C1        : ='Programação trançadeiras'!R[-306]C[7]
+A1-PT       : ='Programação trançadeiras'!I61
+A1-EN       : ='Programação trançadeiras'!I61
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B373
+Ultima      : C373
+R1C1        : ='Programação trançadeiras'!R[-311]C[7]
+A1-PT       : ='Programação trançadeiras'!I62
+A1-EN       : ='Programação trançadeiras'!I62
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B379
+Ultima      : C379
+R1C1        : ='Programação trançadeiras'!R[-316]C[7]
+A1-PT       : ='Programação trançadeiras'!I63
+A1-EN       : ='Programação trançadeiras'!I63
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B385
+Ultima      : C385
+R1C1        : ='Programação trançadeiras'!R[-321]C[7]
+A1-PT       : ='Programação trançadeiras'!I64
+A1-EN       : ='Programação trançadeiras'!I64
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B391
+Ultima      : C391
+R1C1        : ='Programação trançadeiras'!R[-326]C[7]
+A1-PT       : ='Programação trançadeiras'!I65
+A1-EN       : ='Programação trançadeiras'!I65
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B397
+Ultima      : C397
+R1C1        : ='Programação trançadeiras'!R[-331]C[7]
+A1-PT       : ='Programação trançadeiras'!I66
+A1-EN       : ='Programação trançadeiras'!I66
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B403
+Ultima      : C403
+R1C1        : ='Programação trançadeiras'!R[-336]C[7]
+A1-PT       : ='Programação trançadeiras'!I67
+A1-EN       : ='Programação trançadeiras'!I67
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B409
+Ultima      : C409
+R1C1        : ='Programação trançadeiras'!R[-341]C[7]
+A1-PT       : ='Programação trançadeiras'!I68
+A1-EN       : ='Programação trançadeiras'!I68
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B415
+Ultima      : C415
+R1C1        : ='Programação trançadeiras'!R[-346]C[7]
+A1-PT       : ='Programação trançadeiras'!I69
+A1-EN       : ='Programação trançadeiras'!I69
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B421
+Ultima      : C421
+R1C1        : ='Programação trançadeiras'!R[-351]C[7]
+A1-PT       : ='Programação trançadeiras'!I70
+A1-EN       : ='Programação trançadeiras'!I70
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B427
+Ultima      : C427
+R1C1        : ='Programação trançadeiras'!R[-356]C[7]
+A1-PT       : ='Programação trançadeiras'!I71
+A1-EN       : ='Programação trançadeiras'!I71
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B433
+Ultima      : C433
+R1C1        : ='Programação trançadeiras'!R[-361]C[7]
+A1-PT       : ='Programação trançadeiras'!I72
+A1-EN       : ='Programação trançadeiras'!I72
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B439
+Ultima      : C439
+R1C1        : ='Programação trançadeiras'!R[-366]C[7]
+A1-PT       : ='Programação trançadeiras'!I73
+A1-EN       : ='Programação trançadeiras'!I73
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B445
+Ultima      : C445
+R1C1        : ='Programação trançadeiras'!R[-371]C[7]
+A1-PT       : ='Programação trançadeiras'!I74
+A1-EN       : ='Programação trançadeiras'!I74
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B451
+Ultima      : C451
+R1C1        : ='Programação trançadeiras'!R[-376]C[7]
+A1-PT       : ='Programação trançadeiras'!I75
+A1-EN       : ='Programação trançadeiras'!I75
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B457
+Ultima      : C457
+R1C1        : ='Programação trançadeiras'!R[-381]C[7]
+A1-PT       : ='Programação trançadeiras'!I76
+A1-EN       : ='Programação trançadeiras'!I76
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B463
+Ultima      : C463
+R1C1        : ='Programação trançadeiras'!R[-386]C[7]
+A1-PT       : ='Programação trançadeiras'!I77
+A1-EN       : ='Programação trançadeiras'!I77
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B469
+Ultima      : C469
+R1C1        : ='Programação trançadeiras'!R[-391]C[7]
+A1-PT       : ='Programação trançadeiras'!I78
+A1-EN       : ='Programação trançadeiras'!I78
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B475
+Ultima      : C475
+R1C1        : ='Programação trançadeiras'!R[-396]C[7]
+A1-PT       : ='Programação trançadeiras'!I79
+A1-EN       : ='Programação trançadeiras'!I79
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B481
+Ultima      : C481
+R1C1        : ='Programação trançadeiras'!R[-401]C[7]
+A1-PT       : ='Programação trançadeiras'!I80
+A1-EN       : ='Programação trançadeiras'!I80
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B487
+Ultima      : C487
+R1C1        : ='Programação trançadeiras'!R[-406]C[7]
+A1-PT       : ='Programação trançadeiras'!I81
+A1-EN       : ='Programação trançadeiras'!I81
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B493
+Ultima      : C493
+R1C1        : ='Programação trançadeiras'!R[-411]C[7]
+A1-PT       : ='Programação trançadeiras'!I82
+A1-EN       : ='Programação trançadeiras'!I82
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B499
+Ultima      : C499
+R1C1        : ='Programação trançadeiras'!R[-416]C[7]
+A1-PT       : ='Programação trançadeiras'!I83
+A1-EN       : ='Programação trançadeiras'!I83
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B505
+Ultima      : C505
+R1C1        : ='Programação trançadeiras'!R[-421]C[7]
+A1-PT       : ='Programação trançadeiras'!I84
+A1-EN       : ='Programação trançadeiras'!I84
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B511
+Ultima      : C511
+R1C1        : ='Programação trançadeiras'!R[-426]C[7]
+A1-PT       : ='Programação trançadeiras'!I85
+A1-EN       : ='Programação trançadeiras'!I85
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B517
+Ultima      : C517
+R1C1        : ='Programação trançadeiras'!R[-431]C[7]
+A1-PT       : ='Programação trançadeiras'!I86
+A1-EN       : ='Programação trançadeiras'!I86
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B523
+Ultima      : C523
+R1C1        : ='Programação trançadeiras'!R[-436]C[7]
+A1-PT       : ='Programação trançadeiras'!I87
+A1-EN       : ='Programação trançadeiras'!I87
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B529
+Ultima      : C529
+R1C1        : ='Programação trançadeiras'!R[-441]C[7]
+A1-PT       : ='Programação trançadeiras'!I88
+A1-EN       : ='Programação trançadeiras'!I88
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B535
+Ultima      : C535
+R1C1        : ='Programação trançadeiras'!R[-446]C[7]
+A1-PT       : ='Programação trançadeiras'!I89
+A1-EN       : ='Programação trançadeiras'!I89
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B541
+Ultima      : C541
+R1C1        : ='Programação trançadeiras'!R[-451]C[7]
+A1-PT       : ='Programação trançadeiras'!I90
+A1-EN       : ='Programação trançadeiras'!I90
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B547
+Ultima      : C547
+R1C1        : ='Programação trançadeiras'!R[-456]C[7]
+A1-PT       : ='Programação trançadeiras'!I91
+A1-EN       : ='Programação trançadeiras'!I91
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B553
+Ultima      : C553
+R1C1        : ='Programação trançadeiras'!R[-461]C[7]
+A1-PT       : ='Programação trançadeiras'!I92
+A1-EN       : ='Programação trançadeiras'!I92
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B559
+Ultima      : C559
+R1C1        : ='Programação trançadeiras'!R[-466]C[7]
+A1-PT       : ='Programação trançadeiras'!I93
+A1-EN       : ='Programação trançadeiras'!I93
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B565
+Ultima      : C565
+R1C1        : ='Programação trançadeiras'!R[-471]C[7]
+A1-PT       : ='Programação trançadeiras'!I94
+A1-EN       : ='Programação trançadeiras'!I94
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B25
+Ultima      : C25
+R1C1        : ='Programação trançadeiras'!R[-21]C[7]
+A1-PT       : ='Programação trançadeiras'!I4
+A1-EN       : ='Programação trançadeiras'!I4
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B31
+Ultima      : C31
+R1C1        : ='Programação trançadeiras'!R[-26]C[7]
+A1-PT       : ='Programação trançadeiras'!I5
+A1-EN       : ='Programação trançadeiras'!I5
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B37
+Ultima      : C37
+R1C1        : ='Programação trançadeiras'!R[-31]C[7]
+A1-PT       : ='Programação trançadeiras'!I6
+A1-EN       : ='Programação trançadeiras'!I6
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B43
+Ultima      : C43
+R1C1        : ='Programação trançadeiras'!R[-36]C[7]
+A1-PT       : ='Programação trançadeiras'!I7
+A1-EN       : ='Programação trançadeiras'!I7
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B49
+Ultima      : C49
+R1C1        : ='Programação trançadeiras'!R[-41]C[7]
+A1-PT       : ='Programação trançadeiras'!I8
+A1-EN       : ='Programação trançadeiras'!I8
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B571
+Ultima      : C571
+R1C1        : ='Programação trançadeiras'!R[-476]C[7]
+A1-PT       : ='Programação trançadeiras'!I95
+A1-EN       : ='Programação trançadeiras'!I95
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B577
+Ultima      : C577
+R1C1        : ='Programação trançadeiras'!R[-481]C[7]
+A1-PT       : ='Programação trançadeiras'!I96
+A1-EN       : ='Programação trançadeiras'!I96
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B583
+Ultima      : C583
+R1C1        : ='Programação trançadeiras'!R[-486]C[7]
+A1-PT       : ='Programação trançadeiras'!I97
+A1-EN       : ='Programação trançadeiras'!I97
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B589
+Ultima      : C589
+R1C1        : ='Programação trançadeiras'!R[-491]C[7]
+A1-PT       : ='Programação trançadeiras'!I98
+A1-EN       : ='Programação trançadeiras'!I98
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B595
+Ultima      : C595
+R1C1        : ='Programação trançadeiras'!R[-496]C[7]
+A1-PT       : ='Programação trançadeiras'!I99
+A1-EN       : ='Programação trançadeiras'!I99
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B601
+Ultima      : C601
+R1C1        : ='Programação trançadeiras'!R[-501]C[7]
+A1-PT       : ='Programação trançadeiras'!I100
+A1-EN       : ='Programação trançadeiras'!I100
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B607
+Ultima      : C607
+R1C1        : ='Programação trançadeiras'!R[-506]C[7]
+A1-PT       : ='Programação trançadeiras'!I101
+A1-EN       : ='Programação trançadeiras'!I101
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B613
+Ultima      : C613
+R1C1        : ='Programação trançadeiras'!R[-511]C[7]
+A1-PT       : ='Programação trançadeiras'!I102
+A1-EN       : ='Programação trançadeiras'!I102
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B619
+Ultima      : C619
+R1C1        : ='Programação trançadeiras'!R[-516]C[7]
+A1-PT       : ='Programação trançadeiras'!I103
+A1-EN       : ='Programação trançadeiras'!I103
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B625
+Ultima      : C625
+R1C1        : ='Programação trançadeiras'!R[-521]C[7]
+A1-PT       : ='Programação trançadeiras'!I104
+A1-EN       : ='Programação trançadeiras'!I104
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B631
+Ultima      : C631
+R1C1        : ='Programação trançadeiras'!R[-526]C[7]
+A1-PT       : ='Programação trançadeiras'!I105
+A1-EN       : ='Programação trançadeiras'!I105
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B637
+Ultima      : C637
+R1C1        : ='Programação trançadeiras'!R[-531]C[7]
+A1-PT       : ='Programação trançadeiras'!I106
+A1-EN       : ='Programação trançadeiras'!I106
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B643
+Ultima      : C643
+R1C1        : ='Programação trançadeiras'!R[-536]C[7]
+A1-PT       : ='Programação trançadeiras'!I107
+A1-EN       : ='Programação trançadeiras'!I107
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B649
+Ultima      : C649
+R1C1        : ='Programação trançadeiras'!R[-541]C[7]
+A1-PT       : ='Programação trançadeiras'!I108
+A1-EN       : ='Programação trançadeiras'!I108
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B655
+Ultima      : C655
+R1C1        : ='Programação trançadeiras'!R[-546]C[7]
+A1-PT       : ='Programação trançadeiras'!I109
+A1-EN       : ='Programação trançadeiras'!I109
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B661
+Ultima      : C661
+R1C1        : ='Programação trançadeiras'!R[-551]C[7]
+A1-PT       : ='Programação trançadeiras'!I110
+A1-EN       : ='Programação trançadeiras'!I110
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B667
+Ultima      : C667
+R1C1        : ='Programação trançadeiras'!R[-556]C[7]
+A1-PT       : ='Programação trançadeiras'!I111
+A1-EN       : ='Programação trançadeiras'!I111
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B673
+Ultima      : C673
+R1C1        : ='Programação trançadeiras'!R[-561]C[7]
+A1-PT       : ='Programação trançadeiras'!I112
+A1-EN       : ='Programação trançadeiras'!I112
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B679
+Ultima      : C679
+R1C1        : ='Programação trançadeiras'!R[-566]C[7]
+A1-PT       : ='Programação trançadeiras'!I113
+A1-EN       : ='Programação trançadeiras'!I113
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B685
+Ultima      : C685
+R1C1        : ='Programação trançadeiras'!R[-571]C[7]
+A1-PT       : ='Programação trançadeiras'!I114
+A1-EN       : ='Programação trançadeiras'!I114
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B691
+Ultima      : C691
+R1C1        : ='Programação trançadeiras'!R[-576]C[7]
+A1-PT       : ='Programação trançadeiras'!I115
+A1-EN       : ='Programação trançadeiras'!I115
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B697
+Ultima      : C697
+R1C1        : ='Programação trançadeiras'!R[-581]C[7]
+A1-PT       : ='Programação trançadeiras'!I116
+A1-EN       : ='Programação trançadeiras'!I116
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B703
+Ultima      : C703
+R1C1        : ='Programação trançadeiras'!R[-586]C[7]
+A1-PT       : ='Programação trançadeiras'!I117
+A1-EN       : ='Programação trançadeiras'!I117
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B709
+Ultima      : C709
+R1C1        : ='Programação trançadeiras'!R[-591]C[7]
+A1-PT       : ='Programação trançadeiras'!I118
+A1-EN       : ='Programação trançadeiras'!I118
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B715
+Ultima      : C715
+R1C1        : ='Programação trançadeiras'!R[-596]C[7]
+A1-PT       : ='Programação trançadeiras'!I119
+A1-EN       : ='Programação trançadeiras'!I119
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B721
+Ultima      : C721
+R1C1        : ='Programação trançadeiras'!R[-601]C[7]
+A1-PT       : ='Programação trançadeiras'!I120
+A1-EN       : ='Programação trançadeiras'!I120
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B727
+Ultima      : C727
+R1C1        : ='Programação trançadeiras'!R[-606]C[7]
+A1-PT       : ='Programação trançadeiras'!I121
+A1-EN       : ='Programação trançadeiras'!I121
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B733
+Ultima      : C733
+R1C1        : ='Programação trançadeiras'!R[-611]C[7]
+A1-PT       : ='Programação trançadeiras'!I122
+A1-EN       : ='Programação trançadeiras'!I122
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B739
+Ultima      : C739
+R1C1        : ='Programação trançadeiras'!R[-616]C[7]
+A1-PT       : ='Programação trançadeiras'!I123
+A1-EN       : ='Programação trançadeiras'!I123
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B745
+Ultima      : C745
+R1C1        : ='Programação trançadeiras'!R[-621]C[7]
+A1-PT       : ='Programação trançadeiras'!I124
+A1-EN       : ='Programação trançadeiras'!I124
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B751
+Ultima      : C751
+R1C1        : ='Programação trançadeiras'!R[-626]C[7]
+A1-PT       : ='Programação trançadeiras'!I125
+A1-EN       : ='Programação trançadeiras'!I125
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B757
+Ultima      : C757
+R1C1        : ='Programação trançadeiras'!R[-631]C[7]
+A1-PT       : ='Programação trançadeiras'!I126
+A1-EN       : ='Programação trançadeiras'!I126
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B763
+Ultima      : C763
+R1C1        : ='Programação trançadeiras'!R[-636]C[7]
+A1-PT       : ='Programação trançadeiras'!I127
+A1-EN       : ='Programação trançadeiras'!I127
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B769
+Ultima      : C769
+R1C1        : ='Programação trançadeiras'!R[-641]C[7]
+A1-PT       : ='Programação trançadeiras'!I128
+A1-EN       : ='Programação trançadeiras'!I128
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B775
+Ultima      : C775
+R1C1        : ='Programação trançadeiras'!R[-646]C[7]
+A1-PT       : ='Programação trançadeiras'!I129
+A1-EN       : ='Programação trançadeiras'!I129
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B781
+Ultima      : C781
+R1C1        : ='Programação trançadeiras'!R[-651]C[7]
+A1-PT       : ='Programação trançadeiras'!I130
+A1-EN       : ='Programação trançadeiras'!I130
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B787
+Ultima      : C787
+R1C1        : ='Programação trançadeiras'!R[-656]C[7]
+A1-PT       : ='Programação trançadeiras'!I131
+A1-EN       : ='Programação trançadeiras'!I131
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B55
+Ultima      : C55
+R1C1        : ='Programação trançadeiras'!R[-46]C[7]
+A1-PT       : ='Programação trançadeiras'!I9
+A1-EN       : ='Programação trançadeiras'!I9
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B61
+Ultima      : C61
+R1C1        : ='Programação trançadeiras'!R[-51]C[7]
+A1-PT       : ='Programação trançadeiras'!I10
+A1-EN       : ='Programação trançadeiras'!I10
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B67
+Ultima      : C67
+R1C1        : ='Programação trançadeiras'!R[-56]C[7]
+A1-PT       : ='Programação trançadeiras'!I11
+A1-EN       : ='Programação trançadeiras'!I11
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B73
+Ultima      : C73
+R1C1        : ='Programação trançadeiras'!R[-61]C[7]
+A1-PT       : ='Programação trançadeiras'!I12
+A1-EN       : ='Programação trançadeiras'!I12
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B79
+Ultima      : C79
+R1C1        : ='Programação trançadeiras'!R[-66]C[7]
+A1-PT       : ='Programação trançadeiras'!I13
+A1-EN       : ='Programação trançadeiras'!I13
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B85
+Ultima      : C85
+R1C1        : ='Programação trançadeiras'!R[-71]C[7]
+A1-PT       : ='Programação trançadeiras'!I14
+A1-EN       : ='Programação trançadeiras'!I14
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B91
+Ultima      : C91
+R1C1        : ='Programação trançadeiras'!R[-76]C[7]
+A1-PT       : ='Programação trançadeiras'!I15
+A1-EN       : ='Programação trançadeiras'!I15
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B97
+Ultima      : C97
+R1C1        : ='Programação trançadeiras'!R[-81]C[7]
+A1-PT       : ='Programação trançadeiras'!I16
+A1-EN       : ='Programação trançadeiras'!I16
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B103
+Ultima      : C103
+R1C1        : ='Programação trançadeiras'!R[-86]C[7]
+A1-PT       : ='Programação trançadeiras'!I17
+A1-EN       : ='Programação trançadeiras'!I17
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B109
+Ultima      : C109
+R1C1        : ='Programação trançadeiras'!R[-91]C[7]
+A1-PT       : ='Programação trançadeiras'!I18
+A1-EN       : ='Programação trançadeiras'!I18
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B115
+Ultima      : C115
+R1C1        : ='Programação trançadeiras'!R[-96]C[7]
+A1-PT       : ='Programação trançadeiras'!I19
+A1-EN       : ='Programação trançadeiras'!I19
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B121
+Ultima      : C121
+R1C1        : ='Programação trançadeiras'!R[-101]C[7]
+A1-PT       : ='Programação trançadeiras'!I20
+A1-EN       : ='Programação trançadeiras'!I20
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B127
+Ultima      : C127
+R1C1        : ='Programação trançadeiras'!R[-106]C[7]
+A1-PT       : ='Programação trançadeiras'!I21
+A1-EN       : ='Programação trançadeiras'!I21
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B133
+Ultima      : C133
+R1C1        : ='Programação trançadeiras'!R[-111]C[7]
+A1-PT       : ='Programação trançadeiras'!I22
+A1-EN       : ='Programação trançadeiras'!I22
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B139
+Ultima      : C139
+R1C1        : ='Programação trançadeiras'!R[-116]C[7]
+A1-PT       : ='Programação trançadeiras'!I23
+A1-EN       : ='Programação trançadeiras'!I23
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B145
+Ultima      : C145
+R1C1        : ='Programação trançadeiras'!R[-121]C[7]
+A1-PT       : ='Programação trançadeiras'!I24
+A1-EN       : ='Programação trançadeiras'!I24
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B151
+Ultima      : C151
+R1C1        : ='Programação trançadeiras'!R[-126]C[7]
+A1-PT       : ='Programação trançadeiras'!I25
+A1-EN       : ='Programação trançadeiras'!I25
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B157
+Ultima      : C157
+R1C1        : ='Programação trançadeiras'!R[-131]C[7]
+A1-PT       : ='Programação trançadeiras'!I26
+A1-EN       : ='Programação trançadeiras'!I26
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B163
+Ultima      : C163
+R1C1        : ='Programação trançadeiras'!R[-136]C[7]
+A1-PT       : ='Programação trançadeiras'!I27
+A1-EN       : ='Programação trançadeiras'!I27
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B169
+Ultima      : C169
+R1C1        : ='Programação trançadeiras'!R[-141]C[7]
+A1-PT       : ='Programação trançadeiras'!I28
+A1-EN       : ='Programação trançadeiras'!I28
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B175
+Ultima      : C175
+R1C1        : ='Programação trançadeiras'!R[-146]C[7]
+A1-PT       : ='Programação trançadeiras'!I29
+A1-EN       : ='Programação trançadeiras'!I29
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B181
+Ultima      : C181
+R1C1        : ='Programação trançadeiras'!R[-151]C[7]
+A1-PT       : ='Programação trançadeiras'!I30
+A1-EN       : ='Programação trançadeiras'!I30
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B187
+Ultima      : C187
+R1C1        : ='Programação trançadeiras'!R[-156]C[7]
+A1-PT       : ='Programação trançadeiras'!I31
+A1-EN       : ='Programação trançadeiras'!I31
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W193
+Ultima      : W193
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-163]C[-20]:R[-163]C[1082],'Planejamento Trançadeira'!R[-163]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C30:APM30;'Planejamento Trançadeira'!A30)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C30:APM30,'Planejamento Trançadeira'!A30)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W451
+Ultima      : W451
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-370]C[-20]:R[-370]C[1082],'Planejamento Trançadeira'!R[-370]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C81:APM81;'Planejamento Trançadeira'!A81)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C81:APM81,'Planejamento Trançadeira'!A81)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W67
+Ultima      : W67
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-58]C[-20]:R[-58]C[1082],'Planejamento Trançadeira'!R[-58]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C9:APM9;'Planejamento Trançadeira'!A9)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C9:APM9,'Planejamento Trançadeira'!A9)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W457
+Ultima      : W457
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-375]C[-20]:R[-375]C[1082],'Planejamento Trançadeira'!R[-375]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C82:APM82;'Planejamento Trançadeira'!A82)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C82:APM82,'Planejamento Trançadeira'!A82)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W199
+Ultima      : W199
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-168]C[-20]:R[-168]C[1082],'Planejamento Trançadeira'!R[-168]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C31:APM31;'Planejamento Trançadeira'!A31)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C31:APM31,'Planejamento Trançadeira'!A31)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W463
+Ultima      : W463
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-380]C[-20]:R[-380]C[1082],'Planejamento Trançadeira'!R[-380]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C83:APM83;'Planejamento Trançadeira'!A83)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C83:APM83,'Planejamento Trançadeira'!A83)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : O3
+Ultima      : O3
+R1C1        : =IF(PEDIDOS!R[1]C[-11]=0,TODAY(),PEDIDOS!R[1]C[-11])
+A1-PT       : =SE(PEDIDOS!D4=0;HOJE();PEDIDOS!D4)
+A1-EN       : =IF(PEDIDOS!D4=0,TODAY(),PEDIDOS!D4)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W469
+Ultima      : W469
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-385]C[-20]:R[-385]C[1082],'Planejamento Trançadeira'!R[-385]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C84:APM84;'Planejamento Trançadeira'!A84)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C84:APM84,'Planejamento Trançadeira'!A84)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W205
+Ultima      : W205
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-173]C[-20]:R[-173]C[1082],'Planejamento Trançadeira'!R[-173]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C32:APM32;'Planejamento Trançadeira'!A32)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C32:APM32,'Planejamento Trançadeira'!A32)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W475
+Ultima      : W475
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-390]C[-20]:R[-390]C[1082],'Planejamento Trançadeira'!R[-390]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C85:APM85;'Planejamento Trançadeira'!A85)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C85:APM85,'Planejamento Trançadeira'!A85)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W73
+Ultima      : W73
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-63]C[-20]:R[-63]C[1082],'Planejamento Trançadeira'!R[-63]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C10:APM10;'Planejamento Trançadeira'!A10)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C10:APM10,'Planejamento Trançadeira'!A10)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W481
+Ultima      : W481
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-395]C[-20]:R[-395]C[1082],'Planejamento Trançadeira'!R[-395]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C86:APM86;'Planejamento Trançadeira'!A86)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C86:APM86,'Planejamento Trançadeira'!A86)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W211
+Ultima      : W211
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-178]C[-20]:R[-178]C[1082],'Planejamento Trançadeira'!R[-178]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C33:APM33;'Planejamento Trançadeira'!A33)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C33:APM33,'Planejamento Trançadeira'!A33)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W487
+Ultima      : W487
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-400]C[-20]:R[-400]C[1082],'Planejamento Trançadeira'!R[-400]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C87:APM87;'Planejamento Trançadeira'!A87)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C87:APM87,'Planejamento Trançadeira'!A87)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W19
+Ultima      : W19
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-18]C[-20]:R[-18]C[1082],'Planejamento Trançadeira'!R[-18]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C1:APM1;'Planejamento Trançadeira'!A1)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C1:APM1,'Planejamento Trançadeira'!A1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W493
+Ultima      : W493
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-405]C[-20]:R[-405]C[1082],'Planejamento Trançadeira'!R[-405]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C88:APM88;'Planejamento Trançadeira'!A88)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C88:APM88,'Planejamento Trançadeira'!A88)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W217
+Ultima      : W217
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-183]C[-20]:R[-183]C[1082],'Planejamento Trançadeira'!R[-183]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C34:APM34;'Planejamento Trançadeira'!A34)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C34:APM34,'Planejamento Trançadeira'!A34)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W499
+Ultima      : W499
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-410]C[-20]:R[-410]C[1082],'Planejamento Trançadeira'!R[-410]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C89:APM89;'Planejamento Trançadeira'!A89)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C89:APM89,'Planejamento Trançadeira'!A89)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W79
+Ultima      : W79
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-68]C[-20]:R[-68]C[1082],'Planejamento Trançadeira'!R[-68]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C11:APM11;'Planejamento Trançadeira'!A11)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C11:APM11,'Planejamento Trançadeira'!A11)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W505
+Ultima      : W505
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-415]C[-20]:R[-415]C[1082],'Planejamento Trançadeira'!R[-415]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C90:APM90;'Planejamento Trançadeira'!A90)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C90:APM90,'Planejamento Trançadeira'!A90)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W223
+Ultima      : W223
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-188]C[-20]:R[-188]C[1082],'Planejamento Trançadeira'!R[-188]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C35:APM35;'Planejamento Trançadeira'!A35)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C35:APM35,'Planejamento Trançadeira'!A35)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W511
+Ultima      : W511
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-420]C[-20]:R[-420]C[1082],'Planejamento Trançadeira'!R[-420]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C91:APM91;'Planejamento Trançadeira'!A91)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C91:APM91,'Planejamento Trançadeira'!A91)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H4
+Ultima      : H4
+R1C1        : =PEDIDOS!R[-2]C[-5]
+A1-PT       : =PEDIDOS!C2
+A1-EN       : =PEDIDOS!C2
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W517
+Ultima      : W517
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-425]C[-20]:R[-425]C[1082],'Planejamento Trançadeira'!R[-425]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C92:APM92;'Planejamento Trançadeira'!A92)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C92:APM92,'Planejamento Trançadeira'!A92)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W229
+Ultima      : W229
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-193]C[-20]:R[-193]C[1082],'Planejamento Trançadeira'!R[-193]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C36:APM36;'Planejamento Trançadeira'!A36)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C36:APM36,'Planejamento Trançadeira'!A36)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W523
+Ultima      : W523
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-430]C[-20]:R[-430]C[1082],'Planejamento Trançadeira'!R[-430]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C93:APM93;'Planejamento Trançadeira'!A93)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C93:APM93,'Planejamento Trançadeira'!A93)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W85
+Ultima      : W85
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-73]C[-20]:R[-73]C[1082],'Planejamento Trançadeira'!R[-73]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C12:APM12;'Planejamento Trançadeira'!A12)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C12:APM12,'Planejamento Trançadeira'!A12)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W529
+Ultima      : W529
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-435]C[-20]:R[-435]C[1082],'Planejamento Trançadeira'!R[-435]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C94:APM94;'Planejamento Trançadeira'!A94)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C94:APM94,'Planejamento Trançadeira'!A94)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W235
+Ultima      : W235
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-198]C[-20]:R[-198]C[1082],'Planejamento Trançadeira'!R[-198]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C37:APM37;'Planejamento Trançadeira'!A37)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C37:APM37,'Planejamento Trançadeira'!A37)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W535
+Ultima      : W535
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-440]C[-20]:R[-440]C[1082],'Planejamento Trançadeira'!R[-440]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C95:APM95;'Planejamento Trançadeira'!A95)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C95:APM95,'Planejamento Trançadeira'!A95)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : O5
+Ultima      : O5
+R1C1        : =R[4]C[-4]-R[3]C[-6]
+A1-PT       : =K9-I8
+A1-EN       : =K9-I8
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W541
+Ultima      : W541
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-445]C[-20]:R[-445]C[1082],'Planejamento Trançadeira'!R[-445]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C96:APM96;'Planejamento Trançadeira'!A96)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C96:APM96,'Planejamento Trançadeira'!A96)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W241
+Ultima      : W241
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-203]C[-20]:R[-203]C[1082],'Planejamento Trançadeira'!R[-203]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C38:APM38;'Planejamento Trançadeira'!A38)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C38:APM38,'Planejamento Trançadeira'!A38)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W547
+Ultima      : W547
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-450]C[-20]:R[-450]C[1082],'Planejamento Trançadeira'!R[-450]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C97:APM97;'Planejamento Trançadeira'!A97)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C97:APM97,'Planejamento Trançadeira'!A97)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W91
+Ultima      : W91
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-78]C[-20]:R[-78]C[1082],'Planejamento Trançadeira'!R[-78]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C13:APM13;'Planejamento Trançadeira'!A13)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C13:APM13,'Planejamento Trançadeira'!A13)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W553
+Ultima      : W553
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-455]C[-20]:R[-455]C[1082],'Planejamento Trançadeira'!R[-455]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C98:APM98;'Planejamento Trançadeira'!A98)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C98:APM98,'Planejamento Trançadeira'!A98)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W247
+Ultima      : W247
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-208]C[-20]:R[-208]C[1082],'Planejamento Trançadeira'!R[-208]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C39:APM39;'Planejamento Trançadeira'!A39)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C39:APM39,'Planejamento Trançadeira'!A39)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W559
+Ultima      : W559
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-460]C[-20]:R[-460]C[1082],'Planejamento Trançadeira'!R[-460]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C99:APM99;'Planejamento Trançadeira'!A99)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C99:APM99,'Planejamento Trançadeira'!A99)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : F3
+Ultima      : F3
+R1C1        : =PEDIDOS!R[-1]C[10]
+A1-PT       : =PEDIDOS!P2
+A1-EN       : =PEDIDOS!P2
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W565
+Ultima      : W565
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-465]C[-20]:R[-465]C[1082],'Planejamento Trançadeira'!R[-465]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C100:APM100;'Planejamento Trançadeira'!A100)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C100:APM100,'Planejamento Trançadeira'!A100)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W253
+Ultima      : W253
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-213]C[-20]:R[-213]C[1082],'Planejamento Trançadeira'!R[-213]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C40:APM40;'Planejamento Trançadeira'!A40)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C40:APM40,'Planejamento Trançadeira'!A40)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W97
+Ultima      : W97
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-83]C[-20]:R[-83]C[1082],'Planejamento Trançadeira'!R[-83]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C14:APM14;'Planejamento Trançadeira'!A14)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C14:APM14,'Planejamento Trançadeira'!A14)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W259
+Ultima      : W259
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-218]C[-20]:R[-218]C[1082],'Planejamento Trançadeira'!R[-218]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C41:APM41;'Planejamento Trançadeira'!A41)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C41:APM41,'Planejamento Trançadeira'!A41)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : F4
+Ultima      : F4
+R1C1        : =PEDIDOS!R[-2]C[9]
+A1-PT       : =PEDIDOS!O2
+A1-EN       : =PEDIDOS!O2
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W265
+Ultima      : W265
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-223]C[-20]:R[-223]C[1082],'Planejamento Trançadeira'!R[-223]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C42:APM42;'Planejamento Trançadeira'!A42)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C42:APM42,'Planejamento Trançadeira'!A42)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H22
+Ultima      : H22
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-21]C[-5]:R[-21]C[158],COUNTIF('Planejamento Trançadeira'!R[-21]C[-5]:R[-21]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C1:FJ1;CONT.SE('Planejamento Trançadeira'!C1:FJ1;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C1:FJ1,COUNTIF('Planejamento Trançadeira'!C1:FJ1,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H28
+Ultima      : H28
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-26]C[-5]:R[-26]C[158],COUNTIF('Planejamento Trançadeira'!R[-26]C[-5]:R[-26]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C2:FJ2;CONT.SE('Planejamento Trançadeira'!C2:FJ2;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C2:FJ2,COUNTIF('Planejamento Trançadeira'!C2:FJ2,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H34
+Ultima      : H34
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-31]C[-5]:R[-31]C[158],COUNTIF('Planejamento Trançadeira'!R[-31]C[-5]:R[-31]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C3:FJ3;CONT.SE('Planejamento Trançadeira'!C3:FJ3;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C3:FJ3,COUNTIF('Planejamento Trançadeira'!C3:FJ3,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H40
+Ultima      : H40
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-36]C[-5]:R[-36]C[158],COUNTIF('Planejamento Trançadeira'!R[-36]C[-5]:R[-36]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C4:FJ4;CONT.SE('Planejamento Trançadeira'!C4:FJ4;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C4:FJ4,COUNTIF('Planejamento Trançadeira'!C4:FJ4,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H46
+Ultima      : H46
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-41]C[-5]:R[-41]C[158],COUNTIF('Planejamento Trançadeira'!R[-41]C[-5]:R[-41]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C5:FJ5;CONT.SE('Planejamento Trançadeira'!C5:FJ5;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C5:FJ5,COUNTIF('Planejamento Trançadeira'!C5:FJ5,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H52
+Ultima      : H52
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-46]C[-5]:R[-46]C[158],COUNTIF('Planejamento Trançadeira'!R[-46]C[-5]:R[-46]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C6:FJ6;CONT.SE('Planejamento Trançadeira'!C6:FJ6;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C6:FJ6,COUNTIF('Planejamento Trançadeira'!C6:FJ6,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H58
+Ultima      : H58
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-51]C[-5]:R[-51]C[158],COUNTIF('Planejamento Trançadeira'!R[-51]C[-5]:R[-51]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C7:FJ7;CONT.SE('Planejamento Trançadeira'!C7:FJ7;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C7:FJ7,COUNTIF('Planejamento Trançadeira'!C7:FJ7,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H64
+Ultima      : H64
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-56]C[-5]:R[-56]C[158],COUNTIF('Planejamento Trançadeira'!R[-56]C[-5]:R[-56]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C8:FJ8;CONT.SE('Planejamento Trançadeira'!C8:FJ8;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C8:FJ8,COUNTIF('Planejamento Trançadeira'!C8:FJ8,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H70
+Ultima      : H70
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-61]C[-5]:R[-61]C[158],COUNTIF('Planejamento Trançadeira'!R[-61]C[-5]:R[-61]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C9:FJ9;CONT.SE('Planejamento Trançadeira'!C9:FJ9;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C9:FJ9,COUNTIF('Planejamento Trançadeira'!C9:FJ9,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H76
+Ultima      : H76
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-66]C[-5]:R[-66]C[158],COUNTIF('Planejamento Trançadeira'!R[-66]C[-5]:R[-66]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C10:FJ10;CONT.SE('Planejamento Trançadeira'!C10:FJ10;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C10:FJ10,COUNTIF('Planejamento Trançadeira'!C10:FJ10,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H82
+Ultima      : H82
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-71]C[-5]:R[-71]C[158],COUNTIF('Planejamento Trançadeira'!R[-71]C[-5]:R[-71]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C11:FJ11;CONT.SE('Planejamento Trançadeira'!C11:FJ11;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C11:FJ11,COUNTIF('Planejamento Trançadeira'!C11:FJ11,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H88
+Ultima      : H88
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-76]C[-5]:R[-76]C[158],COUNTIF('Planejamento Trançadeira'!R[-76]C[-5]:R[-76]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C12:FJ12;CONT.SE('Planejamento Trançadeira'!C12:FJ12;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C12:FJ12,COUNTIF('Planejamento Trançadeira'!C12:FJ12,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H94
+Ultima      : H94
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-81]C[-5]:R[-81]C[158],COUNTIF('Planejamento Trançadeira'!R[-81]C[-5]:R[-81]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C13:FJ13;CONT.SE('Planejamento Trançadeira'!C13:FJ13;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C13:FJ13,COUNTIF('Planejamento Trançadeira'!C13:FJ13,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H100
+Ultima      : H100
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-86]C[-5]:R[-86]C[158],COUNTIF('Planejamento Trançadeira'!R[-86]C[-5]:R[-86]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C14:FJ14;CONT.SE('Planejamento Trançadeira'!C14:FJ14;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C14:FJ14,COUNTIF('Planejamento Trançadeira'!C14:FJ14,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H106
+Ultima      : H106
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-91]C[-5]:R[-91]C[158],COUNTIF('Planejamento Trançadeira'!R[-91]C[-5]:R[-91]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C15:FJ15;CONT.SE('Planejamento Trançadeira'!C15:FJ15;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C15:FJ15,COUNTIF('Planejamento Trançadeira'!C15:FJ15,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H112
+Ultima      : H112
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-96]C[-5]:R[-96]C[158],COUNTIF('Planejamento Trançadeira'!R[-96]C[-5]:R[-96]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C16:FJ16;CONT.SE('Planejamento Trançadeira'!C16:FJ16;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C16:FJ16,COUNTIF('Planejamento Trançadeira'!C16:FJ16,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H118
+Ultima      : H118
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-101]C[-5]:R[-101]C[158],COUNTIF('Planejamento Trançadeira'!R[-101]C[-5]:R[-101]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C17:FJ17;CONT.SE('Planejamento Trançadeira'!C17:FJ17;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C17:FJ17,COUNTIF('Planejamento Trançadeira'!C17:FJ17,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H124
+Ultima      : H124
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-106]C[-5]:R[-106]C[158],COUNTIF('Planejamento Trançadeira'!R[-106]C[-5]:R[-106]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C18:FJ18;CONT.SE('Planejamento Trançadeira'!C18:FJ18;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C18:FJ18,COUNTIF('Planejamento Trançadeira'!C18:FJ18,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H130
+Ultima      : H130
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-111]C[-5]:R[-111]C[158],COUNTIF('Planejamento Trançadeira'!R[-111]C[-5]:R[-111]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C19:FJ19;CONT.SE('Planejamento Trançadeira'!C19:FJ19;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C19:FJ19,COUNTIF('Planejamento Trançadeira'!C19:FJ19,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H136
+Ultima      : H136
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-116]C[-5]:R[-116]C[158],COUNTIF('Planejamento Trançadeira'!R[-116]C[-5]:R[-116]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C20:FJ20;CONT.SE('Planejamento Trançadeira'!C20:FJ20;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C20:FJ20,COUNTIF('Planejamento Trançadeira'!C20:FJ20,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H142
+Ultima      : H142
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-121]C[-5]:R[-121]C[158],COUNTIF('Planejamento Trançadeira'!R[-121]C[-5]:R[-121]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C21:FJ21;CONT.SE('Planejamento Trançadeira'!C21:FJ21;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C21:FJ21,COUNTIF('Planejamento Trançadeira'!C21:FJ21,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H148
+Ultima      : H148
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-126]C[-5]:R[-126]C[158],COUNTIF('Planejamento Trançadeira'!R[-126]C[-5]:R[-126]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C22:FJ22;CONT.SE('Planejamento Trançadeira'!C22:FJ22;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C22:FJ22,COUNTIF('Planejamento Trançadeira'!C22:FJ22,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H154
+Ultima      : H154
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-131]C[-5]:R[-131]C[158],COUNTIF('Planejamento Trançadeira'!R[-131]C[-5]:R[-131]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C23:FJ23;CONT.SE('Planejamento Trançadeira'!C23:FJ23;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C23:FJ23,COUNTIF('Planejamento Trançadeira'!C23:FJ23,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H160
+Ultima      : H160
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-136]C[-5]:R[-136]C[158],COUNTIF('Planejamento Trançadeira'!R[-136]C[-5]:R[-136]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C24:FJ24;CONT.SE('Planejamento Trançadeira'!C24:FJ24;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C24:FJ24,COUNTIF('Planejamento Trançadeira'!C24:FJ24,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H166
+Ultima      : H166
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-141]C[-5]:R[-141]C[158],COUNTIF('Planejamento Trançadeira'!R[-141]C[-5]:R[-141]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C25:FJ25;CONT.SE('Planejamento Trançadeira'!C25:FJ25;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C25:FJ25,COUNTIF('Planejamento Trançadeira'!C25:FJ25,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H172
+Ultima      : H172
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-146]C[-5]:R[-146]C[158],COUNTIF('Planejamento Trançadeira'!R[-146]C[-5]:R[-146]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C26:FJ26;CONT.SE('Planejamento Trançadeira'!C26:FJ26;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C26:FJ26,COUNTIF('Planejamento Trançadeira'!C26:FJ26,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H178
+Ultima      : H178
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-151]C[-5]:R[-151]C[158],COUNTIF('Planejamento Trançadeira'!R[-151]C[-5]:R[-151]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C27:FJ27;CONT.SE('Planejamento Trançadeira'!C27:FJ27;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C27:FJ27,COUNTIF('Planejamento Trançadeira'!C27:FJ27,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H184
+Ultima      : H184
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-156]C[-5]:R[-156]C[158],COUNTIF('Planejamento Trançadeira'!R[-156]C[-5]:R[-156]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C28:FJ28;CONT.SE('Planejamento Trançadeira'!C28:FJ28;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C28:FJ28,COUNTIF('Planejamento Trançadeira'!C28:FJ28,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H190
+Ultima      : H190
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-161]C[-5]:R[-161]C[158],COUNTIF('Planejamento Trançadeira'!R[-161]C[-5]:R[-161]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C29:FJ29;CONT.SE('Planejamento Trançadeira'!C29:FJ29;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C29:FJ29,COUNTIF('Planejamento Trançadeira'!C29:FJ29,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H196
+Ultima      : H196
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-166]C[-5]:R[-166]C[158],COUNTIF('Planejamento Trançadeira'!R[-166]C[-5]:R[-166]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C30:FJ30;CONT.SE('Planejamento Trançadeira'!C30:FJ30;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C30:FJ30,COUNTIF('Planejamento Trançadeira'!C30:FJ30,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H202
+Ultima      : H202
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-171]C[-5]:R[-171]C[158],COUNTIF('Planejamento Trançadeira'!R[-171]C[-5]:R[-171]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C31:FJ31;CONT.SE('Planejamento Trançadeira'!C31:FJ31;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C31:FJ31,COUNTIF('Planejamento Trançadeira'!C31:FJ31,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H208
+Ultima      : H208
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-176]C[-5]:R[-176]C[158],COUNTIF('Planejamento Trançadeira'!R[-176]C[-5]:R[-176]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C32:FJ32;CONT.SE('Planejamento Trançadeira'!C32:FJ32;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C32:FJ32,COUNTIF('Planejamento Trançadeira'!C32:FJ32,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H214
+Ultima      : H214
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-181]C[-5]:R[-181]C[158],COUNTIF('Planejamento Trançadeira'!R[-181]C[-5]:R[-181]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C33:FJ33;CONT.SE('Planejamento Trançadeira'!C33:FJ33;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C33:FJ33,COUNTIF('Planejamento Trançadeira'!C33:FJ33,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H220
+Ultima      : H220
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-186]C[-5]:R[-186]C[158],COUNTIF('Planejamento Trançadeira'!R[-186]C[-5]:R[-186]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C34:FJ34;CONT.SE('Planejamento Trançadeira'!C34:FJ34;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C34:FJ34,COUNTIF('Planejamento Trançadeira'!C34:FJ34,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H226
+Ultima      : H226
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-191]C[-5]:R[-191]C[158],COUNTIF('Planejamento Trançadeira'!R[-191]C[-5]:R[-191]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C35:FJ35;CONT.SE('Planejamento Trançadeira'!C35:FJ35;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C35:FJ35,COUNTIF('Planejamento Trançadeira'!C35:FJ35,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H232
+Ultima      : H232
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-196]C[-5]:R[-196]C[158],COUNTIF('Planejamento Trançadeira'!R[-196]C[-5]:R[-196]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C36:FJ36;CONT.SE('Planejamento Trançadeira'!C36:FJ36;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C36:FJ36,COUNTIF('Planejamento Trançadeira'!C36:FJ36,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H238
+Ultima      : H238
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-201]C[-5]:R[-201]C[158],COUNTIF('Planejamento Trançadeira'!R[-201]C[-5]:R[-201]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C37:FJ37;CONT.SE('Planejamento Trançadeira'!C37:FJ37;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C37:FJ37,COUNTIF('Planejamento Trançadeira'!C37:FJ37,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H244
+Ultima      : H244
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-206]C[-5]:R[-206]C[158],COUNTIF('Planejamento Trançadeira'!R[-206]C[-5]:R[-206]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C38:FJ38;CONT.SE('Planejamento Trançadeira'!C38:FJ38;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C38:FJ38,COUNTIF('Planejamento Trançadeira'!C38:FJ38,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H250
+Ultima      : H250
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-211]C[-5]:R[-211]C[158],COUNTIF('Planejamento Trançadeira'!R[-211]C[-5]:R[-211]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C39:FJ39;CONT.SE('Planejamento Trançadeira'!C39:FJ39;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C39:FJ39,COUNTIF('Planejamento Trançadeira'!C39:FJ39,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H256
+Ultima      : H256
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-216]C[-5]:R[-216]C[158],COUNTIF('Planejamento Trançadeira'!R[-216]C[-5]:R[-216]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C40:FJ40;CONT.SE('Planejamento Trançadeira'!C40:FJ40;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C40:FJ40,COUNTIF('Planejamento Trançadeira'!C40:FJ40,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H262
+Ultima      : H262
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-221]C[-5]:R[-221]C[158],COUNTIF('Planejamento Trançadeira'!R[-221]C[-5]:R[-221]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C41:FJ41;CONT.SE('Planejamento Trançadeira'!C41:FJ41;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C41:FJ41,COUNTIF('Planejamento Trançadeira'!C41:FJ41,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H268
+Ultima      : H268
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-226]C[-5]:R[-226]C[158],COUNTIF('Planejamento Trançadeira'!R[-226]C[-5]:R[-226]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C42:FJ42;CONT.SE('Planejamento Trançadeira'!C42:FJ42;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C42:FJ42,COUNTIF('Planejamento Trançadeira'!C42:FJ42,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H274
+Ultima      : H274
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-231]C[-5]:R[-231]C[158],COUNTIF('Planejamento Trançadeira'!R[-231]C[-5]:R[-231]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C43:FJ43;CONT.SE('Planejamento Trançadeira'!C43:FJ43;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C43:FJ43,COUNTIF('Planejamento Trançadeira'!C43:FJ43,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H280
+Ultima      : H280
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-236]C[-5]:R[-236]C[158],COUNTIF('Planejamento Trançadeira'!R[-236]C[-5]:R[-236]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C44:FJ44;CONT.SE('Planejamento Trançadeira'!C44:FJ44;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C44:FJ44,COUNTIF('Planejamento Trançadeira'!C44:FJ44,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H286
+Ultima      : H286
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-241]C[-5]:R[-241]C[158],COUNTIF('Planejamento Trançadeira'!R[-241]C[-5]:R[-241]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C45:FJ45;CONT.SE('Planejamento Trançadeira'!C45:FJ45;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C45:FJ45,COUNTIF('Planejamento Trançadeira'!C45:FJ45,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H292
+Ultima      : H292
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-246]C[-5]:R[-246]C[158],COUNTIF('Planejamento Trançadeira'!R[-246]C[-5]:R[-246]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C46:FJ46;CONT.SE('Planejamento Trançadeira'!C46:FJ46;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C46:FJ46,COUNTIF('Planejamento Trançadeira'!C46:FJ46,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H298
+Ultima      : H298
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-251]C[-5]:R[-251]C[158],COUNTIF('Planejamento Trançadeira'!R[-251]C[-5]:R[-251]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C47:FJ47;CONT.SE('Planejamento Trançadeira'!C47:FJ47;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C47:FJ47,COUNTIF('Planejamento Trançadeira'!C47:FJ47,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H304
+Ultima      : H304
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-256]C[-5]:R[-256]C[158],COUNTIF('Planejamento Trançadeira'!R[-256]C[-5]:R[-256]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C48:FJ48;CONT.SE('Planejamento Trançadeira'!C48:FJ48;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C48:FJ48,COUNTIF('Planejamento Trançadeira'!C48:FJ48,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H310
+Ultima      : H310
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-261]C[-5]:R[-261]C[158],COUNTIF('Planejamento Trançadeira'!R[-261]C[-5]:R[-261]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C49:FJ49;CONT.SE('Planejamento Trançadeira'!C49:FJ49;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C49:FJ49,COUNTIF('Planejamento Trançadeira'!C49:FJ49,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H316
+Ultima      : H316
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-266]C[-5]:R[-266]C[158],COUNTIF('Planejamento Trançadeira'!R[-266]C[-5]:R[-266]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C50:FJ50;CONT.SE('Planejamento Trançadeira'!C50:FJ50;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C50:FJ50,COUNTIF('Planejamento Trançadeira'!C50:FJ50,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H322
+Ultima      : H322
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-271]C[-5]:R[-271]C[158],COUNTIF('Planejamento Trançadeira'!R[-271]C[-5]:R[-271]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C51:FJ51;CONT.SE('Planejamento Trançadeira'!C51:FJ51;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C51:FJ51,COUNTIF('Planejamento Trançadeira'!C51:FJ51,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H328
+Ultima      : H328
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-276]C[-5]:R[-276]C[158],COUNTIF('Planejamento Trançadeira'!R[-276]C[-5]:R[-276]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C52:FJ52;CONT.SE('Planejamento Trançadeira'!C52:FJ52;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C52:FJ52,COUNTIF('Planejamento Trançadeira'!C52:FJ52,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H334
+Ultima      : H334
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-281]C[-5]:R[-281]C[158],COUNTIF('Planejamento Trançadeira'!R[-281]C[-5]:R[-281]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C53:FJ53;CONT.SE('Planejamento Trançadeira'!C53:FJ53;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C53:FJ53,COUNTIF('Planejamento Trançadeira'!C53:FJ53,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H340
+Ultima      : H340
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-286]C[-5]:R[-286]C[158],COUNTIF('Planejamento Trançadeira'!R[-286]C[-5]:R[-286]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C54:FJ54;CONT.SE('Planejamento Trançadeira'!C54:FJ54;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C54:FJ54,COUNTIF('Planejamento Trançadeira'!C54:FJ54,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H346
+Ultima      : H346
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-291]C[-5]:R[-291]C[158],COUNTIF('Planejamento Trançadeira'!R[-291]C[-5]:R[-291]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C55:FJ55;CONT.SE('Planejamento Trançadeira'!C55:FJ55;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C55:FJ55,COUNTIF('Planejamento Trançadeira'!C55:FJ55,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H352
+Ultima      : H352
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-296]C[-5]:R[-296]C[158],COUNTIF('Planejamento Trançadeira'!R[-296]C[-5]:R[-296]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C56:FJ56;CONT.SE('Planejamento Trançadeira'!C56:FJ56;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C56:FJ56,COUNTIF('Planejamento Trançadeira'!C56:FJ56,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H358
+Ultima      : H358
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-301]C[-5]:R[-301]C[158],COUNTIF('Planejamento Trançadeira'!R[-301]C[-5]:R[-301]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C57:FJ57;CONT.SE('Planejamento Trançadeira'!C57:FJ57;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C57:FJ57,COUNTIF('Planejamento Trançadeira'!C57:FJ57,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H364
+Ultima      : H364
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-306]C[-5]:R[-306]C[158],COUNTIF('Planejamento Trançadeira'!R[-306]C[-5]:R[-306]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C58:FJ58;CONT.SE('Planejamento Trançadeira'!C58:FJ58;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C58:FJ58,COUNTIF('Planejamento Trançadeira'!C58:FJ58,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H370
+Ultima      : H370
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-311]C[-5]:R[-311]C[158],COUNTIF('Planejamento Trançadeira'!R[-311]C[-5]:R[-311]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C59:FJ59;CONT.SE('Planejamento Trançadeira'!C59:FJ59;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C59:FJ59,COUNTIF('Planejamento Trançadeira'!C59:FJ59,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H376
+Ultima      : H376
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-316]C[-5]:R[-316]C[158],COUNTIF('Planejamento Trançadeira'!R[-316]C[-5]:R[-316]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C60:FJ60;CONT.SE('Planejamento Trançadeira'!C60:FJ60;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C60:FJ60,COUNTIF('Planejamento Trançadeira'!C60:FJ60,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H382
+Ultima      : H382
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-321]C[-5]:R[-321]C[158],COUNTIF('Planejamento Trançadeira'!R[-321]C[-5]:R[-321]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C61:FJ61;CONT.SE('Planejamento Trançadeira'!C61:FJ61;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C61:FJ61,COUNTIF('Planejamento Trançadeira'!C61:FJ61,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H388
+Ultima      : H388
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-326]C[-5]:R[-326]C[158],COUNTIF('Planejamento Trançadeira'!R[-326]C[-5]:R[-326]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C62:FJ62;CONT.SE('Planejamento Trançadeira'!C62:FJ62;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C62:FJ62,COUNTIF('Planejamento Trançadeira'!C62:FJ62,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H394
+Ultima      : H394
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-331]C[-5]:R[-331]C[158],COUNTIF('Planejamento Trançadeira'!R[-331]C[-5]:R[-331]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C63:FJ63;CONT.SE('Planejamento Trançadeira'!C63:FJ63;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C63:FJ63,COUNTIF('Planejamento Trançadeira'!C63:FJ63,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H400
+Ultima      : H400
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-336]C[-5]:R[-336]C[158],COUNTIF('Planejamento Trançadeira'!R[-336]C[-5]:R[-336]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C64:FJ64;CONT.SE('Planejamento Trançadeira'!C64:FJ64;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C64:FJ64,COUNTIF('Planejamento Trançadeira'!C64:FJ64,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H406
+Ultima      : H406
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-341]C[-5]:R[-341]C[158],COUNTIF('Planejamento Trançadeira'!R[-341]C[-5]:R[-341]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C65:FJ65;CONT.SE('Planejamento Trançadeira'!C65:FJ65;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C65:FJ65,COUNTIF('Planejamento Trançadeira'!C65:FJ65,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H412
+Ultima      : H412
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-346]C[-5]:R[-346]C[158],COUNTIF('Planejamento Trançadeira'!R[-346]C[-5]:R[-346]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C66:FJ66;CONT.SE('Planejamento Trançadeira'!C66:FJ66;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C66:FJ66,COUNTIF('Planejamento Trançadeira'!C66:FJ66,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H418
+Ultima      : H418
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-351]C[-5]:R[-351]C[158],COUNTIF('Planejamento Trançadeira'!R[-351]C[-5]:R[-351]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C67:FJ67;CONT.SE('Planejamento Trançadeira'!C67:FJ67;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C67:FJ67,COUNTIF('Planejamento Trançadeira'!C67:FJ67,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H424
+Ultima      : H424
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-356]C[-5]:R[-356]C[158],COUNTIF('Planejamento Trançadeira'!R[-356]C[-5]:R[-356]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C68:FJ68;CONT.SE('Planejamento Trançadeira'!C68:FJ68;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C68:FJ68,COUNTIF('Planejamento Trançadeira'!C68:FJ68,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H430
+Ultima      : H430
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-361]C[-5]:R[-361]C[158],COUNTIF('Planejamento Trançadeira'!R[-361]C[-5]:R[-361]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C69:FJ69;CONT.SE('Planejamento Trançadeira'!C69:FJ69;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C69:FJ69,COUNTIF('Planejamento Trançadeira'!C69:FJ69,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H436
+Ultima      : H436
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-366]C[-5]:R[-366]C[158],COUNTIF('Planejamento Trançadeira'!R[-366]C[-5]:R[-366]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C70:FJ70;CONT.SE('Planejamento Trançadeira'!C70:FJ70;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C70:FJ70,COUNTIF('Planejamento Trançadeira'!C70:FJ70,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H442
+Ultima      : H442
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-371]C[-5]:R[-371]C[158],COUNTIF('Planejamento Trançadeira'!R[-371]C[-5]:R[-371]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C71:FJ71;CONT.SE('Planejamento Trançadeira'!C71:FJ71;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C71:FJ71,COUNTIF('Planejamento Trançadeira'!C71:FJ71,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H448
+Ultima      : H448
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-376]C[-5]:R[-376]C[158],COUNTIF('Planejamento Trançadeira'!R[-376]C[-5]:R[-376]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C72:FJ72;CONT.SE('Planejamento Trançadeira'!C72:FJ72;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C72:FJ72,COUNTIF('Planejamento Trançadeira'!C72:FJ72,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H454
+Ultima      : H454
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-381]C[-5]:R[-381]C[158],COUNTIF('Planejamento Trançadeira'!R[-381]C[-5]:R[-381]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C73:FJ73;CONT.SE('Planejamento Trançadeira'!C73:FJ73;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C73:FJ73,COUNTIF('Planejamento Trançadeira'!C73:FJ73,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H460
+Ultima      : H460
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-386]C[-5]:R[-386]C[158],COUNTIF('Planejamento Trançadeira'!R[-386]C[-5]:R[-386]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C74:FJ74;CONT.SE('Planejamento Trançadeira'!C74:FJ74;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C74:FJ74,COUNTIF('Planejamento Trançadeira'!C74:FJ74,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H466
+Ultima      : H466
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-391]C[-5]:R[-391]C[158],COUNTIF('Planejamento Trançadeira'!R[-391]C[-5]:R[-391]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C75:FJ75;CONT.SE('Planejamento Trançadeira'!C75:FJ75;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C75:FJ75,COUNTIF('Planejamento Trançadeira'!C75:FJ75,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H472
+Ultima      : H472
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-396]C[-5]:R[-396]C[158],COUNTIF('Planejamento Trançadeira'!R[-396]C[-5]:R[-396]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C76:FJ76;CONT.SE('Planejamento Trançadeira'!C76:FJ76;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C76:FJ76,COUNTIF('Planejamento Trançadeira'!C76:FJ76,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H478
+Ultima      : H478
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-401]C[-5]:R[-401]C[158],COUNTIF('Planejamento Trançadeira'!R[-401]C[-5]:R[-401]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C77:FJ77;CONT.SE('Planejamento Trançadeira'!C77:FJ77;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C77:FJ77,COUNTIF('Planejamento Trançadeira'!C77:FJ77,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H484
+Ultima      : H484
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-406]C[-5]:R[-406]C[158],COUNTIF('Planejamento Trançadeira'!R[-406]C[-5]:R[-406]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C78:FJ78;CONT.SE('Planejamento Trançadeira'!C78:FJ78;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C78:FJ78,COUNTIF('Planejamento Trançadeira'!C78:FJ78,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H490
+Ultima      : H490
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-411]C[-5]:R[-411]C[158],COUNTIF('Planejamento Trançadeira'!R[-411]C[-5]:R[-411]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C79:FJ79;CONT.SE('Planejamento Trançadeira'!C79:FJ79;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C79:FJ79,COUNTIF('Planejamento Trançadeira'!C79:FJ79,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H496
+Ultima      : H496
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-416]C[-5]:R[-416]C[158],COUNTIF('Planejamento Trançadeira'!R[-416]C[-5]:R[-416]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C80:FJ80;CONT.SE('Planejamento Trançadeira'!C80:FJ80;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C80:FJ80,COUNTIF('Planejamento Trançadeira'!C80:FJ80,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H502
+Ultima      : H502
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-421]C[-5]:R[-421]C[158],COUNTIF('Planejamento Trançadeira'!R[-421]C[-5]:R[-421]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C81:FJ81;CONT.SE('Planejamento Trançadeira'!C81:FJ81;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C81:FJ81,COUNTIF('Planejamento Trançadeira'!C81:FJ81,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H508
+Ultima      : H508
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-426]C[-5]:R[-426]C[158],COUNTIF('Planejamento Trançadeira'!R[-426]C[-5]:R[-426]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C82:FJ82;CONT.SE('Planejamento Trançadeira'!C82:FJ82;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C82:FJ82,COUNTIF('Planejamento Trançadeira'!C82:FJ82,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H514
+Ultima      : H514
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-431]C[-5]:R[-431]C[158],COUNTIF('Planejamento Trançadeira'!R[-431]C[-5]:R[-431]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C83:FJ83;CONT.SE('Planejamento Trançadeira'!C83:FJ83;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C83:FJ83,COUNTIF('Planejamento Trançadeira'!C83:FJ83,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H520
+Ultima      : H520
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-436]C[-5]:R[-436]C[158],COUNTIF('Planejamento Trançadeira'!R[-436]C[-5]:R[-436]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C84:FJ84;CONT.SE('Planejamento Trançadeira'!C84:FJ84;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C84:FJ84,COUNTIF('Planejamento Trançadeira'!C84:FJ84,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H526
+Ultima      : H526
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-441]C[-5]:R[-441]C[158],COUNTIF('Planejamento Trançadeira'!R[-441]C[-5]:R[-441]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C85:FJ85;CONT.SE('Planejamento Trançadeira'!C85:FJ85;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C85:FJ85,COUNTIF('Planejamento Trançadeira'!C85:FJ85,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H532
+Ultima      : H532
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-446]C[-5]:R[-446]C[158],COUNTIF('Planejamento Trançadeira'!R[-446]C[-5]:R[-446]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C86:FJ86;CONT.SE('Planejamento Trançadeira'!C86:FJ86;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C86:FJ86,COUNTIF('Planejamento Trançadeira'!C86:FJ86,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H538
+Ultima      : H538
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-451]C[-5]:R[-451]C[158],COUNTIF('Planejamento Trançadeira'!R[-451]C[-5]:R[-451]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C87:FJ87;CONT.SE('Planejamento Trançadeira'!C87:FJ87;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C87:FJ87,COUNTIF('Planejamento Trançadeira'!C87:FJ87,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H544
+Ultima      : H544
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-456]C[-5]:R[-456]C[158],COUNTIF('Planejamento Trançadeira'!R[-456]C[-5]:R[-456]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C88:FJ88;CONT.SE('Planejamento Trançadeira'!C88:FJ88;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C88:FJ88,COUNTIF('Planejamento Trançadeira'!C88:FJ88,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H550
+Ultima      : H550
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-461]C[-5]:R[-461]C[158],COUNTIF('Planejamento Trançadeira'!R[-461]C[-5]:R[-461]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C89:FJ89;CONT.SE('Planejamento Trançadeira'!C89:FJ89;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C89:FJ89,COUNTIF('Planejamento Trançadeira'!C89:FJ89,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H556
+Ultima      : H556
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-466]C[-5]:R[-466]C[158],COUNTIF('Planejamento Trançadeira'!R[-466]C[-5]:R[-466]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C90:FJ90;CONT.SE('Planejamento Trançadeira'!C90:FJ90;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C90:FJ90,COUNTIF('Planejamento Trançadeira'!C90:FJ90,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H562
+Ultima      : H562
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-471]C[-5]:R[-471]C[158],COUNTIF('Planejamento Trançadeira'!R[-471]C[-5]:R[-471]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C91:FJ91;CONT.SE('Planejamento Trançadeira'!C91:FJ91;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C91:FJ91,COUNTIF('Planejamento Trançadeira'!C91:FJ91,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H568
+Ultima      : H568
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-476]C[-5]:R[-476]C[158],COUNTIF('Planejamento Trançadeira'!R[-476]C[-5]:R[-476]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C92:FJ92;CONT.SE('Planejamento Trançadeira'!C92:FJ92;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C92:FJ92,COUNTIF('Planejamento Trançadeira'!C92:FJ92,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H574
+Ultima      : H574
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-481]C[-5]:R[-481]C[158],COUNTIF('Planejamento Trançadeira'!R[-481]C[-5]:R[-481]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C93:FJ93;CONT.SE('Planejamento Trançadeira'!C93:FJ93;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C93:FJ93,COUNTIF('Planejamento Trançadeira'!C93:FJ93,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H580
+Ultima      : H580
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-486]C[-5]:R[-486]C[158],COUNTIF('Planejamento Trançadeira'!R[-486]C[-5]:R[-486]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C94:FJ94;CONT.SE('Planejamento Trançadeira'!C94:FJ94;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C94:FJ94,COUNTIF('Planejamento Trançadeira'!C94:FJ94,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H586
+Ultima      : H586
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-491]C[-5]:R[-491]C[158],COUNTIF('Planejamento Trançadeira'!R[-491]C[-5]:R[-491]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C95:FJ95;CONT.SE('Planejamento Trançadeira'!C95:FJ95;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C95:FJ95,COUNTIF('Planejamento Trançadeira'!C95:FJ95,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H592
+Ultima      : H592
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-496]C[-5]:R[-496]C[158],COUNTIF('Planejamento Trançadeira'!R[-496]C[-5]:R[-496]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C96:FJ96;CONT.SE('Planejamento Trançadeira'!C96:FJ96;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C96:FJ96,COUNTIF('Planejamento Trançadeira'!C96:FJ96,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H598
+Ultima      : H598
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-501]C[-5]:R[-501]C[158],COUNTIF('Planejamento Trançadeira'!R[-501]C[-5]:R[-501]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C97:FJ97;CONT.SE('Planejamento Trançadeira'!C97:FJ97;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C97:FJ97,COUNTIF('Planejamento Trançadeira'!C97:FJ97,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H604
+Ultima      : H604
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-506]C[-5]:R[-506]C[158],COUNTIF('Planejamento Trançadeira'!R[-506]C[-5]:R[-506]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C98:FJ98;CONT.SE('Planejamento Trançadeira'!C98:FJ98;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C98:FJ98,COUNTIF('Planejamento Trançadeira'!C98:FJ98,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H610
+Ultima      : H610
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-511]C[-5]:R[-511]C[158],COUNTIF('Planejamento Trançadeira'!R[-511]C[-5]:R[-511]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C99:FJ99;CONT.SE('Planejamento Trançadeira'!C99:FJ99;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C99:FJ99,COUNTIF('Planejamento Trançadeira'!C99:FJ99,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H616
+Ultima      : H616
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-516]C[-5]:R[-516]C[158],COUNTIF('Planejamento Trançadeira'!R[-516]C[-5]:R[-516]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C100:FJ100;CONT.SE('Planejamento Trançadeira'!C100:FJ100;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C100:FJ100,COUNTIF('Planejamento Trançadeira'!C100:FJ100,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H622
+Ultima      : H622
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-521]C[-5]:R[-521]C[158],COUNTIF('Planejamento Trançadeira'!R[-521]C[-5]:R[-521]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C101:FJ101;CONT.SE('Planejamento Trançadeira'!C101:FJ101;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C101:FJ101,COUNTIF('Planejamento Trançadeira'!C101:FJ101,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H628
+Ultima      : H628
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-526]C[-5]:R[-526]C[158],COUNTIF('Planejamento Trançadeira'!R[-526]C[-5]:R[-526]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C102:FJ102;CONT.SE('Planejamento Trançadeira'!C102:FJ102;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C102:FJ102,COUNTIF('Planejamento Trançadeira'!C102:FJ102,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H634
+Ultima      : H634
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-531]C[-5]:R[-531]C[158],COUNTIF('Planejamento Trançadeira'!R[-531]C[-5]:R[-531]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C103:FJ103;CONT.SE('Planejamento Trançadeira'!C103:FJ103;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C103:FJ103,COUNTIF('Planejamento Trançadeira'!C103:FJ103,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H640
+Ultima      : H640
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-536]C[-5]:R[-536]C[158],COUNTIF('Planejamento Trançadeira'!R[-536]C[-5]:R[-536]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C104:FJ104;CONT.SE('Planejamento Trançadeira'!C104:FJ104;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C104:FJ104,COUNTIF('Planejamento Trançadeira'!C104:FJ104,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H646
+Ultima      : H646
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-541]C[-5]:R[-541]C[158],COUNTIF('Planejamento Trançadeira'!R[-541]C[-5]:R[-541]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C105:FJ105;CONT.SE('Planejamento Trançadeira'!C105:FJ105;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C105:FJ105,COUNTIF('Planejamento Trançadeira'!C105:FJ105,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H652
+Ultima      : H652
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-546]C[-5]:R[-546]C[158],COUNTIF('Planejamento Trançadeira'!R[-546]C[-5]:R[-546]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C106:FJ106;CONT.SE('Planejamento Trançadeira'!C106:FJ106;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C106:FJ106,COUNTIF('Planejamento Trançadeira'!C106:FJ106,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H658
+Ultima      : H658
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-551]C[-5]:R[-551]C[158],COUNTIF('Planejamento Trançadeira'!R[-551]C[-5]:R[-551]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C107:FJ107;CONT.SE('Planejamento Trançadeira'!C107:FJ107;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C107:FJ107,COUNTIF('Planejamento Trançadeira'!C107:FJ107,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H664
+Ultima      : H664
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-556]C[-5]:R[-556]C[158],COUNTIF('Planejamento Trançadeira'!R[-556]C[-5]:R[-556]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C108:FJ108;CONT.SE('Planejamento Trançadeira'!C108:FJ108;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C108:FJ108,COUNTIF('Planejamento Trançadeira'!C108:FJ108,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H670
+Ultima      : H670
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-561]C[-5]:R[-561]C[158],COUNTIF('Planejamento Trançadeira'!R[-561]C[-5]:R[-561]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C109:FJ109;CONT.SE('Planejamento Trançadeira'!C109:FJ109;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C109:FJ109,COUNTIF('Planejamento Trançadeira'!C109:FJ109,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H676
+Ultima      : H676
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-566]C[-5]:R[-566]C[158],COUNTIF('Planejamento Trançadeira'!R[-566]C[-5]:R[-566]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C110:FJ110;CONT.SE('Planejamento Trançadeira'!C110:FJ110;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C110:FJ110,COUNTIF('Planejamento Trançadeira'!C110:FJ110,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H682
+Ultima      : H682
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-571]C[-5]:R[-571]C[158],COUNTIF('Planejamento Trançadeira'!R[-571]C[-5]:R[-571]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C111:FJ111;CONT.SE('Planejamento Trançadeira'!C111:FJ111;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C111:FJ111,COUNTIF('Planejamento Trançadeira'!C111:FJ111,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H688
+Ultima      : H688
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-576]C[-5]:R[-576]C[158],COUNTIF('Planejamento Trançadeira'!R[-576]C[-5]:R[-576]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C112:FJ112;CONT.SE('Planejamento Trançadeira'!C112:FJ112;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C112:FJ112,COUNTIF('Planejamento Trançadeira'!C112:FJ112,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H694
+Ultima      : H694
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-581]C[-5]:R[-581]C[158],COUNTIF('Planejamento Trançadeira'!R[-581]C[-5]:R[-581]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C113:FJ113;CONT.SE('Planejamento Trançadeira'!C113:FJ113;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C113:FJ113,COUNTIF('Planejamento Trançadeira'!C113:FJ113,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H700
+Ultima      : H700
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-586]C[-5]:R[-586]C[158],COUNTIF('Planejamento Trançadeira'!R[-586]C[-5]:R[-586]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C114:FJ114;CONT.SE('Planejamento Trançadeira'!C114:FJ114;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C114:FJ114,COUNTIF('Planejamento Trançadeira'!C114:FJ114,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H706
+Ultima      : H706
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-591]C[-5]:R[-591]C[158],COUNTIF('Planejamento Trançadeira'!R[-591]C[-5]:R[-591]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C115:FJ115;CONT.SE('Planejamento Trançadeira'!C115:FJ115;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C115:FJ115,COUNTIF('Planejamento Trançadeira'!C115:FJ115,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H712
+Ultima      : H712
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-596]C[-5]:R[-596]C[158],COUNTIF('Planejamento Trançadeira'!R[-596]C[-5]:R[-596]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C116:FJ116;CONT.SE('Planejamento Trançadeira'!C116:FJ116;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C116:FJ116,COUNTIF('Planejamento Trançadeira'!C116:FJ116,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H718
+Ultima      : H718
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-601]C[-5]:R[-601]C[158],COUNTIF('Planejamento Trançadeira'!R[-601]C[-5]:R[-601]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C117:FJ117;CONT.SE('Planejamento Trançadeira'!C117:FJ117;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C117:FJ117,COUNTIF('Planejamento Trançadeira'!C117:FJ117,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H724
+Ultima      : H724
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-606]C[-5]:R[-606]C[158],COUNTIF('Planejamento Trançadeira'!R[-606]C[-5]:R[-606]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C118:FJ118;CONT.SE('Planejamento Trançadeira'!C118:FJ118;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C118:FJ118,COUNTIF('Planejamento Trançadeira'!C118:FJ118,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H730
+Ultima      : H730
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-611]C[-5]:R[-611]C[158],COUNTIF('Planejamento Trançadeira'!R[-611]C[-5]:R[-611]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C119:FJ119;CONT.SE('Planejamento Trançadeira'!C119:FJ119;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C119:FJ119,COUNTIF('Planejamento Trançadeira'!C119:FJ119,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H736
+Ultima      : H736
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-616]C[-5]:R[-616]C[158],COUNTIF('Planejamento Trançadeira'!R[-616]C[-5]:R[-616]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C120:FJ120;CONT.SE('Planejamento Trançadeira'!C120:FJ120;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C120:FJ120,COUNTIF('Planejamento Trançadeira'!C120:FJ120,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H742
+Ultima      : H742
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-621]C[-5]:R[-621]C[158],COUNTIF('Planejamento Trançadeira'!R[-621]C[-5]:R[-621]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C121:FJ121;CONT.SE('Planejamento Trançadeira'!C121:FJ121;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C121:FJ121,COUNTIF('Planejamento Trançadeira'!C121:FJ121,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H748
+Ultima      : H748
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-626]C[-5]:R[-626]C[158],COUNTIF('Planejamento Trançadeira'!R[-626]C[-5]:R[-626]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C122:FJ122;CONT.SE('Planejamento Trançadeira'!C122:FJ122;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C122:FJ122,COUNTIF('Planejamento Trançadeira'!C122:FJ122,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H754
+Ultima      : H754
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-631]C[-5]:R[-631]C[158],COUNTIF('Planejamento Trançadeira'!R[-631]C[-5]:R[-631]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C123:FJ123;CONT.SE('Planejamento Trançadeira'!C123:FJ123;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C123:FJ123,COUNTIF('Planejamento Trançadeira'!C123:FJ123,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H760
+Ultima      : H760
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-636]C[-5]:R[-636]C[158],COUNTIF('Planejamento Trançadeira'!R[-636]C[-5]:R[-636]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C124:FJ124;CONT.SE('Planejamento Trançadeira'!C124:FJ124;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C124:FJ124,COUNTIF('Planejamento Trançadeira'!C124:FJ124,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H766
+Ultima      : H766
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-641]C[-5]:R[-641]C[158],COUNTIF('Planejamento Trançadeira'!R[-641]C[-5]:R[-641]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C125:FJ125;CONT.SE('Planejamento Trançadeira'!C125:FJ125;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C125:FJ125,COUNTIF('Planejamento Trançadeira'!C125:FJ125,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H772
+Ultima      : H772
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-646]C[-5]:R[-646]C[158],COUNTIF('Planejamento Trançadeira'!R[-646]C[-5]:R[-646]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C126:FJ126;CONT.SE('Planejamento Trançadeira'!C126:FJ126;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C126:FJ126,COUNTIF('Planejamento Trançadeira'!C126:FJ126,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H778
+Ultima      : H778
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-651]C[-5]:R[-651]C[158],COUNTIF('Planejamento Trançadeira'!R[-651]C[-5]:R[-651]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C127:FJ127;CONT.SE('Planejamento Trançadeira'!C127:FJ127;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C127:FJ127,COUNTIF('Planejamento Trançadeira'!C127:FJ127,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H784
+Ultima      : H784
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-656]C[-5]:R[-656]C[158],COUNTIF('Planejamento Trançadeira'!R[-656]C[-5]:R[-656]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C128:FJ128;CONT.SE('Planejamento Trançadeira'!C128:FJ128;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C128:FJ128,COUNTIF('Planejamento Trançadeira'!C128:FJ128,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H790
+Ultima      : H790
+R1C1        : =SMALL('Planejamento Trançadeira'!R[-661]C[-5]:R[-661]C[158],COUNTIF('Planejamento Trançadeira'!R[-661]C[-5]:R[-661]C[158],0)+1)
+A1-PT       : =MENOR('Planejamento Trançadeira'!C129:FJ129;CONT.SE('Planejamento Trançadeira'!C129:FJ129;0)+1)
+A1-EN       : =SMALL('Planejamento Trançadeira'!C129:FJ129,COUNTIF('Planejamento Trançadeira'!C129:FJ129,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W103
+Ultima      : W103
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-88]C[-20]:R[-88]C[1082],'Planejamento Trançadeira'!R[-88]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C15:APM15;'Planejamento Trançadeira'!A15)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C15:APM15,'Planejamento Trançadeira'!A15)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W571
+Ultima      : W571
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-470]C[-20]:R[-470]C[1082],'Planejamento Trançadeira'!R[-470]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C101:APM101;'Planejamento Trançadeira'!A101)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C101:APM101,'Planejamento Trançadeira'!A101)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W271
+Ultima      : W271
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-228]C[-20]:R[-228]C[1082],'Planejamento Trançadeira'!R[-228]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C43:APM43;'Planejamento Trançadeira'!A43)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C43:APM43,'Planejamento Trançadeira'!A43)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W577
+Ultima      : W577
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-475]C[-20]:R[-475]C[1082],'Planejamento Trançadeira'!R[-475]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C102:APM102;'Planejamento Trançadeira'!A102)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C102:APM102,'Planejamento Trançadeira'!A102)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : F6
+Ultima      : F6
+R1C1        : ='REALTÓRIO TEARES'!R[1]C[-1]
+A1-PT       : ='REALTÓRIO TEARES'!E7
+A1-EN       : ='REALTÓRIO TEARES'!E7
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W583
+Ultima      : W583
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-480]C[-20]:R[-480]C[1082],'Planejamento Trançadeira'!R[-480]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C103:APM103;'Planejamento Trançadeira'!A103)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C103:APM103,'Planejamento Trançadeira'!A103)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W277
+Ultima      : W277
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-233]C[-20]:R[-233]C[1082],'Planejamento Trançadeira'!R[-233]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C44:APM44;'Planejamento Trançadeira'!A44)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C44:APM44,'Planejamento Trançadeira'!A44)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W589
+Ultima      : W589
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-485]C[-20]:R[-485]C[1082],'Planejamento Trançadeira'!R[-485]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C104:APM104;'Planejamento Trançadeira'!A104)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C104:APM104,'Planejamento Trançadeira'!A104)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W109
+Ultima      : W109
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-93]C[-20]:R[-93]C[1082],'Planejamento Trançadeira'!R[-93]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C16:APM16;'Planejamento Trançadeira'!A16)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C16:APM16,'Planejamento Trançadeira'!A16)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W595
+Ultima      : W595
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-490]C[-20]:R[-490]C[1082],'Planejamento Trançadeira'!R[-490]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C105:APM105;'Planejamento Trançadeira'!A105)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C105:APM105,'Planejamento Trançadeira'!A105)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W283
+Ultima      : W283
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-238]C[-20]:R[-238]C[1082],'Planejamento Trançadeira'!R[-238]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C45:APM45;'Planejamento Trançadeira'!A45)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C45:APM45,'Planejamento Trançadeira'!A45)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W601
+Ultima      : W601
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-495]C[-20]:R[-495]C[1082],'Planejamento Trançadeira'!R[-495]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C106:APM106;'Planejamento Trançadeira'!A106)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C106:APM106,'Planejamento Trançadeira'!A106)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W25
+Ultima      : W25
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-23]C[-20]:R[-23]C[1082],'Planejamento Trançadeira'!R[-23]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C2:APM2;'Planejamento Trançadeira'!A2)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C2:APM2,'Planejamento Trançadeira'!A2)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W607
+Ultima      : W607
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-500]C[-20]:R[-500]C[1082],'Planejamento Trançadeira'!R[-500]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C107:APM107;'Planejamento Trançadeira'!A107)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C107:APM107,'Planejamento Trançadeira'!A107)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W289
+Ultima      : W289
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-243]C[-20]:R[-243]C[1082],'Planejamento Trançadeira'!R[-243]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C46:APM46;'Planejamento Trançadeira'!A46)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C46:APM46,'Planejamento Trançadeira'!A46)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W613
+Ultima      : W613
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-505]C[-20]:R[-505]C[1082],'Planejamento Trançadeira'!R[-505]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C108:APM108;'Planejamento Trançadeira'!A108)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C108:APM108,'Planejamento Trançadeira'!A108)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W115
+Ultima      : W115
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-98]C[-20]:R[-98]C[1082],'Planejamento Trançadeira'!R[-98]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C17:APM17;'Planejamento Trançadeira'!A17)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C17:APM17,'Planejamento Trançadeira'!A17)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W619
+Ultima      : W619
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-510]C[-20]:R[-510]C[1082],'Planejamento Trançadeira'!R[-510]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C109:APM109;'Planejamento Trançadeira'!A109)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C109:APM109,'Planejamento Trançadeira'!A109)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W295
+Ultima      : W295
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-248]C[-20]:R[-248]C[1082],'Planejamento Trançadeira'!R[-248]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C47:APM47;'Planejamento Trançadeira'!A47)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C47:APM47,'Planejamento Trançadeira'!A47)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W625
+Ultima      : W625
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-515]C[-20]:R[-515]C[1082],'Planejamento Trançadeira'!R[-515]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C110:APM110;'Planejamento Trançadeira'!A110)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C110:APM110,'Planejamento Trançadeira'!A110)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : I8
+Ultima      : I8
+R1C1        : =TODAY()
+A1-PT       : =HOJE()
+A1-EN       : =TODAY()
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W631
+Ultima      : W631
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-520]C[-20]:R[-520]C[1082],'Planejamento Trançadeira'!R[-520]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C111:APM111;'Planejamento Trançadeira'!A111)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C111:APM111,'Planejamento Trançadeira'!A111)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W301
+Ultima      : W301
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-253]C[-20]:R[-253]C[1082],'Planejamento Trançadeira'!R[-253]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C48:APM48;'Planejamento Trançadeira'!A48)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C48:APM48,'Planejamento Trançadeira'!A48)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W637
+Ultima      : W637
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-525]C[-20]:R[-525]C[1082],'Planejamento Trançadeira'!R[-525]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C112:APM112;'Planejamento Trançadeira'!A112)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C112:APM112,'Planejamento Trançadeira'!A112)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W121
+Ultima      : W121
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-103]C[-20]:R[-103]C[1082],'Planejamento Trançadeira'!R[-103]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C18:APM18;'Planejamento Trançadeira'!A18)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C18:APM18,'Planejamento Trançadeira'!A18)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W643
+Ultima      : W643
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-530]C[-20]:R[-530]C[1082],'Planejamento Trançadeira'!R[-530]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C113:APM113;'Planejamento Trançadeira'!A113)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C113:APM113,'Planejamento Trançadeira'!A113)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W307
+Ultima      : W307
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-258]C[-20]:R[-258]C[1082],'Planejamento Trançadeira'!R[-258]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C49:APM49;'Planejamento Trançadeira'!A49)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C49:APM49,'Planejamento Trançadeira'!A49)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W649
+Ultima      : W649
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-535]C[-20]:R[-535]C[1082],'Planejamento Trançadeira'!R[-535]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C114:APM114;'Planejamento Trançadeira'!A114)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C114:APM114,'Planejamento Trançadeira'!A114)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W31
+Ultima      : W31
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-28]C[-20]:R[-28]C[1082],'Planejamento Trançadeira'!R[-28]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C3:APM3;'Planejamento Trançadeira'!A3)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C3:APM3,'Planejamento Trançadeira'!A3)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W655
+Ultima      : W655
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-540]C[-20]:R[-540]C[1082],'Planejamento Trançadeira'!R[-540]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C115:APM115;'Planejamento Trançadeira'!A115)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C115:APM115,'Planejamento Trançadeira'!A115)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W313
+Ultima      : W313
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-263]C[-20]:R[-263]C[1082],'Planejamento Trançadeira'!R[-263]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C50:APM50;'Planejamento Trançadeira'!A50)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C50:APM50,'Planejamento Trançadeira'!A50)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W661
+Ultima      : W661
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-545]C[-20]:R[-545]C[1082],'Planejamento Trançadeira'!R[-545]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C116:APM116;'Planejamento Trançadeira'!A116)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C116:APM116,'Planejamento Trançadeira'!A116)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W127
+Ultima      : W127
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-108]C[-20]:R[-108]C[1082],'Planejamento Trançadeira'!R[-108]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C19:APM19;'Planejamento Trançadeira'!A19)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C19:APM19,'Planejamento Trançadeira'!A19)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W667
+Ultima      : W667
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-550]C[-20]:R[-550]C[1082],'Planejamento Trançadeira'!R[-550]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C117:APM117;'Planejamento Trançadeira'!A117)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C117:APM117,'Planejamento Trançadeira'!A117)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W319
+Ultima      : W319
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-259]C[-20]:R[-259]C[1082],'Planejamento Trançadeira'!R[-259]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C60:APM60;'Planejamento Trançadeira'!A60)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C60:APM60,'Planejamento Trançadeira'!A60)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W673
+Ultima      : W673
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-555]C[-20]:R[-555]C[1082],'Planejamento Trançadeira'!R[-555]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C118:APM118;'Planejamento Trançadeira'!A118)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C118:APM118,'Planejamento Trançadeira'!A118)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K9
+Ultima      : K9
+R1C1        : =IF(PEDIDOS!R[-5]C[-6]=0,TODAY(),PEDIDOS!R[-5]C[-6])
+A1-PT       : =SE(PEDIDOS!E4=0;HOJE();PEDIDOS!E4)
+A1-EN       : =IF(PEDIDOS!E4=0,TODAY(),PEDIDOS!E4)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W679
+Ultima      : W679
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-560]C[-20]:R[-560]C[1082],'Planejamento Trançadeira'!R[-560]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C119:APM119;'Planejamento Trançadeira'!A119)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C119:APM119,'Planejamento Trançadeira'!A119)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W325
+Ultima      : W325
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-264]C[-20]:R[-264]C[1082],'Planejamento Trançadeira'!R[-264]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C61:APM61;'Planejamento Trançadeira'!A61)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C61:APM61,'Planejamento Trançadeira'!A61)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W685
+Ultima      : W685
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-565]C[-20]:R[-565]C[1082],'Planejamento Trançadeira'!R[-565]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C120:APM120;'Planejamento Trançadeira'!A120)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C120:APM120,'Planejamento Trançadeira'!A120)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W133
+Ultima      : W133
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-113]C[-20]:R[-113]C[1082],'Planejamento Trançadeira'!R[-113]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C20:APM20;'Planejamento Trançadeira'!A20)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C20:APM20,'Planejamento Trançadeira'!A20)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W691
+Ultima      : W691
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-570]C[-20]:R[-570]C[1082],'Planejamento Trançadeira'!R[-570]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C121:APM121;'Planejamento Trançadeira'!A121)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C121:APM121,'Planejamento Trançadeira'!A121)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W331
+Ultima      : W331
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-269]C[-20]:R[-269]C[1082],'Planejamento Trançadeira'!R[-269]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C62:APM62;'Planejamento Trançadeira'!A62)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C62:APM62,'Planejamento Trançadeira'!A62)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W697
+Ultima      : W697
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-575]C[-20]:R[-575]C[1082],'Planejamento Trançadeira'!R[-575]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C122:APM122;'Planejamento Trançadeira'!A122)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C122:APM122,'Planejamento Trançadeira'!A122)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W37
+Ultima      : W37
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-33]C[-20]:R[-33]C[1082],'Planejamento Trançadeira'!R[-33]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C4:APM4;'Planejamento Trançadeira'!A4)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C4:APM4,'Planejamento Trançadeira'!A4)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W703
+Ultima      : W703
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-580]C[-20]:R[-580]C[1082],'Planejamento Trançadeira'!R[-580]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C123:APM123;'Planejamento Trançadeira'!A123)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C123:APM123,'Planejamento Trançadeira'!A123)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W337
+Ultima      : W337
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-274]C[-20]:R[-274]C[1082],'Planejamento Trançadeira'!R[-274]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C63:APM63;'Planejamento Trançadeira'!A63)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C63:APM63,'Planejamento Trançadeira'!A63)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W709
+Ultima      : W709
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-585]C[-20]:R[-585]C[1082],'Planejamento Trançadeira'!R[-585]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C124:APM124;'Planejamento Trançadeira'!A124)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C124:APM124,'Planejamento Trançadeira'!A124)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W139
+Ultima      : W139
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-118]C[-20]:R[-118]C[1082],'Planejamento Trançadeira'!R[-118]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C21:APM21;'Planejamento Trançadeira'!A21)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C21:APM21,'Planejamento Trançadeira'!A21)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W715
+Ultima      : W715
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-590]C[-20]:R[-590]C[1082],'Planejamento Trançadeira'!R[-590]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C125:APM125;'Planejamento Trançadeira'!A125)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C125:APM125,'Planejamento Trançadeira'!A125)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W343
+Ultima      : W343
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-279]C[-20]:R[-279]C[1082],'Planejamento Trançadeira'!R[-279]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C64:APM64;'Planejamento Trançadeira'!A64)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C64:APM64,'Planejamento Trançadeira'!A64)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W721
+Ultima      : W721
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-595]C[-20]:R[-595]C[1082],'Planejamento Trançadeira'!R[-595]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C126:APM126;'Planejamento Trançadeira'!A126)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C126:APM126,'Planejamento Trançadeira'!A126)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : I3
+Ultima      : I3
+R1C1        : =COUNTIF(R[16]C[13]:R[172]C[13],"ATAC")
+A1-PT       : =CONT.SE(V19:V175;"ATAC")
+A1-EN       : =COUNTIF(V19:V175,"ATAC")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W727
+Ultima      : W727
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-600]C[-20]:R[-600]C[1082],'Planejamento Trançadeira'!R[-600]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C127:APM127;'Planejamento Trançadeira'!A127)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C127:APM127,'Planejamento Trançadeira'!A127)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W349
+Ultima      : W349
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-284]C[-20]:R[-284]C[1082],'Planejamento Trançadeira'!R[-284]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C65:APM65;'Planejamento Trançadeira'!A65)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C65:APM65,'Planejamento Trançadeira'!A65)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W733
+Ultima      : W733
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-605]C[-20]:R[-605]C[1082],'Planejamento Trançadeira'!R[-605]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C128:APM128;'Planejamento Trançadeira'!A128)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C128:APM128,'Planejamento Trançadeira'!A128)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W145
+Ultima      : W145
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-123]C[-20]:R[-123]C[1082],'Planejamento Trançadeira'!R[-123]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C22:APM22;'Planejamento Trançadeira'!A22)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C22:APM22,'Planejamento Trançadeira'!A22)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W739
+Ultima      : W739
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-610]C[-20]:R[-610]C[1082],'Planejamento Trançadeira'!R[-610]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C129:APM129;'Planejamento Trançadeira'!A129)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C129:APM129,'Planejamento Trançadeira'!A129)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W355
+Ultima      : W355
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-289]C[-20]:R[-289]C[1082],'Planejamento Trançadeira'!R[-289]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C66:APM66;'Planejamento Trançadeira'!A66)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C66:APM66,'Planejamento Trançadeira'!A66)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W745
+Ultima      : W745
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-615]C[-20]:R[-615]C[1082],'Planejamento Trançadeira'!R[-615]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C130:APM130;'Planejamento Trançadeira'!A130)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C130:APM130,'Planejamento Trançadeira'!A130)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W43
+Ultima      : W43
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-38]C[-20]:R[-38]C[1082],'Planejamento Trançadeira'!R[-38]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C5:APM5;'Planejamento Trançadeira'!A5)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C5:APM5,'Planejamento Trançadeira'!A5)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W751
+Ultima      : W751
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-620]C[-20]:R[-620]C[1082],'Planejamento Trançadeira'!R[-620]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C131:APM131;'Planejamento Trançadeira'!A131)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C131:APM131,'Planejamento Trançadeira'!A131)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W361
+Ultima      : W361
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-294]C[-20]:R[-294]C[1082],'Planejamento Trançadeira'!R[-294]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C67:APM67;'Planejamento Trançadeira'!A67)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C67:APM67,'Planejamento Trançadeira'!A67)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W757
+Ultima      : W757
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-625]C[-20]:R[-625]C[1082],'Planejamento Trançadeira'!R[-625]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C132:APM132;'Planejamento Trançadeira'!A132)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C132:APM132,'Planejamento Trançadeira'!A132)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W151
+Ultima      : W151
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-128]C[-20]:R[-128]C[1082],'Planejamento Trançadeira'!R[-128]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C23:APM23;'Planejamento Trançadeira'!A23)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C23:APM23,'Planejamento Trançadeira'!A23)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W763
+Ultima      : W763
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-630]C[-20]:R[-630]C[1082],'Planejamento Trançadeira'!R[-630]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C133:APM133;'Planejamento Trançadeira'!A133)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C133:APM133,'Planejamento Trançadeira'!A133)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W367
+Ultima      : W367
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-299]C[-20]:R[-299]C[1082],'Planejamento Trançadeira'!R[-299]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C68:APM68;'Planejamento Trançadeira'!A68)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C68:APM68,'Planejamento Trançadeira'!A68)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W769
+Ultima      : W769
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-635]C[-20]:R[-635]C[1082],'Planejamento Trançadeira'!R[-635]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C134:APM134;'Planejamento Trançadeira'!A134)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C134:APM134,'Planejamento Trançadeira'!A134)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : J3
+Ultima      : J3
+R1C1        : =COUNTIF('Programação trançadeiras'!RC[12]:R[274]C[12],"ATAC")
+A1-PT       : =CONT.SE('Programação trançadeiras'!V3:V277;"ATAC")
+A1-EN       : =COUNTIF('Programação trançadeiras'!V3:V277,"ATAC")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W775
+Ultima      : W775
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-640]C[-20]:R[-640]C[1082],'Planejamento Trançadeira'!R[-640]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C135:APM135;'Planejamento Trançadeira'!A135)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C135:APM135,'Planejamento Trançadeira'!A135)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W373
+Ultima      : W373
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-304]C[-20]:R[-304]C[1082],'Planejamento Trançadeira'!R[-304]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C69:APM69;'Planejamento Trançadeira'!A69)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C69:APM69,'Planejamento Trançadeira'!A69)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W781
+Ultima      : W781
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-645]C[-20]:R[-645]C[1082],'Planejamento Trançadeira'!R[-645]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C136:APM136;'Planejamento Trançadeira'!A136)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C136:APM136,'Planejamento Trançadeira'!A136)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W157
+Ultima      : W157
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-133]C[-20]:R[-133]C[1082],'Planejamento Trançadeira'!R[-133]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C24:APM24;'Planejamento Trançadeira'!A24)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C24:APM24,'Planejamento Trançadeira'!A24)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W787
+Ultima      : W787
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-650]C[-20]:R[-650]C[1082],'Planejamento Trançadeira'!R[-650]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C137:APM137;'Planejamento Trançadeira'!A137)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C137:APM137,'Planejamento Trançadeira'!A137)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W379
+Ultima      : W379
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-309]C[-20]:R[-309]C[1082],'Planejamento Trançadeira'!R[-309]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C70:APM70;'Planejamento Trançadeira'!A70)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C70:APM70,'Planejamento Trançadeira'!A70)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W49
+Ultima      : W49
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-43]C[-20]:R[-43]C[1082],'Planejamento Trançadeira'!R[-43]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C6:APM6;'Planejamento Trançadeira'!A6)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C6:APM6,'Planejamento Trançadeira'!A6)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W385
+Ultima      : W385
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-314]C[-20]:R[-314]C[1082],'Planejamento Trançadeira'!R[-314]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C71:APM71;'Planejamento Trançadeira'!A71)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C71:APM71,'Planejamento Trançadeira'!A71)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W163
+Ultima      : W163
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-138]C[-20]:R[-138]C[1082],'Planejamento Trançadeira'!R[-138]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C25:APM25;'Planejamento Trançadeira'!A25)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C25:APM25,'Planejamento Trançadeira'!A25)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W391
+Ultima      : W391
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-319]C[-20]:R[-319]C[1082],'Planejamento Trançadeira'!R[-319]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C72:APM72;'Planejamento Trançadeira'!A72)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C72:APM72,'Planejamento Trançadeira'!A72)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B19
+Ultima      : B19
+R1C1        : ='Programação trançadeiras'!Extract
+A1-PT       : ='Programação trançadeiras'!Area_de_extracao
+A1-EN       : ='Programação trançadeiras'!Extract
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W397
+Ultima      : W397
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-324]C[-20]:R[-324]C[1082],'Planejamento Trançadeira'!R[-324]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C73:APM73;'Planejamento Trançadeira'!A73)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C73:APM73,'Planejamento Trançadeira'!A73)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W169
+Ultima      : W169
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-143]C[-20]:R[-143]C[1082],'Planejamento Trançadeira'!R[-143]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C26:APM26;'Planejamento Trançadeira'!A26)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C26:APM26,'Planejamento Trançadeira'!A26)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W403
+Ultima      : W403
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-329]C[-20]:R[-329]C[1082],'Planejamento Trançadeira'!R[-329]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C74:APM74;'Planejamento Trançadeira'!A74)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C74:APM74,'Planejamento Trançadeira'!A74)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W55
+Ultima      : W55
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-48]C[-20]:R[-48]C[1082],'Planejamento Trançadeira'!R[-48]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C7:APM7;'Planejamento Trançadeira'!A7)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C7:APM7,'Planejamento Trançadeira'!A7)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W409
+Ultima      : W409
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-334]C[-20]:R[-334]C[1082],'Planejamento Trançadeira'!R[-334]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C75:APM75;'Planejamento Trançadeira'!A75)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C75:APM75,'Planejamento Trançadeira'!A75)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W175
+Ultima      : W175
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-148]C[-20]:R[-148]C[1082],'Planejamento Trançadeira'!R[-148]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C27:APM27;'Planejamento Trançadeira'!A27)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C27:APM27,'Planejamento Trançadeira'!A27)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W415
+Ultima      : W415
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-339]C[-20]:R[-339]C[1082],'Planejamento Trançadeira'!R[-339]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C76:APM76;'Planejamento Trançadeira'!A76)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C76:APM76,'Planejamento Trançadeira'!A76)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C19
+Ultima      : C19
+R1C1        : ='Programação trançadeiras'!R[-16]C[7]
+A1-PT       : ='Programação trançadeiras'!J3
+A1-EN       : ='Programação trançadeiras'!J3
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W421
+Ultima      : W421
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-344]C[-20]:R[-344]C[1082],'Planejamento Trançadeira'!R[-344]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C77:APM77;'Planejamento Trançadeira'!A77)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C77:APM77,'Planejamento Trançadeira'!A77)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W181
+Ultima      : W181
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-153]C[-20]:R[-153]C[1082],'Planejamento Trançadeira'!R[-153]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C28:APM28;'Planejamento Trançadeira'!A28)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C28:APM28,'Planejamento Trançadeira'!A28)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W427
+Ultima      : W427
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-349]C[-20]:R[-349]C[1082],'Planejamento Trançadeira'!R[-349]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C78:APM78;'Planejamento Trançadeira'!A78)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C78:APM78,'Planejamento Trançadeira'!A78)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W61
+Ultima      : W61
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-53]C[-20]:R[-53]C[1082],'Planejamento Trançadeira'!R[-53]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C8:APM8;'Planejamento Trançadeira'!A8)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C8:APM8,'Planejamento Trançadeira'!A8)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W433
+Ultima      : W433
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-355]C[-20]:R[-355]C[1082],'Planejamento Trançadeira'!R[-355]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C78:APM78;'Planejamento Trançadeira'!A78)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C78:APM78,'Planejamento Trançadeira'!A78)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W187
+Ultima      : W187
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-158]C[-20]:R[-158]C[1082],'Planejamento Trançadeira'!R[-158]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C29:APM29;'Planejamento Trançadeira'!A29)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C29:APM29,'Planejamento Trançadeira'!A29)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W439
+Ultima      : W439
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-360]C[-20]:R[-360]C[1082],'Planejamento Trançadeira'!R[-360]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C79:APM79;'Planejamento Trançadeira'!A79)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C79:APM79,'Planejamento Trançadeira'!A79)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K3
+Ultima      : K3
+R1C1        : =IF(RC[-2]=RC[-1],"OK","VERIFICAR ERRO")
+A1-PT       : =SE(I3=J3;"OK";"VERIFICAR ERRO")
+A1-EN       : =IF(I3=J3,"OK","VERIFICAR ERRO")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : W445
+Ultima      : W445
+R1C1        : =COUNTIF('Planejamento Trançadeira'!R[-365]C[-20]:R[-365]C[1082],'Planejamento Trançadeira'!R[-365]C[-22])
+A1-PT       : =CONT.SE('Planejamento Trançadeira'!C80:APM80;'Planejamento Trançadeira'!A80)
+A1-EN       : =COUNTIF('Planejamento Trançadeira'!C80:APM80,'Planejamento Trançadeira'!A80)

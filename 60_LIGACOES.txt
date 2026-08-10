@@ -1,0 +1,47 @@
+================================================================
+LIGACOES
+================================================================
+
+## Vinculos com outros arquivos
+
+(nenhum vinculo externo)
+
+## Quais abas referenciam quais
+
+Deduzido procurando o nome de cada aba dentro das formulas das demais.
+
+- `REALTÓRIO TEARES NOVO` usa dados de `PEDIDOS`
+- `REALTÓRIO TEARES NOVO` usa dados de `REALTÓRIO TEARES`
+- `REALTÓRIO TEARES NOVO` usa dados de `CONSUMO DIÁRIO`
+- `REALTÓRIO TEARES NOVO` usa dados de `DADOS DOS PRODUTOS`
+- `REALTÓRIO TEARES NOVO` usa dados de `CONSUMO`
+- `REALTÓRIO TEARES NOVO` usa dados de `Programação Teares`
+- `REALTÓRIO TEARES NOVO` usa dados de `Planejamento tear`
+- `PEDIDOS` usa dados de `CADASTRO CLIENTES`
+- `PEDIDOS` usa dados de `DADOS GERAIS DE PRODUTOS`
+- `PEDIDOS` usa dados de `Programação Teares`
+- `RELATÓRIO TRANÇADEIRAS` usa dados de `PEDIDOS`
+- `RELATÓRIO TRANÇADEIRAS` usa dados de `REALTÓRIO TEARES`
+- `RELATÓRIO TRANÇADEIRAS` usa dados de `DADOS DOS PRODUTOS`
+- `RELATÓRIO TRANÇADEIRAS` usa dados de `Programação trançadeiras`
+- `RELATÓRIO TRANÇADEIRAS` usa dados de `Planejamento Trançadeira`
+- `REALTÓRIO TEARES` usa dados de `PEDIDOS`
+- `REALTÓRIO TEARES` usa dados de `CONSUMO DIÁRIO`
+- `REALTÓRIO TEARES` usa dados de `DADOS DOS PRODUTOS`
+- `REALTÓRIO TEARES` usa dados de `CONSUMO`
+- `REALTÓRIO TEARES` usa dados de `Programação Teares`
+- `REALTÓRIO TEARES` usa dados de `Planejamento tear`
+- `CONSUMO DIÁRIO` usa dados de `PEDIDOS`
+- `CONSUMO DIÁRIO` usa dados de `REALTÓRIO TEARES`
+- `DADOS DOS PRODUTOS` usa dados de `PESOS DE FIOS`
+- `CONSUMO` usa dados de `CORES USADAS`
+- `CONSUMO` usa dados de `Relação de referencias`
+- `Programação trançadeiras` usa dados de `PEDIDOS`
+- `Programação trançadeiras` usa dados de `DADOS GERAIS DE PRODUTOS`
+- `Programação trançadeiras` usa dados de `PESOS DE FIOS`
+- `Programação Teares` usa dados de `PEDIDOS`
+- `Programação Teares` usa dados de `REALTÓRIO TEARES`
+- `Programação Teares` usa dados de `DADOS GERAIS DE PRODUTOS`
+- `Programação Teares` usa dados de `PESOS DE FIOS`
+- `Planejamento Trançadeira` usa dados de `RELATÓRIO TRANÇADEIRAS`
+- `Planejamento tear` usa dados de `REALTÓRIO TEARES`

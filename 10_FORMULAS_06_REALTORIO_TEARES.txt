@@ -1,0 +1,1832 @@
+================================================================
+FORMULAS DA ABA: REALTÓRIO TEARES
+================================================================
+
+Total de celulas com formula : 11.308
+Padroes distintos (R1C1)     : 224
+
+Como ler este arquivo:
+  R1C1  = o padrao da formula. Igual para toda celula copiada.
+          R = linha atual, C = coluna atual. R[-1] = uma linha acima.
+  A1-PT = a formula como aparece no Excel em portugues.
+  A1-EN = a mesma formula com os nomes de funcao em ingles.
+          E esta que serve para o Google Sheets e para programacao.
+
+----------------------------------------------------------------
+Ocorrencias : 996
+Primeira    : Q26
+Ultima      : K498
+R1C1        : =R[-2]C
+A1-PT       : =Q24
+A1-EN       : =Q24
+
+----------------------------------------------------------------
+Ocorrencias : 958
+Primeira    : T2
+Ultima      : U480
+R1C1        : ='Programação Teares'!R[1]C[-17]
+A1-PT       : ='Programação Teares'!C3
+A1-EN       : ='Programação Teares'!C3
+
+----------------------------------------------------------------
+Ocorrencias : 870
+Primeira    : G500
+Ultima      : M934
+R1C1        : ='Programação Teares'!R[-497]C[2]
+A1-PT       : ='Programação Teares'!I3
+A1-EN       : ='Programação Teares'!I3
+
+----------------------------------------------------------------
+Ocorrencias : 870
+Primeira    : H500
+Ultima      : P934
+R1C1        : ='Programação Teares'!R[-497]C[5]
+A1-PT       : ='Programação Teares'!M3
+A1-EN       : ='Programação Teares'!M3
+
+----------------------------------------------------------------
+Ocorrencias : 636
+Primeira    : F500
+Ultima      : F1135
+Distribuicao: linhas consecutivas de 500 a 1135
+R1C1        : =IFERROR(RC[3],0)
+A1-PT       : =SEERRO(I500;0)
+A1-EN       : =IFERROR(I500,0)
+
+----------------------------------------------------------------
+Ocorrencias : 444
+Primeira    : M45
+Ultima      : O497
+R1C1        : =IF(RC2="","",VLOOKUP(RC2,'DADOS DOS PRODUTOS'!R2C1:R2499C33,2,0))
+A1-PT       : =SE($B45="";"";PROCV($B45;'DADOS DOS PRODUTOS'!$A$2:$AG$2499;2;0))
+A1-EN       : =IF($B45="","",VLOOKUP($B45,'DADOS DOS PRODUTOS'!$A$2:$AG$2499,2,0))
+
+----------------------------------------------------------------
+Ocorrencias : 435
+Primeira    : I500
+Ultima      : I934
+Distribuicao: linhas consecutivas de 500 a 934
+R1C1        : ='Programação Teares'!R[-497]C[9]
+A1-PT       : ='Programação Teares'!R3
+A1-EN       : ='Programação Teares'!R3
+
+----------------------------------------------------------------
+Ocorrencias : 435
+Primeira    : K500
+Ultima      : K934
+Distribuicao: linhas consecutivas de 500 a 934
+R1C1        : ='Programação Teares'!R[-497]C[3]
+A1-PT       : ='Programação Teares'!N3
+A1-EN       : ='Programação Teares'!N3
+
+----------------------------------------------------------------
+Ocorrencias : 435
+Primeira    : L500
+Ultima      : L934
+Distribuicao: linhas consecutivas de 500 a 934
+R1C1        : ='Programação Teares'!R[-497]C[7]
+A1-PT       : ='Programação Teares'!S3
+A1-EN       : ='Programação Teares'!S3
+
+----------------------------------------------------------------
+Ocorrencias : 435
+Primeira    : N500
+Ultima      : N934
+Distribuicao: linhas consecutivas de 500 a 934
+R1C1        : ='Programação Teares'!R[-497]C[6]
+A1-PT       : ='Programação Teares'!T3
+A1-EN       : ='Programação Teares'!T3
+
+----------------------------------------------------------------
+Ocorrencias : 435
+Primeira    : O500
+Ultima      : O934
+Distribuicao: linhas consecutivas de 500 a 934
+R1C1        : ='Programação Teares'!R[-497]C[1]
+A1-PT       : ='Programação Teares'!P3
+A1-EN       : ='Programação Teares'!P3
+
+----------------------------------------------------------------
+Ocorrencias : 435
+Primeira    : R500
+Ultima      : R934
+Distribuicao: linhas consecutivas de 500 a 934
+R1C1        : ='Programação Teares'!R[-497]C[-7]
+A1-PT       : ='Programação Teares'!K3
+A1-EN       : ='Programação Teares'!K3
+
+----------------------------------------------------------------
+Ocorrencias : 435
+Primeira    : S500
+Ultima      : S934
+Distribuicao: linhas consecutivas de 500 a 934
+R1C1        : =R3C13
+A1-PT       : =$M$3
+A1-EN       : =$M$3
+
+----------------------------------------------------------------
+Ocorrencias : 435
+Primeira    : T500
+Ultima      : T934
+Distribuicao: linhas consecutivas de 500 a 934
+R1C1        : =R5C9
+A1-PT       : =$I$5
+A1-EN       : =$I$5
+
+----------------------------------------------------------------
+Ocorrencias : 335
+Primeira    : Q501
+Ultima      : Q850
+R1C1        : =CONCATENATE(R3C6," ",R4C6," ",R5C6," ",R6C6," ",R7C6," ",R8C6," ",R9C6," ",R10C6," ",R11C6," ",R12C6," ",R13C6," ",R14C6," ",R15C6," ",R16C6," ",R17C6," ",R18C6," ",R19C6," ",R20C6," ",R21C6," ",R12C7, " ",R4C15)
+A1-PT       : =CONCATENAR($F$3;" ";$F$4;" ";$F$5;" ";$F$6;" ";$F$7;" ";$F$8;" ";$F$9;" ";$F$10;" ";$F$11;" ";$F$12;" ";$F$13;" ";$F$14;" ";$F$15;" ";$F$16;" ";$F$17;" ";$F$18;" ";$F$19;" ";$F$20;" ";$F$21;" ";$G$12; " ";$O$4)
+A1-EN       : =CONCATENATE($F$3," ",$F$4," ",$F$5," ",$F$6," ",$F$7," ",$F$8," ",$F$9," ",$F$10," ",$F$11," ",$F$12," ",$F$13," ",$F$14," ",$F$15," ",$F$16," ",$F$17," ",$F$18," ",$F$19," ",$F$20," ",$F$21," ",$G$12, " ",$O$4)
+
+----------------------------------------------------------------
+Ocorrencias : 200
+Primeira    : H936
+Ultima      : H1135
+Distribuicao: linhas consecutivas de 936 a 1135
+R1C1        : =IFERROR(INDEX(R210C31:R2708C31, SMALL(IF(MATCH(IF(R210C31:R2708C31="","",R210C31:R2708C31), IF(R210C31:R2708C31="","",R210C31:R2708C31),0)= ROW(INDIRECT("1:"&ROWS(R210C31:R2708C31))), MATCH(IF(R210C31:R2708C31="","",R210C31:R2708C31), IF(R210C31:R2708C31="","",R210C31:R2708C31),0),""), ROW(INDIRECT("1:"&ROWS(R210C31:R2708C31))))),"")
+A1-PT       : =SEERRO(ÍNDICE($AE$210:$AE$2708; MENOR(SE(CORRESP(SE($AE$210:$AE$2708="";"";$AE$210:$AE$2708); SE($AE$210:$AE$2708="";"";$AE$210:$AE$2708);0)= LIN(INDIRETO("1:"&LINS($AE$210:$AE$2708))); CORRESP(SE($AE$210:$AE$2708="";"";$AE$210:$AE$2708); SE($AE$210:$AE$2708="";"";$AE$210:$AE$2708);0);""); LIN(INDIRETO("1:"&LINS($AE$210:$AE$2708)))));"")
+A1-EN       : =IFERROR(INDEX($AE$210:$AE$2708, SMALL(IF(MATCH(IF($AE$210:$AE$2708="","",$AE$210:$AE$2708), IF($AE$210:$AE$2708="","",$AE$210:$AE$2708),0)= ROW(INDIRECT("1:"&ROWS($AE$210:$AE$2708))), MATCH(IF($AE$210:$AE$2708="","",$AE$210:$AE$2708), IF($AE$210:$AE$2708="","",$AE$210:$AE$2708),0),""), ROW(INDIRECT("1:"&ROWS($AE$210:$AE$2708))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 200
+Primeira    : I936
+Ultima      : I1135
+Distribuicao: linhas consecutivas de 936 a 1135
+R1C1        : =SUMIFS(R210C32:R2207C32,R210C31:R2207C31,RC[-1])
+A1-PT       : =SOMASES($AF$210:$AF$2207;$AE$210:$AE$2207;H936)
+A1-EN       : =SUMIFS($AF$210:$AF$2207,$AE$210:$AE$2207,H936)
+
+----------------------------------------------------------------
+Ocorrencias : 149
+Primeira    : N24
+Ultima      : N496
+R1C1        : =IF(RC2="","",VLOOKUP(RC2,'DADOS DOS PRODUTOS'!R2C1:R9999C33,13,0))
+A1-PT       : =SE($B24="";"";PROCV($B24;'DADOS DOS PRODUTOS'!$A$2:$AG$9999;13;0))
+A1-EN       : =IF($B24="","",VLOOKUP($B24,'DADOS DOS PRODUTOS'!$A$2:$AG$9999,13,0))
+
+----------------------------------------------------------------
+Ocorrencias : 149
+Primeira    : O24
+Ultima      : O496
+R1C1        : =IF(RC2="","",VLOOKUP(RC2,'DADOS DOS PRODUTOS'!R2C1:R9999C33,14,0))
+A1-PT       : =SE($B24="";"";PROCV($B24;'DADOS DOS PRODUTOS'!$A$2:$AG$9999;14;0))
+A1-EN       : =IF($B24="","",VLOOKUP($B24,'DADOS DOS PRODUTOS'!$A$2:$AG$9999,14,0))
+
+----------------------------------------------------------------
+Ocorrencias : 149
+Primeira    : M24
+Ultima      : M496
+R1C1        : =IF(RC2="","",VLOOKUP(RC2,'DADOS DOS PRODUTOS'!R2C1:R9999C33,12,0))
+A1-PT       : =SE($B24="";"";PROCV($B24;'DADOS DOS PRODUTOS'!$A$2:$AG$9999;12;0))
+A1-EN       : =IF($B24="","",VLOOKUP($B24,'DADOS DOS PRODUTOS'!$A$2:$AG$9999,12,0))
+
+----------------------------------------------------------------
+Ocorrencias : 100
+Primeira    : F24
+Ultima      : F496
+R1C1        : =IF(RC2="","",VLOOKUP(RC2,'DADOS DOS PRODUTOS'!R2C1:R9999C33,2,0))
+A1-PT       : =SE($B24="";"";PROCV($B24;'DADOS DOS PRODUTOS'!$A$2:$AG$9999;2;0))
+A1-EN       : =IF($B24="","",VLOOKUP($B24,'DADOS DOS PRODUTOS'!$A$2:$AG$9999,2,0))
+
+----------------------------------------------------------------
+Ocorrencias : 100
+Primeira    : F25
+Ultima      : F497
+R1C1        : =IF(R[-1]C2="","",VLOOKUP(R[-1]C2,'DADOS DOS PRODUTOS'!R2C1:R9999C33,3,0))
+A1-PT       : =SE($B24="";"";PROCV($B24;'DADOS DOS PRODUTOS'!$A$2:$AG$9999;3;0))
+A1-EN       : =IF($B24="","",VLOOKUP($B24,'DADOS DOS PRODUTOS'!$A$2:$AG$9999,3,0))
+
+----------------------------------------------------------------
+Ocorrencias : 100
+Primeira    : F26
+Ultima      : F498
+R1C1        : =IF(R[-2]C2="","",VLOOKUP(R[-2]C2,'DADOS DOS PRODUTOS'!R2C1:R9999C33,4,0))
+A1-PT       : =SE($B24="";"";PROCV($B24;'DADOS DOS PRODUTOS'!$A$2:$AG$9999;4;0))
+A1-EN       : =IF($B24="","",VLOOKUP($B24,'DADOS DOS PRODUTOS'!$A$2:$AG$9999,4,0))
+
+----------------------------------------------------------------
+Ocorrencias : 100
+Primeira    : F27
+Ultima      : F499
+R1C1        : =IF(R[-3]C2="","",VLOOKUP(R[-3]C2,'DADOS DOS PRODUTOS'!R2C1:R9999C33,5,0))
+A1-PT       : =SE($B24="";"";PROCV($B24;'DADOS DOS PRODUTOS'!$A$2:$AG$9999;5;0))
+A1-EN       : =IF($B24="","",VLOOKUP($B24,'DADOS DOS PRODUTOS'!$A$2:$AG$9999,5,0))
+
+----------------------------------------------------------------
+Ocorrencias : 100
+Primeira    : E24
+Ultima      : E496
+R1C1        : =RC[-3]
+A1-PT       : =B24
+A1-EN       : =B24
+
+----------------------------------------------------------------
+Ocorrencias : 100
+Primeira    : AE210
+Ultima      : AF259
+R1C1        : =IFERROR(R[290]C[-23],"")
+A1-PT       : =SEERRO(H500;"")
+A1-EN       : =IFERROR(H500,"")
+
+----------------------------------------------------------------
+Ocorrencias : 100
+Primeira    : AE260
+Ultima      : AF309
+R1C1        : =IFERROR(R[240]C[-20],"")
+A1-PT       : =SEERRO(K500;"")
+A1-EN       : =IFERROR(K500,"")
+
+----------------------------------------------------------------
+Ocorrencias : 100
+Primeira    : AE310
+Ultima      : AF359
+R1C1        : =IFERROR(R[190]C[-18],"")
+A1-PT       : =SEERRO(M500;"")
+A1-EN       : =IFERROR(M500,"")
+
+----------------------------------------------------------------
+Ocorrencias : 100
+Primeira    : AE360
+Ultima      : AF409
+R1C1        : =IFERROR(R[140]C[-16],"")
+A1-PT       : =SEERRO(O500;"")
+A1-EN       : =IFERROR(O500,"")
+
+----------------------------------------------------------------
+Ocorrencias : 50
+Primeira    : K24
+Ultima      : K492
+R1C1        : =IF(R[2]C[-9]>1500,1500,IF(R[2]C[-9]<1500,R[2]C[-9],R[2]C[-9]))
+A1-PT       : =SE(B26>1500;1500;SE(B26<1500;B26;B26))
+A1-EN       : =IF(B26>1500,1500,IF(B26<1500,B26,B26))
+
+----------------------------------------------------------------
+Ocorrencias : 50
+Primeira    : B25
+Ultima      : B493
+R1C1        : =IF(R[-1]C[12]=R1C2,R[-1]C[1]/R4C3,R[-1]C[1]/R3C3)
+A1-PT       : =SE(N24=$B$1;C24/$C$4;C24/$C$3)
+A1-EN       : =IF(N24=$B$1,C24/$C$4,C24/$C$3)
+
+----------------------------------------------------------------
+Ocorrencias : 50
+Primeira    : P24
+Ultima      : P492
+R1C1        : =RC[-13]
+A1-PT       : =C24
+A1-EN       : =C24
+
+----------------------------------------------------------------
+Ocorrencias : 50
+Primeira    : G24
+Ultima      : G492
+R1C1        : =IF(RC[1]<1500,1,RC[10])
+A1-PT       : =SE(H24<1500;1;Q24)
+A1-EN       : =IF(H24<1500,1,Q24)
+
+----------------------------------------------------------------
+Ocorrencias : 50
+Primeira    : H24
+Ultima      : H492
+R1C1        : =IF(R[1]C[-6]>1500,1500,IF(R[1]C[-6]<1500,R[1]C[-6],R[1]C[-6]))
+A1-PT       : =SE(B25>1500;1500;SE(B25<1500;B25;B25))
+A1-EN       : =IF(B25>1500,1500,IF(B25<1500,B25,B25))
+
+----------------------------------------------------------------
+Ocorrencias : 50
+Primeira    : J24
+Ultima      : J492
+R1C1        : =IF(RC[1]<1500,1,RC[8])
+A1-PT       : =SE(K24<1500;1;R24)
+A1-EN       : =IF(K24<1500,1,R24)
+
+----------------------------------------------------------------
+Ocorrencias : 49
+Primeira    : B26
+Ultima      : B494
+R1C1        : =IF(R[-2]C[12]=R1C2,R[-2]C[1]/R4C4,R[-2]C[1]/R3C4)
+A1-PT       : =SE(N24=$B$1;C24/$D$4;C24/$D$3)
+A1-EN       : =IF(N24=$B$1,C24/$D$4,C24/$D$3)
+
+----------------------------------------------------------------
+Ocorrencias : 43
+Primeira    : B148
+Ultima      : B496
+R1C1        : =IF(RC[6]>0,R[-4]C," ")
+A1-PT       : =SE(H148>0;B144;" ")
+A1-EN       : =IF(H148>0,B144," ")
+
+----------------------------------------------------------------
+Ocorrencias : 36
+Primeira    : G32
+Ultima      : J142
+R1C1        : =R[-8]C
+A1-PT       : =G24
+A1-EN       : =G24
+
+----------------------------------------------------------------
+Ocorrencias : 36
+Primeira    : Q28
+Ultima      : J138
+R1C1        : =R[-4]C
+A1-PT       : =Q24
+A1-EN       : =Q24
+
+----------------------------------------------------------------
+Ocorrencias : 36
+Primeira    : Q30
+Ultima      : J140
+R1C1        : =R[-6]C
+A1-PT       : =Q24
+A1-EN       : =Q24
+
+----------------------------------------------------------------
+Ocorrencias : 32
+Primeira    : H248
+Ultima      : H496
+Distribuicao: uma a cada 8 linhas, de 248 a 496
+R1C1        : =SMALL('Planejamento tear'!R[-175]C[-5]:R[-175]C[1380],COUNTIF('Planejamento tear'!R[-175]C[-5]:R[-175]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C73:BAJ73;CONT.SE('Planejamento tear'!C73:BAJ73;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C73:BAJ73,COUNTIF('Planejamento tear'!C73:BAJ73,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 32
+Primeira    : K248
+Ultima      : K496
+Distribuicao: uma a cada 8 linhas, de 248 a 496
+R1C1        : =SMALL('Planejamento tear'!R[-174]C[-8]:R[-174]C[1377],COUNTIF('Planejamento tear'!R[-174]C[-8]:R[-174]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C74:BAJ74;CONT.SE('Planejamento tear'!C74:BAJ74;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C74:BAJ74,COUNTIF('Planejamento tear'!C74:BAJ74,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 32
+Primeira    : Q244
+Ultima      : Q492
+Distribuicao: uma a cada 8 linhas, de 244 a 492
+R1C1        : =COUNTIF('Planejamento tear'!R[-171]C[-14]:R[-171]C[1371],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C73:BAJ73;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C73:BAJ73,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 32
+Primeira    : R244
+Ultima      : R492
+Distribuicao: uma a cada 8 linhas, de 244 a 492
+R1C1        : =COUNTIF('Planejamento tear'!R[-170]C[-15]:R[-170]C[1370],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C74:BAJ74;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C74:BAJ74,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 19
+Primeira    : L3
+Ultima      : L21
+Distribuicao: linhas consecutivas de 3 a 21
+R1C1        : =PEDIDOS!R[20]C[5]
+A1-PT       : =PEDIDOS!Q23
+A1-EN       : =PEDIDOS!Q23
+
+----------------------------------------------------------------
+Ocorrencias : 19
+Primeira    : R3
+Ultima      : R21
+Distribuicao: linhas consecutivas de 3 a 21
+R1C1        : =IFERROR(INDEX(R2C21:R479C21, SMALL(IF(MATCH(IF(R2C21:R479C21="","",R2C21:R479C21), IF(R2C21:R479C21="","",R2C21:R479C21),0)= ROW(INDIRECT("1:"&ROWS(R2C21:R479C21))), MATCH(IF(R2C21:R479C21="","",R2C21:R479C21), IF(R2C21:R479C21="","",R2C21:R479C21),0),""), ROW(INDIRECT("1:"&ROWS(R2C21:R479C21))))),"")
+A1-PT       : =SEERRO(ÍNDICE($U$2:$U$479; MENOR(SE(CORRESP(SE($U$2:$U$479="";"";$U$2:$U$479); SE($U$2:$U$479="";"";$U$2:$U$479);0)= LIN(INDIRETO("1:"&LINS($U$2:$U$479))); CORRESP(SE($U$2:$U$479="";"";$U$2:$U$479); SE($U$2:$U$479="";"";$U$2:$U$479);0);""); LIN(INDIRETO("1:"&LINS($U$2:$U$479)))));"")
+A1-EN       : =IFERROR(INDEX($U$2:$U$479, SMALL(IF(MATCH(IF($U$2:$U$479="","",$U$2:$U$479), IF($U$2:$U$479="","",$U$2:$U$479),0)= ROW(INDIRECT("1:"&ROWS($U$2:$U$479))), MATCH(IF($U$2:$U$479="","",$U$2:$U$479), IF($U$2:$U$479="","",$U$2:$U$479),0),""), ROW(INDIRECT("1:"&ROWS($U$2:$U$479))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 19
+Primeira    : F3
+Ultima      : F21
+Distribuicao: linhas consecutivas de 3 a 21
+R1C1        : =PEDIDOS!R[1]C[11]
+A1-PT       : =PEDIDOS!Q4
+A1-EN       : =PEDIDOS!Q4
+
+----------------------------------------------------------------
+Ocorrencias : 16
+Primeira    : Q500
+Ultima      : Q516
+R1C1        : =CONCATENATE(R3C6," ",R4C6," ",R5C6," ",R6C6," ",R7C6," ",R8C6," ",R9C6," ",R10C6," ",R11C6," ",R12C6," ",R13C6," ",R14C6," ",R15C6," ",R16C6," ",R17C6," ",R18C6," ",R19C6," ",R20C6," ",R21C6," ",R7C7, " ",R4C15)
+A1-PT       : =CONCATENAR($F$3;" ";$F$4;" ";$F$5;" ";$F$6;" ";$F$7;" ";$F$8;" ";$F$9;" ";$F$10;" ";$F$11;" ";$F$12;" ";$F$13;" ";$F$14;" ";$F$15;" ";$F$16;" ";$F$17;" ";$F$18;" ";$F$19;" ";$F$20;" ";$F$21;" ";$G$7; " ";$O$4)
+A1-EN       : =CONCATENATE($F$3," ",$F$4," ",$F$5," ",$F$6," ",$F$7," ",$F$8," ",$F$9," ",$F$10," ",$F$11," ",$F$12," ",$F$13," ",$F$14," ",$F$15," ",$F$16," ",$F$17," ",$F$18," ",$F$19," ",$F$20," ",$F$21," ",$G$7, " ",$O$4)
+
+----------------------------------------------------------------
+Ocorrencias : 14
+Primeira    : F29
+Ultima      : F243
+R1C1        : =IF(R[-5]C2="","",VLOOKUP(R[-5]C2,'DADOS DOS PRODUTOS'!R2C1:R9999C33,7,0))
+A1-PT       : =SE($B24="";"";PROCV($B24;'DADOS DOS PRODUTOS'!$A$2:$AG$9999;7;0))
+A1-EN       : =IF($B24="","",VLOOKUP($B24,'DADOS DOS PRODUTOS'!$A$2:$AG$9999,7,0))
+
+----------------------------------------------------------------
+Ocorrencias : 14
+Primeira    : F28
+Ultima      : F242
+R1C1        : =IF(R[-4]C2="","",VLOOKUP(R[-4]C2,'DADOS DOS PRODUTOS'!R2C1:R9999C33,6,0))
+A1-PT       : =SE($B24="";"";PROCV($B24;'DADOS DOS PRODUTOS'!$A$2:$AG$9999;6;0))
+A1-EN       : =IF($B24="","",VLOOKUP($B24,'DADOS DOS PRODUTOS'!$A$2:$AG$9999,6,0))
+
+----------------------------------------------------------------
+Ocorrencias : 12
+Primeira    : F33
+Ultima      : F143
+Distribuicao: uma a cada 10 linhas, de 33 a 143
+R1C1        : =IF(R[-9]C2="","",VLOOKUP(R[-9]C2,'DADOS DOS PRODUTOS'!R2C1:R9999C33,11,0))
+A1-PT       : =SE($B24="";"";PROCV($B24;'DADOS DOS PRODUTOS'!$A$2:$AG$9999;11;0))
+A1-EN       : =IF($B24="","",VLOOKUP($B24,'DADOS DOS PRODUTOS'!$A$2:$AG$9999,11,0))
+
+----------------------------------------------------------------
+Ocorrencias : 12
+Primeira    : F30
+Ultima      : F140
+Distribuicao: uma a cada 10 linhas, de 30 a 140
+R1C1        : =IF(R[-6]C2="","",VLOOKUP(R[-6]C2,'DADOS DOS PRODUTOS'!R2C1:R9999C33,8,0))
+A1-PT       : =SE($B24="";"";PROCV($B24;'DADOS DOS PRODUTOS'!$A$2:$AG$9999;8;0))
+A1-EN       : =IF($B24="","",VLOOKUP($B24,'DADOS DOS PRODUTOS'!$A$2:$AG$9999,8,0))
+
+----------------------------------------------------------------
+Ocorrencias : 12
+Primeira    : F31
+Ultima      : F141
+Distribuicao: uma a cada 10 linhas, de 31 a 141
+R1C1        : =IF(R[-7]C2="","",VLOOKUP(R[-7]C2,'DADOS DOS PRODUTOS'!R2C1:R9999C33,9,0))
+A1-PT       : =SE($B24="";"";PROCV($B24;'DADOS DOS PRODUTOS'!$A$2:$AG$9999;9;0))
+A1-EN       : =IF($B24="","",VLOOKUP($B24,'DADOS DOS PRODUTOS'!$A$2:$AG$9999,9,0))
+
+----------------------------------------------------------------
+Ocorrencias : 12
+Primeira    : F32
+Ultima      : F142
+Distribuicao: uma a cada 10 linhas, de 32 a 142
+R1C1        : =IF(R[-8]C2="","",VLOOKUP(R[-8]C2,'DADOS DOS PRODUTOS'!R2C1:R9999C33,10,0))
+A1-PT       : =SE($B24="";"";PROCV($B24;'DADOS DOS PRODUTOS'!$A$2:$AG$9999;10;0))
+A1-EN       : =IF($B24="","",VLOOKUP($B24,'DADOS DOS PRODUTOS'!$A$2:$AG$9999,10,0))
+
+----------------------------------------------------------------
+Ocorrencias : 6
+Primeira    : B34
+Ultima      : B134
+Distribuicao: uma a cada 20 linhas, de 34 a 134
+R1C1        : =IF(RC[6]>0,R[-10]C," ")
+A1-PT       : =SE(H34>0;B24;" ")
+A1-EN       : =IF(H34>0,B24," ")
+
+----------------------------------------------------------------
+Ocorrencias : 6
+Primeira    : Q192
+Ultima      : Q232
+Distribuicao: uma a cada 8 linhas, de 192 a 232
+R1C1        : =COUNTIF('Planejamento tear'!R[-167]C[-14]:R[-167]C[1371],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C25:BAJ25;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C25:BAJ25,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 6
+Primeira    : R192
+Ultima      : R232
+Distribuicao: uma a cada 8 linhas, de 192 a 232
+R1C1        : =COUNTIF('Planejamento tear'!R[-166]C[-15]:R[-166]C[1370],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C26:BAJ26;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C26:BAJ26,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 5
+Primeira    : K196
+Ultima      : K228
+Distribuicao: uma a cada 8 linhas, de 196 a 228
+R1C1        : =SMALL('Planejamento tear'!R[-170]C[-8]:R[-170]C[1377],COUNTIF('Planejamento tear'!R[-170]C[-8]:R[-170]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C26:BAJ26;CONT.SE('Planejamento tear'!C26:BAJ26;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C26:BAJ26,COUNTIF('Planejamento tear'!C26:BAJ26,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 5
+Primeira    : H196
+Ultima      : H228
+Distribuicao: uma a cada 8 linhas, de 196 a 228
+R1C1        : =SMALL('Planejamento tear'!R[-171]C[-5]:R[-171]C[1380],COUNTIF('Planejamento tear'!R[-171]C[-5]:R[-171]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C25:BAJ25;CONT.SE('Planejamento tear'!C25:BAJ25;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C25:BAJ25,COUNTIF('Planejamento tear'!C25:BAJ25,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B226
+Ultima      : B382
+R1C1        : =IF(R[-2]C[12]=R1C2,R[-2]C[1]*R4C4,R[-2]C[1]*R3C4)
+A1-PT       : =SE(N224=$B$1;C224*$D$4;C224*$D$3)
+A1-EN       : =IF(N224=$B$1,C224*$D$4,C224*$D$3)
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : H935
+Ultima      : I935
+R1C1        : ='CONSUMO DIÁRIO'!R[-933]C[-4]
+A1-PT       : ='CONSUMO DIÁRIO'!D2
+A1-EN       : ='CONSUMO DIÁRIO'!D2
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : Q124
+Ultima      : Q124
+R1C1        : =COUNTIF('Planejamento tear'!R[-113]C[-14]:R[-113]C[1371],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C11:BAJ11;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C11:BAJ11,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : R124
+Ultima      : R124
+R1C1        : =COUNTIF('Planejamento tear'!R[-112]C[-15]:R[-112]C[1370],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C12:BAJ12;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C12:BAJ12,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B124
+Ultima      : B124
+R1C1        : ='Programação Teares'!R[-116]C[7]
+A1-PT       : ='Programação Teares'!I8
+A1-EN       : ='Programação Teares'!I8
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H134
+Ultima      : H134
+R1C1        : =SMALL('Planejamento tear'!R[-123]C[-5]:R[-123]C[1380],COUNTIF('Planejamento tear'!R[-123]C[-5]:R[-123]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C11:BAJ11;CONT.SE('Planejamento tear'!C11:BAJ11;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C11:BAJ11,COUNTIF('Planejamento tear'!C11:BAJ11,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K134
+Ultima      : K134
+R1C1        : =SMALL('Planejamento tear'!R[-122]C[-8]:R[-122]C[1377],COUNTIF('Planejamento tear'!R[-122]C[-8]:R[-122]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C12:BAJ12;CONT.SE('Planejamento tear'!C12:BAJ12;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C12:BAJ12,COUNTIF('Planejamento tear'!C12:BAJ12,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C144
+Ultima      : C144
+R1C1        : ='Programação Teares'!R[-135]C[8]
+A1-PT       : ='Programação Teares'!K9
+A1-EN       : ='Programação Teares'!K9
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : Q144
+Ultima      : Q144
+R1C1        : =COUNTIF('Planejamento tear'!R[-131]C[-14]:R[-131]C[1371],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C13:BAJ13;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C13:BAJ13,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : R144
+Ultima      : R144
+R1C1        : =COUNTIF('Planejamento tear'!R[-130]C[-15]:R[-130]C[1370],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C14:BAJ14;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C14:BAJ14,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B144
+Ultima      : B144
+R1C1        : ='Programação Teares'!R[-135]C[7]
+A1-PT       : ='Programação Teares'!I9
+A1-EN       : ='Programação Teares'!I9
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B24
+Ultima      : B24
+R1C1        : ='Programação Teares'!Extract
+A1-PT       : ='Programação Teares'!Area_de_extracao
+A1-EN       : ='Programação Teares'!Extract
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H148
+Ultima      : H148
+R1C1        : =SMALL('Planejamento tear'!R[-135]C[-5]:R[-135]C[1380],COUNTIF('Planejamento tear'!R[-135]C[-5]:R[-135]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C13:BAJ13;CONT.SE('Planejamento tear'!C13:BAJ13;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C13:BAJ13,COUNTIF('Planejamento tear'!C13:BAJ13,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K148
+Ultima      : K148
+R1C1        : =SMALL('Planejamento tear'!R[-134]C[-8]:R[-134]C[1377],COUNTIF('Planejamento tear'!R[-134]C[-8]:R[-134]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C14:BAJ14;CONT.SE('Planejamento tear'!C14:BAJ14;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C14:BAJ14,COUNTIF('Planejamento tear'!C14:BAJ14,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C152
+Ultima      : C152
+R1C1        : ='Programação Teares'!R[-142]C[8]
+A1-PT       : ='Programação Teares'!K10
+A1-EN       : ='Programação Teares'!K10
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : Q152
+Ultima      : Q152
+R1C1        : =COUNTIF('Planejamento tear'!R[-137]C[-14]:R[-137]C[1371],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C15:BAJ15;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C15:BAJ15,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : R152
+Ultima      : R152
+R1C1        : =COUNTIF('Planejamento tear'!R[-136]C[-15]:R[-136]C[1370],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C16:BAJ16;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C16:BAJ16,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B152
+Ultima      : B152
+R1C1        : ='Programação Teares'!R[-142]C[7]
+A1-PT       : ='Programação Teares'!I10
+A1-EN       : ='Programação Teares'!I10
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H156
+Ultima      : H156
+R1C1        : =SMALL('Planejamento tear'!R[-141]C[-5]:R[-141]C[1380],COUNTIF('Planejamento tear'!R[-141]C[-5]:R[-141]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C15:BAJ15;CONT.SE('Planejamento tear'!C15:BAJ15;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C15:BAJ15,COUNTIF('Planejamento tear'!C15:BAJ15,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K156
+Ultima      : K156
+R1C1        : =SMALL('Planejamento tear'!R[-140]C[-8]:R[-140]C[1377],COUNTIF('Planejamento tear'!R[-140]C[-8]:R[-140]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C16:BAJ16;CONT.SE('Planejamento tear'!C16:BAJ16;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C16:BAJ16,COUNTIF('Planejamento tear'!C16:BAJ16,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C160
+Ultima      : C160
+R1C1        : ='Programação Teares'!R[-149]C[8]
+A1-PT       : ='Programação Teares'!K11
+A1-EN       : ='Programação Teares'!K11
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : Q160
+Ultima      : Q160
+R1C1        : =COUNTIF('Planejamento tear'!R[-143]C[-14]:R[-143]C[1371],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C17:BAJ17;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C17:BAJ17,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : R160
+Ultima      : R160
+R1C1        : =COUNTIF('Planejamento tear'!R[-142]C[-15]:R[-142]C[1370],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C18:BAJ18;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C18:BAJ18,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B160
+Ultima      : B160
+R1C1        : ='Programação Teares'!R[-149]C[7]
+A1-PT       : ='Programação Teares'!I11
+A1-EN       : ='Programação Teares'!I11
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H164
+Ultima      : H164
+R1C1        : =SMALL('Planejamento tear'!R[-147]C[-5]:R[-147]C[1380],COUNTIF('Planejamento tear'!R[-147]C[-5]:R[-147]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C17:BAJ17;CONT.SE('Planejamento tear'!C17:BAJ17;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C17:BAJ17,COUNTIF('Planejamento tear'!C17:BAJ17,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K164
+Ultima      : K164
+R1C1        : =SMALL('Planejamento tear'!R[-146]C[-8]:R[-146]C[1377],COUNTIF('Planejamento tear'!R[-146]C[-8]:R[-146]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C18:BAJ18;CONT.SE('Planejamento tear'!C18:BAJ18;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C18:BAJ18,COUNTIF('Planejamento tear'!C18:BAJ18,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C168
+Ultima      : C168
+R1C1        : ='Programação Teares'!R[-156]C[8]
+A1-PT       : ='Programação Teares'!K12
+A1-EN       : ='Programação Teares'!K12
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : Q168
+Ultima      : Q168
+R1C1        : =COUNTIF('Planejamento tear'!R[-149]C[-14]:R[-149]C[27],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C19:AR19;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C19:AR19,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : R168
+Ultima      : R168
+R1C1        : =COUNTIF('Planejamento tear'!R[-148]C[-15]:R[-148]C[26],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C20:AR20;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C20:AR20,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B168
+Ultima      : B168
+R1C1        : ='Programação Teares'!R[-156]C[7]
+A1-PT       : ='Programação Teares'!I12
+A1-EN       : ='Programação Teares'!I12
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H172
+Ultima      : H172
+R1C1        : =SMALL('Planejamento tear'!R[-153]C[-5]:R[-153]C[1380],COUNTIF('Planejamento tear'!R[-153]C[-5]:R[-153]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C19:BAJ19;CONT.SE('Planejamento tear'!C19:BAJ19;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C19:BAJ19,COUNTIF('Planejamento tear'!C19:BAJ19,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K172
+Ultima      : K172
+R1C1        : =SMALL('Planejamento tear'!R[-152]C[-8]:R[-152]C[1377],COUNTIF('Planejamento tear'!R[-152]C[-8]:R[-152]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C20:BAJ20;CONT.SE('Planejamento tear'!C20:BAJ20;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C20:BAJ20,COUNTIF('Planejamento tear'!C20:BAJ20,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C176
+Ultima      : C176
+R1C1        : ='Programação Teares'!R[-163]C[8]
+A1-PT       : ='Programação Teares'!K13
+A1-EN       : ='Programação Teares'!K13
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : Q176
+Ultima      : Q176
+R1C1        : =COUNTIF('Planejamento tear'!R[-155]C[-14]:R[-155]C[1371],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C21:BAJ21;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C21:BAJ21,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : R176
+Ultima      : R176
+R1C1        : =COUNTIF('Planejamento tear'!R[-154]C[-15]:R[-154]C[1370],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C22:BAJ22;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C22:BAJ22,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B176
+Ultima      : B176
+R1C1        : ='Programação Teares'!R[-163]C[7]
+A1-PT       : ='Programação Teares'!I13
+A1-EN       : ='Programação Teares'!I13
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H180
+Ultima      : H180
+R1C1        : =SMALL('Planejamento tear'!R[-159]C[-5]:R[-159]C[1380],COUNTIF('Planejamento tear'!R[-159]C[-5]:R[-159]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C21:BAJ21;CONT.SE('Planejamento tear'!C21:BAJ21;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C21:BAJ21,COUNTIF('Planejamento tear'!C21:BAJ21,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K180
+Ultima      : K180
+R1C1        : =SMALL('Planejamento tear'!R[-158]C[-8]:R[-158]C[1377],COUNTIF('Planejamento tear'!R[-158]C[-8]:R[-158]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C22:BAJ22;CONT.SE('Planejamento tear'!C22:BAJ22;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C22:BAJ22,COUNTIF('Planejamento tear'!C22:BAJ22,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C184
+Ultima      : C184
+R1C1        : ='Programação Teares'!R[-170]C[8]
+A1-PT       : ='Programação Teares'!K14
+A1-EN       : ='Programação Teares'!K14
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : Q184
+Ultima      : Q184
+R1C1        : =COUNTIF('Planejamento tear'!R[-161]C[-14]:R[-161]C[1371],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C23:BAJ23;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C23:BAJ23,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : R184
+Ultima      : R184
+R1C1        : =COUNTIF('Planejamento tear'!R[-160]C[-15]:R[-160]C[1370],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C24:BAJ24;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C24:BAJ24,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B184
+Ultima      : B184
+R1C1        : ='Programação Teares'!R[-170]C[7]
+A1-PT       : ='Programação Teares'!I14
+A1-EN       : ='Programação Teares'!I14
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H188
+Ultima      : H188
+R1C1        : =SMALL('Planejamento tear'!R[-165]C[-5]:R[-165]C[1380],COUNTIF('Planejamento tear'!R[-165]C[-5]:R[-165]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C23:BAJ23;CONT.SE('Planejamento tear'!C23:BAJ23;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C23:BAJ23,COUNTIF('Planejamento tear'!C23:BAJ23,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K188
+Ultima      : K188
+R1C1        : =SMALL('Planejamento tear'!R[-164]C[-8]:R[-164]C[1377],COUNTIF('Planejamento tear'!R[-164]C[-8]:R[-164]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C24:BAJ24;CONT.SE('Planejamento tear'!C24:BAJ24;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C24:BAJ24,COUNTIF('Planejamento tear'!C24:BAJ24,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C192
+Ultima      : C192
+R1C1        : ='Programação Teares'!R[-177]C[8]
+A1-PT       : ='Programação Teares'!K15
+A1-EN       : ='Programação Teares'!K15
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : M16
+Ultima      : M16
+R1C1        : =SUMIF(R[8]C[3]:R[483]C[3],">0")
+A1-PT       : =SOMASE(P24:P499;">0")
+A1-EN       : =SUMIF(P24:P499,">0")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : G2
+Ultima      : G2
+R1C1        : =PEDIDOS!RC[-4]
+A1-PT       : =PEDIDOS!C2
+A1-EN       : =PEDIDOS!C2
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B192
+Ultima      : B192
+R1C1        : ='Programação Teares'!R[-177]C[7]
+A1-PT       : ='Programação Teares'!I15
+A1-EN       : ='Programação Teares'!I15
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : M3
+Ultima      : M3
+R1C1        : =IF(PEDIDOS!R[1]C[-9]=0,TODAY(),PEDIDOS!R[1]C[-9])
+A1-PT       : =SE(PEDIDOS!D4=0;HOJE();PEDIDOS!D4)
+A1-EN       : =IF(PEDIDOS!D4=0,TODAY(),PEDIDOS!D4)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : N3
+Ultima      : N3
+R1C1        : =TODAY()
+A1-PT       : =HOJE()
+A1-EN       : =TODAY()
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C200
+Ultima      : C200
+R1C1        : ='Programação Teares'!R[-184]C[8]
+A1-PT       : ='Programação Teares'!K16
+A1-EN       : ='Programação Teares'!K16
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B200
+Ultima      : B200
+R1C1        : ='Programação Teares'!R[-184]C[7]
+A1-PT       : ='Programação Teares'!I16
+A1-EN       : ='Programação Teares'!I16
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C208
+Ultima      : C208
+R1C1        : ='Programação Teares'!R[-191]C[8]
+A1-PT       : ='Programação Teares'!K17
+A1-EN       : ='Programação Teares'!K17
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B208
+Ultima      : B208
+R1C1        : ='Programação Teares'!R[-191]C[7]
+A1-PT       : ='Programação Teares'!I17
+A1-EN       : ='Programação Teares'!I17
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C24
+Ultima      : C24
+R1C1        : ='Programação Teares'!R[-21]C[8]
+A1-PT       : ='Programação Teares'!K3
+A1-EN       : ='Programação Teares'!K3
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : O2
+Ultima      : O2
+R1C1        : =PEDIDOS!RC
+A1-PT       : =PEDIDOS!O2
+A1-EN       : =PEDIDOS!O2
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : O4
+Ultima      : O4
+R1C1        : =PEDIDOS!R[-2]C[1]
+A1-PT       : =PEDIDOS!P2
+A1-EN       : =PEDIDOS!P2
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : I5
+Ultima      : I5
+R1C1        : =IF(PEDIDOS!R[-1]C[-4]=0,TODAY(),PEDIDOS!R[-1]C[-4])
+A1-PT       : =SE(PEDIDOS!E4=0;HOJE();PEDIDOS!E4)
+A1-EN       : =IF(PEDIDOS!E4=0,TODAY(),PEDIDOS!E4)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C216
+Ultima      : C216
+R1C1        : ='Programação Teares'!R[-198]C[8]
+A1-PT       : ='Programação Teares'!K18
+A1-EN       : ='Programação Teares'!K18
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B216
+Ultima      : B216
+R1C1        : ='Programação Teares'!R[-198]C[7]
+A1-PT       : ='Programação Teares'!I18
+A1-EN       : ='Programação Teares'!I18
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C224
+Ultima      : C224
+R1C1        : ='Programação Teares'!R[-205]C[8]
+A1-PT       : ='Programação Teares'!K19
+A1-EN       : ='Programação Teares'!K19
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B224
+Ultima      : B224
+R1C1        : ='Programação Teares'!R[-205]C[7]
+A1-PT       : ='Programação Teares'!I19
+A1-EN       : ='Programação Teares'!I19
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : E7
+Ultima      : E7
+R1C1        : =IF(PEDIDOS!R[-6]C[7]="2","PAQUETA OK PEÇAS", "PEDIDO EM PARES")
+A1-PT       : =SE(PEDIDOS!L1="2";"PAQUETA OK PEÇAS"; "PEDIDO EM PARES")
+A1-EN       : =IF(PEDIDOS!L1="2","PAQUETA OK PEÇAS", "PEDIDO EM PARES")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C232
+Ultima      : C232
+R1C1        : ='Programação Teares'!R[-212]C[8]
+A1-PT       : ='Programação Teares'!K20
+A1-EN       : ='Programação Teares'!K20
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B232
+Ultima      : B232
+R1C1        : ='Programação Teares'!R[-212]C[7]
+A1-PT       : ='Programação Teares'!I20
+A1-EN       : ='Programação Teares'!I20
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B238
+Ultima      : B238
+R1C1        : =IF(RC[6]>0,R[-6]C," ")
+A1-PT       : =SE(H238>0;B232;" ")
+A1-EN       : =IF(H238>0,B232," ")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H238
+Ultima      : H238
+R1C1        : =SMALL('Planejamento tear'!R[-173]C[-5]:R[-173]C[1380],COUNTIF('Planejamento tear'!R[-173]C[-5]:R[-173]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C65:BAJ65;CONT.SE('Planejamento tear'!C65:BAJ65;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C65:BAJ65,COUNTIF('Planejamento tear'!C65:BAJ65,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K238
+Ultima      : K238
+R1C1        : =SMALL('Planejamento tear'!R[-172]C[-8]:R[-172]C[1377],COUNTIF('Planejamento tear'!R[-172]C[-8]:R[-172]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C66:BAJ66;CONT.SE('Planejamento tear'!C66:BAJ66;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C66:BAJ66,COUNTIF('Planejamento tear'!C66:BAJ66,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C244
+Ultima      : C244
+R1C1        : ='Programação Teares'!R[-223]C[8]
+A1-PT       : ='Programação Teares'!K21
+A1-EN       : ='Programação Teares'!K21
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : M7
+Ultima      : M7
+R1C1        : =R[-2]C[-4]-R[-4]C[1]
+A1-PT       : =I5-N3
+A1-EN       : =I5-N3
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : Q24
+Ultima      : Q24
+R1C1        : =COUNTIF('Planejamento tear'!R[-23]C[-14]:R[-23]C[1371],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C1:BAJ1;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C1:BAJ1,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B244
+Ultima      : B244
+R1C1        : ='Programação Teares'!R[-223]C[7]
+A1-PT       : ='Programação Teares'!I21
+A1-EN       : ='Programação Teares'!I21
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H34
+Ultima      : H34
+R1C1        : =SMALL('Planejamento tear'!R[-33]C[-5]:R[-33]C[1380],COUNTIF('Planejamento tear'!R[-33]C[-5]:R[-33]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C1:BAJ1;CONT.SE('Planejamento tear'!C1:BAJ1;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C1:BAJ1,COUNTIF('Planejamento tear'!C1:BAJ1,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K34
+Ultima      : K34
+R1C1        : =SMALL('Planejamento tear'!R[-32]C[-8]:R[-32]C[1377],COUNTIF('Planejamento tear'!R[-32]C[-8]:R[-32]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C2:BAJ2;CONT.SE('Planejamento tear'!C2:BAJ2;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C2:BAJ2,COUNTIF('Planejamento tear'!C2:BAJ2,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C252
+Ultima      : C252
+R1C1        : ='Programação Teares'!R[-230]C[8]
+A1-PT       : ='Programação Teares'!K22
+A1-EN       : ='Programação Teares'!K22
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B252
+Ultima      : B252
+R1C1        : ='Programação Teares'!R[-230]C[7]
+A1-PT       : ='Programação Teares'!I22
+A1-EN       : ='Programação Teares'!I22
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C260
+Ultima      : C260
+R1C1        : ='Programação Teares'!R[-237]C[8]
+A1-PT       : ='Programação Teares'!K23
+A1-EN       : ='Programação Teares'!K23
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B260
+Ultima      : B260
+R1C1        : ='Programação Teares'!R[-237]C[7]
+A1-PT       : ='Programação Teares'!I23
+A1-EN       : ='Programação Teares'!I23
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C268
+Ultima      : C268
+R1C1        : ='Programação Teares'!R[-244]C[8]
+A1-PT       : ='Programação Teares'!K24
+A1-EN       : ='Programação Teares'!K24
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B268
+Ultima      : B268
+R1C1        : ='Programação Teares'!R[-244]C[7]
+A1-PT       : ='Programação Teares'!I24
+A1-EN       : ='Programação Teares'!I24
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C276
+Ultima      : C276
+R1C1        : ='Programação Teares'!R[-251]C[8]
+A1-PT       : ='Programação Teares'!K25
+A1-EN       : ='Programação Teares'!K25
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B276
+Ultima      : B276
+R1C1        : ='Programação Teares'!R[-251]C[7]
+A1-PT       : ='Programação Teares'!I25
+A1-EN       : ='Programação Teares'!I25
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C284
+Ultima      : C284
+R1C1        : ='Programação Teares'!R[-258]C[8]
+A1-PT       : ='Programação Teares'!K26
+A1-EN       : ='Programação Teares'!K26
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B284
+Ultima      : B284
+R1C1        : ='Programação Teares'!R[-258]C[7]
+A1-PT       : ='Programação Teares'!I26
+A1-EN       : ='Programação Teares'!I26
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C292
+Ultima      : C292
+R1C1        : ='Programação Teares'!R[-265]C[8]
+A1-PT       : ='Programação Teares'!K27
+A1-EN       : ='Programação Teares'!K27
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B292
+Ultima      : B292
+R1C1        : ='Programação Teares'!R[-265]C[7]
+A1-PT       : ='Programação Teares'!I27
+A1-EN       : ='Programação Teares'!I27
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C300
+Ultima      : C300
+R1C1        : ='Programação Teares'!R[-272]C[8]
+A1-PT       : ='Programação Teares'!K28
+A1-EN       : ='Programação Teares'!K28
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B300
+Ultima      : B300
+R1C1        : ='Programação Teares'!R[-272]C[7]
+A1-PT       : ='Programação Teares'!I28
+A1-EN       : ='Programação Teares'!I28
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C308
+Ultima      : C308
+R1C1        : ='Programação Teares'!R[-279]C[8]
+A1-PT       : ='Programação Teares'!K29
+A1-EN       : ='Programação Teares'!K29
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B308
+Ultima      : B308
+R1C1        : ='Programação Teares'!R[-279]C[7]
+A1-PT       : ='Programação Teares'!I29
+A1-EN       : ='Programação Teares'!I29
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C316
+Ultima      : C316
+R1C1        : ='Programação Teares'!R[-286]C[8]
+A1-PT       : ='Programação Teares'!K30
+A1-EN       : ='Programação Teares'!K30
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B316
+Ultima      : B316
+R1C1        : ='Programação Teares'!R[-286]C[7]
+A1-PT       : ='Programação Teares'!I30
+A1-EN       : ='Programação Teares'!I30
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C324
+Ultima      : C324
+R1C1        : ='Programação Teares'!R[-293]C[8]
+A1-PT       : ='Programação Teares'!K31
+A1-EN       : ='Programação Teares'!K31
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B324
+Ultima      : B324
+R1C1        : ='Programação Teares'!R[-293]C[7]
+A1-PT       : ='Programação Teares'!I31
+A1-EN       : ='Programação Teares'!I31
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C332
+Ultima      : C332
+R1C1        : ='Programação Teares'!R[-300]C[8]
+A1-PT       : ='Programação Teares'!K32
+A1-EN       : ='Programação Teares'!K32
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B332
+Ultima      : B332
+R1C1        : ='Programação Teares'!R[-300]C[7]
+A1-PT       : ='Programação Teares'!I32
+A1-EN       : ='Programação Teares'!I32
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C340
+Ultima      : C340
+R1C1        : ='Programação Teares'!R[-307]C[8]
+A1-PT       : ='Programação Teares'!K33
+A1-EN       : ='Programação Teares'!K33
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B340
+Ultima      : B340
+R1C1        : ='Programação Teares'!R[-307]C[7]
+A1-PT       : ='Programação Teares'!I33
+A1-EN       : ='Programação Teares'!I33
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C348
+Ultima      : C348
+R1C1        : ='Programação Teares'!R[-314]C[8]
+A1-PT       : ='Programação Teares'!K34
+A1-EN       : ='Programação Teares'!K34
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B348
+Ultima      : B348
+R1C1        : ='Programação Teares'!R[-314]C[7]
+A1-PT       : ='Programação Teares'!I34
+A1-EN       : ='Programação Teares'!I34
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C356
+Ultima      : C356
+R1C1        : ='Programação Teares'!R[-321]C[8]
+A1-PT       : ='Programação Teares'!K35
+A1-EN       : ='Programação Teares'!K35
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B356
+Ultima      : B356
+R1C1        : ='Programação Teares'!R[-321]C[7]
+A1-PT       : ='Programação Teares'!I35
+A1-EN       : ='Programação Teares'!I35
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C364
+Ultima      : C364
+R1C1        : ='Programação Teares'!R[-328]C[8]
+A1-PT       : ='Programação Teares'!K36
+A1-EN       : ='Programação Teares'!K36
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B364
+Ultima      : B364
+R1C1        : ='Programação Teares'!R[-328]C[7]
+A1-PT       : ='Programação Teares'!I36
+A1-EN       : ='Programação Teares'!I36
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C372
+Ultima      : C372
+R1C1        : ='Programação Teares'!R[-335]C[8]
+A1-PT       : ='Programação Teares'!K37
+A1-EN       : ='Programação Teares'!K37
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B372
+Ultima      : B372
+R1C1        : ='Programação Teares'!R[-335]C[7]
+A1-PT       : ='Programação Teares'!I37
+A1-EN       : ='Programação Teares'!I37
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C380
+Ultima      : C380
+R1C1        : ='Programação Teares'!R[-342]C[8]
+A1-PT       : ='Programação Teares'!K38
+A1-EN       : ='Programação Teares'!K38
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B380
+Ultima      : B380
+R1C1        : ='Programação Teares'!R[-342]C[7]
+A1-PT       : ='Programação Teares'!I38
+A1-EN       : ='Programação Teares'!I38
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C388
+Ultima      : C388
+R1C1        : ='Programação Teares'!R[-349]C[8]
+A1-PT       : ='Programação Teares'!K39
+A1-EN       : ='Programação Teares'!K39
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B388
+Ultima      : B388
+R1C1        : ='Programação Teares'!R[-349]C[7]
+A1-PT       : ='Programação Teares'!I39
+A1-EN       : ='Programação Teares'!I39
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C396
+Ultima      : C396
+R1C1        : ='Programação Teares'!R[-356]C[8]
+A1-PT       : ='Programação Teares'!K40
+A1-EN       : ='Programação Teares'!K40
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B396
+Ultima      : B396
+R1C1        : ='Programação Teares'!R[-356]C[7]
+A1-PT       : ='Programação Teares'!I40
+A1-EN       : ='Programação Teares'!I40
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C404
+Ultima      : C404
+R1C1        : ='Programação Teares'!R[-363]C[8]
+A1-PT       : ='Programação Teares'!K41
+A1-EN       : ='Programação Teares'!K41
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B404
+Ultima      : B404
+R1C1        : ='Programação Teares'!R[-363]C[7]
+A1-PT       : ='Programação Teares'!I41
+A1-EN       : ='Programação Teares'!I41
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C412
+Ultima      : C412
+R1C1        : ='Programação Teares'!R[-370]C[8]
+A1-PT       : ='Programação Teares'!K42
+A1-EN       : ='Programação Teares'!K42
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B412
+Ultima      : B412
+R1C1        : ='Programação Teares'!R[-370]C[7]
+A1-PT       : ='Programação Teares'!I42
+A1-EN       : ='Programação Teares'!I42
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C420
+Ultima      : C420
+R1C1        : ='Programação Teares'!R[-377]C[8]
+A1-PT       : ='Programação Teares'!K43
+A1-EN       : ='Programação Teares'!K43
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B420
+Ultima      : B420
+R1C1        : ='Programação Teares'!R[-377]C[7]
+A1-PT       : ='Programação Teares'!I43
+A1-EN       : ='Programação Teares'!I43
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C428
+Ultima      : C428
+R1C1        : ='Programação Teares'!R[-384]C[8]
+A1-PT       : ='Programação Teares'!K44
+A1-EN       : ='Programação Teares'!K44
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B428
+Ultima      : B428
+R1C1        : ='Programação Teares'!R[-384]C[7]
+A1-PT       : ='Programação Teares'!I44
+A1-EN       : ='Programação Teares'!I44
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C436
+Ultima      : C436
+R1C1        : ='Programação Teares'!R[-391]C[8]
+A1-PT       : ='Programação Teares'!K45
+A1-EN       : ='Programação Teares'!K45
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B436
+Ultima      : B436
+R1C1        : ='Programação Teares'!R[-391]C[7]
+A1-PT       : ='Programação Teares'!I45
+A1-EN       : ='Programação Teares'!I45
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C444
+Ultima      : C444
+R1C1        : ='Programação Teares'!R[-398]C[8]
+A1-PT       : ='Programação Teares'!K46
+A1-EN       : ='Programação Teares'!K46
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B444
+Ultima      : B444
+R1C1        : ='Programação Teares'!R[-398]C[7]
+A1-PT       : ='Programação Teares'!I46
+A1-EN       : ='Programação Teares'!I46
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C452
+Ultima      : C452
+R1C1        : ='Programação Teares'!R[-405]C[8]
+A1-PT       : ='Programação Teares'!K47
+A1-EN       : ='Programação Teares'!K47
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B452
+Ultima      : B452
+R1C1        : ='Programação Teares'!R[-405]C[7]
+A1-PT       : ='Programação Teares'!I47
+A1-EN       : ='Programação Teares'!I47
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C460
+Ultima      : C460
+R1C1        : ='Programação Teares'!R[-412]C[8]
+A1-PT       : ='Programação Teares'!K48
+A1-EN       : ='Programação Teares'!K48
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B460
+Ultima      : B460
+R1C1        : ='Programação Teares'!R[-412]C[7]
+A1-PT       : ='Programação Teares'!I48
+A1-EN       : ='Programação Teares'!I48
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C468
+Ultima      : C468
+R1C1        : ='Programação Teares'!R[-419]C[8]
+A1-PT       : ='Programação Teares'!K49
+A1-EN       : ='Programação Teares'!K49
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B468
+Ultima      : B468
+R1C1        : ='Programação Teares'!R[-419]C[7]
+A1-PT       : ='Programação Teares'!I49
+A1-EN       : ='Programação Teares'!I49
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C476
+Ultima      : C476
+R1C1        : ='Programação Teares'!R[-426]C[8]
+A1-PT       : ='Programação Teares'!K50
+A1-EN       : ='Programação Teares'!K50
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B476
+Ultima      : B476
+R1C1        : ='Programação Teares'!R[-426]C[7]
+A1-PT       : ='Programação Teares'!I50
+A1-EN       : ='Programação Teares'!I50
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C484
+Ultima      : C484
+R1C1        : ='Programação Teares'!R[-433]C[8]
+A1-PT       : ='Programação Teares'!K51
+A1-EN       : ='Programação Teares'!K51
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B484
+Ultima      : B484
+R1C1        : ='Programação Teares'!R[-433]C[7]
+A1-PT       : ='Programação Teares'!I51
+A1-EN       : ='Programação Teares'!I51
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C492
+Ultima      : C492
+R1C1        : ='Programação Teares'!R[-440]C[8]
+A1-PT       : ='Programação Teares'!K52
+A1-EN       : ='Programação Teares'!K52
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B492
+Ultima      : B492
+R1C1        : ='Programação Teares'!R[-440]C[7]
+A1-PT       : ='Programação Teares'!I52
+A1-EN       : ='Programação Teares'!I52
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C44
+Ultima      : C44
+R1C1        : ='Programação Teares'!R[-40]C[8]
+A1-PT       : ='Programação Teares'!K4
+A1-EN       : ='Programação Teares'!K4
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : Q44
+Ultima      : Q44
+R1C1        : =COUNTIF('Planejamento tear'!R[-41]C[-14]:R[-41]C[1371],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C3:BAJ3;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C3:BAJ3,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : R44
+Ultima      : R44
+R1C1        : =COUNTIF('Planejamento tear'!R[-40]C[-15]:R[-40]C[1370],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C4:BAJ4;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C4:BAJ4,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : R24
+Ultima      : R24
+R1C1        : =COUNTIF('Planejamento tear'!R[-22]C[-15]:R[-22]C[1370],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C2:BAJ2;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C2:BAJ2,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B44
+Ultima      : B44
+R1C1        : ='Programação Teares'!R[-40]C[7]
+A1-PT       : ='Programação Teares'!I4
+A1-EN       : ='Programação Teares'!I4
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H54
+Ultima      : H54
+R1C1        : =SMALL('Planejamento tear'!R[-51]C[-5]:R[-51]C[1380],COUNTIF('Planejamento tear'!R[-51]C[-5]:R[-51]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C3:BAJ3;CONT.SE('Planejamento tear'!C3:BAJ3;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C3:BAJ3,COUNTIF('Planejamento tear'!C3:BAJ3,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K54
+Ultima      : K54
+R1C1        : =SMALL('Planejamento tear'!R[-50]C[-8]:R[-50]C[1377],COUNTIF('Planejamento tear'!R[-50]C[-8]:R[-50]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C4:BAJ4;CONT.SE('Planejamento tear'!C4:BAJ4;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C4:BAJ4,COUNTIF('Planejamento tear'!C4:BAJ4,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C64
+Ultima      : C64
+R1C1        : ='Programação Teares'!R[-59]C[8]
+A1-PT       : ='Programação Teares'!K5
+A1-EN       : ='Programação Teares'!K5
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : Q64
+Ultima      : Q64
+R1C1        : =COUNTIF('Planejamento tear'!R[-59]C[-14]:R[-59]C[1371],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C5:BAJ5;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C5:BAJ5,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : R64
+Ultima      : R64
+R1C1        : =COUNTIF('Planejamento tear'!R[-58]C[-15]:R[-58]C[1370],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C6:BAJ6;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C6:BAJ6,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B64
+Ultima      : B64
+R1C1        : ='Programação Teares'!R[-59]C[7]
+A1-PT       : ='Programação Teares'!I5
+A1-EN       : ='Programação Teares'!I5
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H74
+Ultima      : H74
+R1C1        : =SMALL('Planejamento tear'!R[-69]C[-5]:R[-69]C[1380],COUNTIF('Planejamento tear'!R[-69]C[-5]:R[-69]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C5:BAJ5;CONT.SE('Planejamento tear'!C5:BAJ5;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C5:BAJ5,COUNTIF('Planejamento tear'!C5:BAJ5,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K74
+Ultima      : K74
+R1C1        : =SMALL('Planejamento tear'!R[-68]C[-8]:R[-68]C[1377],COUNTIF('Planejamento tear'!R[-68]C[-8]:R[-68]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C6:BAJ6;CONT.SE('Planejamento tear'!C6:BAJ6;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C6:BAJ6,COUNTIF('Planejamento tear'!C6:BAJ6,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C84
+Ultima      : C84
+R1C1        : ='Programação Teares'!R[-78]C[8]
+A1-PT       : ='Programação Teares'!K6
+A1-EN       : ='Programação Teares'!K6
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : Q84
+Ultima      : Q84
+R1C1        : =COUNTIF('Planejamento tear'!R[-77]C[-14]:R[-77]C[1371],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C7:BAJ7;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C7:BAJ7,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : R84
+Ultima      : R84
+R1C1        : =COUNTIF('Planejamento tear'!R[-76]C[-15]:R[-76]C[1370],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C8:BAJ8;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C8:BAJ8,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B84
+Ultima      : B84
+R1C1        : ='Programação Teares'!R[-78]C[7]
+A1-PT       : ='Programação Teares'!I6
+A1-EN       : ='Programação Teares'!I6
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H94
+Ultima      : H94
+R1C1        : =SMALL('Planejamento tear'!R[-87]C[-5]:R[-87]C[1380],COUNTIF('Planejamento tear'!R[-87]C[-5]:R[-87]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C7:BAJ7;CONT.SE('Planejamento tear'!C7:BAJ7;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C7:BAJ7,COUNTIF('Planejamento tear'!C7:BAJ7,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K94
+Ultima      : K94
+R1C1        : =SMALL('Planejamento tear'!R[-86]C[-8]:R[-86]C[1377],COUNTIF('Planejamento tear'!R[-86]C[-8]:R[-86]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C8:BAJ8;CONT.SE('Planejamento tear'!C8:BAJ8;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C8:BAJ8,COUNTIF('Planejamento tear'!C8:BAJ8,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C104
+Ultima      : C104
+R1C1        : ='Programação Teares'!R[-97]C[8]
+A1-PT       : ='Programação Teares'!K7
+A1-EN       : ='Programação Teares'!K7
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : Q104
+Ultima      : Q104
+R1C1        : =COUNTIF('Planejamento tear'!R[-95]C[-14]:R[-95]C[1371],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C9:BAJ9;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C9:BAJ9,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : R104
+Ultima      : R104
+R1C1        : =COUNTIF('Planejamento tear'!R[-94]C[-15]:R[-94]C[1370],"1500")
+A1-PT       : =CONT.SE('Planejamento tear'!C10:BAJ10;"1500")
+A1-EN       : =COUNTIF('Planejamento tear'!C10:BAJ10,"1500")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B104
+Ultima      : B104
+R1C1        : ='Programação Teares'!R[-97]C[7]
+A1-PT       : ='Programação Teares'!I7
+A1-EN       : ='Programação Teares'!I7
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B532
+Ultima      : B532
+R1C1        : ='Programação Teares'!R[-467]C[7]
+A1-PT       : ='Programação Teares'!I65
+A1-EN       : ='Programação Teares'!I65
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B536
+Ultima      : B536
+R1C1        : ='Programação Teares'!R[-455]C[7]
+A1-PT       : ='Programação Teares'!I81
+A1-EN       : ='Programação Teares'!I81
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : H114
+Ultima      : H114
+R1C1        : =SMALL('Planejamento tear'!R[-105]C[-5]:R[-105]C[1380],COUNTIF('Planejamento tear'!R[-105]C[-5]:R[-105]C[1380],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C9:BAJ9;CONT.SE('Planejamento tear'!C9:BAJ9;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C9:BAJ9,COUNTIF('Planejamento tear'!C9:BAJ9,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K935
+Ultima      : K935
+R1C1        : ='CONSUMO DIÁRIO'!R[-933]C[-5]
+A1-PT       : ='CONSUMO DIÁRIO'!F2
+A1-EN       : ='CONSUMO DIÁRIO'!F2
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K114
+Ultima      : K114
+R1C1        : =SMALL('Planejamento tear'!R[-104]C[-8]:R[-104]C[1377],COUNTIF('Planejamento tear'!R[-104]C[-8]:R[-104]C[1377],0)+1)
+A1-PT       : =MENOR('Planejamento tear'!C10:BAJ10;CONT.SE('Planejamento tear'!C10:BAJ10;0)+1)
+A1-EN       : =SMALL('Planejamento tear'!C10:BAJ10,COUNTIF('Planejamento tear'!C10:BAJ10,0)+1)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C124
+Ultima      : C124
+R1C1        : ='Programação Teares'!R[-116]C[8]
+A1-PT       : ='Programação Teares'!K8
+A1-EN       : ='Programação Teares'!K8

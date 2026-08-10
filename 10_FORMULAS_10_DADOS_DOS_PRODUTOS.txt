@@ -1,0 +1,326 @@
+================================================================
+FORMULAS DA ABA: DADOS DOS PRODUTOS
+================================================================
+
+Total de celulas com formula : 22.232
+Padroes distintos (R1C1)     : 38
+
+Como ler este arquivo:
+  R1C1  = o padrao da formula. Igual para toda celula copiada.
+          R = linha atual, C = coluna atual. R[-1] = uma linha acima.
+  A1-PT = a formula como aparece no Excel em portugues.
+  A1-EN = a mesma formula com os nomes de funcao em ingles.
+          E esta que serve para o Google Sheets e para programacao.
+
+----------------------------------------------------------------
+Ocorrencias : 5.914
+Primeira    : R2
+Ultima      : R5931
+R1C1        : ='PESOS DE FIOS'!RC[-7]
+A1-PT       : ='PESOS DE FIOS'!K2
+A1-EN       : ='PESOS DE FIOS'!K2
+
+----------------------------------------------------------------
+Ocorrencias : 3.058
+Primeira    : P2
+Ultima      : P4711
+R1C1        : =IF(IFERROR( SEARCH(RC[-3],RC[-15]), 0),"OK","ERRADO")
+A1-PT       : =SE(SEERRO( LOCALIZAR(M2;A2); 0);"OK";"ERRADO")
+A1-EN       : =IF(IFERROR( SEARCH(M2,A2), 0),"OK","ERRADO")
+
+----------------------------------------------------------------
+Ocorrencias : 3.056
+Primeira    : Q2
+Ultima      : Q4711
+R1C1        : =IF(IFERROR(SEARCH(RC[-3], RC[-16]), 0),"OK","ERRADO")
+A1-PT       : =SE(SEERRO(LOCALIZAR(N2; A2); 0);"OK";"ERRADO")
+A1-EN       : =IF(IFERROR(SEARCH(N2, A2), 0),"OK","ERRADO")
+
+----------------------------------------------------------------
+Ocorrencias : 2.964
+Primeira    : O2
+Ultima      : O4711
+R1C1        : =IF(IFERROR( SEARCH(RC[-3],RC[-14]), 0),"OK","ERRADO")
+A1-PT       : =SE(SEERRO( LOCALIZAR(L2;A2); 0);"OK";"ERRADO")
+A1-EN       : =IF(IFERROR( SEARCH(L2,A2), 0),"OK","ERRADO")
+
+----------------------------------------------------------------
+Ocorrencias : 1.407
+Primeira    : A43
+Ultima      : A4652
+R1C1        : ='PESOS DE FIOS'!R[2]C
+A1-PT       : ='PESOS DE FIOS'!A45
+A1-EN       : ='PESOS DE FIOS'!A45
+
+----------------------------------------------------------------
+Ocorrencias : 1.155
+Primeira    : L2
+Ultima      : L4300
+R1C1        : =RC[-9]
+A1-PT       : =C2
+A1-EN       : =C2
+
+----------------------------------------------------------------
+Ocorrencias : 999
+Primeira    : A240
+Ultima      : A2544
+R1C1        : ='PESOS DE FIOS'!R[11]C
+A1-PT       : ='PESOS DE FIOS'!A251
+A1-EN       : ='PESOS DE FIOS'!A251
+
+----------------------------------------------------------------
+Ocorrencias : 982
+Primeira    : A140
+Ultima      : A5924
+R1C1        : ='PESOS DE FIOS'!R[5]C
+A1-PT       : ='PESOS DE FIOS'!A145
+A1-EN       : ='PESOS DE FIOS'!A145
+
+----------------------------------------------------------------
+Ocorrencias : 687
+Primeira    : A40
+Ultima      : A3252
+R1C1        : ='PESOS DE FIOS'!R[1]C
+A1-PT       : ='PESOS DE FIOS'!A41
+A1-EN       : ='PESOS DE FIOS'!A41
+
+----------------------------------------------------------------
+Ocorrencias : 391
+Primeira    : A47
+Ultima      : A4947
+R1C1        : ='PESOS DE FIOS'!R[3]C
+A1-PT       : ='PESOS DE FIOS'!A50
+A1-EN       : ='PESOS DE FIOS'!A50
+
+----------------------------------------------------------------
+Ocorrencias : 292
+Primeira    : A2216
+Ultima      : A2515
+R1C1        : ='PESOS DE FIOS'!R[22]C
+A1-PT       : ='PESOS DE FIOS'!A2238
+A1-EN       : ='PESOS DE FIOS'!A2238
+
+----------------------------------------------------------------
+Ocorrencias : 286
+Primeira    : A1395
+Ultima      : A2536
+R1C1        : ='PESOS DE FIOS'!R[15]C
+A1-PT       : ='PESOS DE FIOS'!A1410
+A1-EN       : ='PESOS DE FIOS'!A1410
+
+----------------------------------------------------------------
+Ocorrencias : 273
+Primeira    : A1946
+Ultima      : A2521
+R1C1        : ='PESOS DE FIOS'!R[20]C
+A1-PT       : ='PESOS DE FIOS'!A1966
+A1-EN       : ='PESOS DE FIOS'!A1966
+
+----------------------------------------------------------------
+Ocorrencias : 188
+Primeira    : A1678
+Ultima      : A2530
+R1C1        : ='PESOS DE FIOS'!R[17]C
+A1-PT       : ='PESOS DE FIOS'!A1695
+A1-EN       : ='PESOS DE FIOS'!A1695
+
+----------------------------------------------------------------
+Ocorrencias : 160
+Primeira    : A1237
+Ultima      : A2538
+R1C1        : ='PESOS DE FIOS'!R[14]C
+A1-PT       : ='PESOS DE FIOS'!A1251
+A1-EN       : ='PESOS DE FIOS'!A1251
+
+----------------------------------------------------------------
+Ocorrencias : 84
+Primeira    : A158
+Ultima      : A2546
+R1C1        : ='PESOS DE FIOS'!R[10]C
+A1-PT       : ='PESOS DE FIOS'!A168
+A1-EN       : ='PESOS DE FIOS'!A168
+
+----------------------------------------------------------------
+Ocorrencias : 69
+Primeira    : A1863
+Ultima      : A2527
+R1C1        : ='PESOS DE FIOS'!R[18]C
+A1-PT       : ='PESOS DE FIOS'!A1881
+A1-EN       : ='PESOS DE FIOS'!A1881
+
+----------------------------------------------------------------
+Ocorrencias : 42
+Primeira    : O81
+Ultima      : O4489
+R1C1        : =IF(IFERROR( SEARCH(RC[-2],RC[-14]), 0),"OK","ERRADO")
+A1-PT       : =SE(SEERRO( LOCALIZAR(M81;A81); 0);"OK";"ERRADO")
+A1-EN       : =IF(IFERROR( SEARCH(M81,A81), 0),"OK","ERRADO")
+
+----------------------------------------------------------------
+Ocorrencias : 40
+Primeira    : Q81
+Ultima      : Q4489
+R1C1        : =IF(IFERROR( SEARCH(RC[-3],RC[-16]), 0),"OK","ERRADO")
+A1-PT       : =SE(SEERRO( LOCALIZAR(N81;A81); 0);"OK";"ERRADO")
+A1-EN       : =IF(IFERROR( SEARCH(N81,A81), 0),"OK","ERRADO")
+
+----------------------------------------------------------------
+Ocorrencias : 40
+Primeira    : P81
+Ultima      : P4489
+R1C1        : =IF(IFERROR( SEARCH(RC[-4],RC[-15]), 0),"OK","ERRADO")
+A1-PT       : =SE(SEERRO( LOCALIZAR(L81;A81); 0);"OK";"ERRADO")
+A1-EN       : =IF(IFERROR( SEARCH(L81,A81), 0),"OK","ERRADO")
+
+----------------------------------------------------------------
+Ocorrencias : 38
+Primeira    : A2
+Ultima      : A39
+Distribuicao: linhas consecutivas de 2 a 39
+R1C1        : ='PESOS DE FIOS'!RC
+A1-PT       : ='PESOS DE FIOS'!A2
+A1-EN       : ='PESOS DE FIOS'!A2
+
+----------------------------------------------------------------
+Ocorrencias : 20
+Primeira    : A1929
+Ultima      : A2524
+R1C1        : ='PESOS DE FIOS'!R[19]C
+A1-PT       : ='PESOS DE FIOS'!A1948
+A1-EN       : ='PESOS DE FIOS'!A1948
+
+----------------------------------------------------------------
+Ocorrencias : 18
+Primeira    : A143
+Ultima      : A2553
+R1C1        : ='PESOS DE FIOS'!R[7]C
+A1-PT       : ='PESOS DE FIOS'!A150
+A1-EN       : ='PESOS DE FIOS'!A150
+
+----------------------------------------------------------------
+Ocorrencias : 10
+Primeira    : E94
+Ultima      : E1632
+R1C1        : =RC[-2]
+A1-PT       : =C94
+A1-EN       : =C94
+
+----------------------------------------------------------------
+Ocorrencias : 8
+Primeira    : O1392
+Ultima      : O2952
+R1C1        : =IF(IFERROR( SEARCH(RC[-3],#REF!), 0),"OK","ERRADO")
+A1-PT       : =SE(SEERRO( LOCALIZAR(L1392;#REF!); 0);"OK";"ERRADO")
+A1-EN       : =IF(IFERROR( SEARCH(L1392,#REF!), 0),"OK","ERRADO")
+
+----------------------------------------------------------------
+Ocorrencias : 8
+Primeira    : A2505
+Ultima      : A2512
+Distribuicao: linhas consecutivas de 2505 a 2512
+R1C1        : ='PESOS DE FIOS'!R[23]C
+A1-PT       : ='PESOS DE FIOS'!A2528
+A1-EN       : ='PESOS DE FIOS'!A2528
+
+----------------------------------------------------------------
+Ocorrencias : 7
+Primeira    : O316
+Ultima      : O3271
+R1C1        : =IF(IFERROR(SEARCH(RC[-3], RC[-14]), 0),"OK","ERRADO")
+A1-PT       : =SE(SEERRO(LOCALIZAR(L316; A316); 0);"OK";"ERRADO")
+A1-EN       : =IF(IFERROR(SEARCH(L316, A316), 0),"OK","ERRADO")
+
+----------------------------------------------------------------
+Ocorrencias : 6
+Primeira    : P4062
+Ultima      : P4067
+Distribuicao: linhas consecutivas de 4062 a 4067
+R1C1        : =IF(IFERROR( SEARCH(RC[-3],R[-1]C[-15]), 0),"OK","ERRADO")
+A1-PT       : =SE(SEERRO( LOCALIZAR(M4062;A4061); 0);"OK";"ERRADO")
+A1-EN       : =IF(IFERROR( SEARCH(M4062,A4061), 0),"OK","ERRADO")
+
+----------------------------------------------------------------
+Ocorrencias : 6
+Primeira    : Q4062
+Ultima      : Q4067
+Distribuicao: linhas consecutivas de 4062 a 4067
+R1C1        : =IF(IFERROR(SEARCH(RC[-3], R[-1]C[-16]), 0),"OK","ERRADO")
+A1-PT       : =SE(SEERRO(LOCALIZAR(N4062; A4061); 0);"OK";"ERRADO")
+A1-EN       : =IF(IFERROR(SEARCH(N4062, A4061), 0),"OK","ERRADO")
+
+----------------------------------------------------------------
+Ocorrencias : 4
+Primeira    : G1680
+Ultima      : G1683
+Distribuicao: linhas consecutivas de 1680 a 1683
+R1C1        : =RC[-3]
+A1-PT       : =D1680
+A1-EN       : =D1680
+
+----------------------------------------------------------------
+Ocorrencias : 3
+Primeira    : A2516
+Ultima      : A2518
+Distribuicao: linhas consecutivas de 2516 a 2518
+R1C1        : ='PESOS DE FIOS'!R[21]C
+A1-PT       : ='PESOS DE FIOS'!A2537
+A1-EN       : ='PESOS DE FIOS'!A2537
+
+----------------------------------------------------------------
+Ocorrencias : 3
+Primeira    : A2531
+Ultima      : A2533
+Distribuicao: linhas consecutivas de 2531 a 2533
+R1C1        : ='PESOS DE FIOS'!R[16]C
+A1-PT       : ='PESOS DE FIOS'!A2547
+A1-EN       : ='PESOS DE FIOS'!A2547
+
+----------------------------------------------------------------
+Ocorrencias : 3
+Primeira    : A2554
+Ultima      : A2556
+Distribuicao: linhas consecutivas de 2554 a 2556
+R1C1        : ='PESOS DE FIOS'!R[6]C
+A1-PT       : ='PESOS DE FIOS'!A2560
+A1-EN       : ='PESOS DE FIOS'!A2560
+
+----------------------------------------------------------------
+Ocorrencias : 3
+Primeira    : A2560
+Ultima      : A2562
+Distribuicao: linhas consecutivas de 2560 a 2562
+R1C1        : ='PESOS DE FIOS'!R[4]C
+A1-PT       : ='PESOS DE FIOS'!A2564
+A1-EN       : ='PESOS DE FIOS'!A2564
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : A2547
+Ultima      : A2548
+R1C1        : ='PESOS DE FIOS'!R[9]C
+A1-PT       : ='PESOS DE FIOS'!A2556
+A1-EN       : ='PESOS DE FIOS'!A2556
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : A2549
+Ultima      : A2550
+R1C1        : ='PESOS DE FIOS'!R[8]C
+A1-PT       : ='PESOS DE FIOS'!A2557
+A1-EN       : ='PESOS DE FIOS'!A2557
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : A2539
+Ultima      : A2540
+R1C1        : ='PESOS DE FIOS'!R[13]C
+A1-PT       : ='PESOS DE FIOS'!A2552
+A1-EN       : ='PESOS DE FIOS'!A2552
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : A2541
+Ultima      : A2542
+R1C1        : ='PESOS DE FIOS'!R[12]C
+A1-PT       : ='PESOS DE FIOS'!A2553
+A1-EN       : ='PESOS DE FIOS'!A2553

@@ -1,0 +1,86 @@
+================================================================
+FORMULAS DA ABA: Calculo dos pesos
+================================================================
+
+Total de celulas com formula : 31
+Padroes distintos (R1C1)     : 9
+
+Como ler este arquivo:
+  R1C1  = o padrao da formula. Igual para toda celula copiada.
+          R = linha atual, C = coluna atual. R[-1] = uma linha acima.
+  A1-PT = a formula como aparece no Excel em portugues.
+  A1-EN = a mesma formula com os nomes de funcao em ingles.
+          E esta que serve para o Google Sheets e para programacao.
+
+----------------------------------------------------------------
+Ocorrencias : 8
+Primeira    : B10
+Ultima      : B17
+Distribuicao: linhas consecutivas de 10 a 17
+R1C1        : =R8C2*RC[-1]/R18C1
+A1-PT       : =$B$8*A10/$A$18
+A1-EN       : =$B$8*A10/$A$18
+
+----------------------------------------------------------------
+Ocorrencias : 6
+Primeira    : G4
+Ultima      : L4
+R1C1        : =R3C13*R[-1]C%
+A1-PT       : =$M$3*G3%
+A1-EN       : =$M$3*G3%
+
+----------------------------------------------------------------
+Ocorrencias : 5
+Primeira    : G3
+Ultima      : K3
+R1C1        : =RC[-6]*100/R3C6
+A1-PT       : =A3*100/$F$3
+A1-EN       : =A3*100/$F$3
+
+----------------------------------------------------------------
+Ocorrencias : 4
+Primeira    : H5
+Ultima      : K5
+R1C1        : =R[-1]C*0.25
+A1-PT       : =H4*0,25
+A1-EN       : =H4*0.25
+
+----------------------------------------------------------------
+Ocorrencias : 3
+Primeira    : I6
+Ultima      : K6
+R1C1        : =R[-2]C-R[-1]C
+A1-PT       : =I4-I5
+A1-EN       : =I4-I5
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : F3
+Ultima      : L3
+R1C1        : =SUM(RC[-5]:RC[-1])
+A1-PT       : =SOMA(A3:E3)
+A1-EN       : =SUM(A3:E3)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : G7
+Ultima      : G7
+R1C1        : =R[-4]C[6]*0.04
+A1-PT       : =M3*0,04
+A1-EN       : =M3*0.04
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : G5
+Ultima      : G5
+R1C1        : =R[-1]C+RC[1]+RC[2]+RC[3]+RC[4]
+A1-PT       : =G4+H5+I5+J5+K5
+A1-EN       : =G4+H5+I5+J5+K5
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A18
+Ultima      : A18
+R1C1        : =SUM(R[-8]C:R[-1]C)
+A1-PT       : =SOMA(A10:A17)
+A1-EN       : =SUM(A10:A17)

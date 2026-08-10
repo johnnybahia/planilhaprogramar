@@ -1,0 +1,130 @@
+================================================================
+FORMULAS DA ABA: Produtividade Kiang
+================================================================
+
+Total de celulas com formula : 1.040
+Padroes distintos (R1C1)     : 13
+
+Como ler este arquivo:
+  R1C1  = o padrao da formula. Igual para toda celula copiada.
+          R = linha atual, C = coluna atual. R[-1] = uma linha acima.
+  A1-PT = a formula como aparece no Excel em portugues.
+  A1-EN = a mesma formula com os nomes de funcao em ingles.
+          E esta que serve para o Google Sheets e para programacao.
+
+----------------------------------------------------------------
+Ocorrencias : 80
+Primeira    : B2
+Ultima      : B81
+Distribuicao: linhas consecutivas de 2 a 81
+R1C1        : =RC[-1]*0.966
+A1-PT       : =A2*0,966
+A1-EN       : =A2*0.966
+
+----------------------------------------------------------------
+Ocorrencias : 80
+Primeira    : C2
+Ultima      : C81
+Distribuicao: linhas consecutivas de 2 a 81
+R1C1        : =RC[-1]*1/0.9
+A1-PT       : =B2*1/0,9
+A1-EN       : =B2*1/0.9
+
+----------------------------------------------------------------
+Ocorrencias : 80
+Primeira    : D2
+Ultima      : D81
+Distribuicao: linhas consecutivas de 2 a 81
+R1C1        : =RC[-1]/R1C4
+A1-PT       : =C2/$D$1
+A1-EN       : =C2/$D$1
+
+----------------------------------------------------------------
+Ocorrencias : 80
+Primeira    : E2
+Ultima      : E81
+Distribuicao: linhas consecutivas de 2 a 81
+R1C1        : =RC[-2]/R1C5
+A1-PT       : =C2/$E$1
+A1-EN       : =C2/$E$1
+
+----------------------------------------------------------------
+Ocorrencias : 80
+Primeira    : F2
+Ultima      : F81
+Distribuicao: linhas consecutivas de 2 a 81
+R1C1        : =RC[-3]/R1C6
+A1-PT       : =C2/$F$1
+A1-EN       : =C2/$F$1
+
+----------------------------------------------------------------
+Ocorrencias : 80
+Primeira    : G2
+Ultima      : G81
+Distribuicao: linhas consecutivas de 2 a 81
+R1C1        : =RC3/R1C7
+A1-PT       : =$C2/$G$1
+A1-EN       : =$C2/$G$1
+
+----------------------------------------------------------------
+Ocorrencias : 80
+Primeira    : H2
+Ultima      : H81
+Distribuicao: linhas consecutivas de 2 a 81
+R1C1        : =RC3/R1C8
+A1-PT       : =$C2/$H$1
+A1-EN       : =$C2/$H$1
+
+----------------------------------------------------------------
+Ocorrencias : 80
+Primeira    : I2
+Ultima      : I81
+Distribuicao: linhas consecutivas de 2 a 81
+R1C1        : =RC3/R1C9
+A1-PT       : =$C2/$I$1
+A1-EN       : =$C2/$I$1
+
+----------------------------------------------------------------
+Ocorrencias : 80
+Primeira    : J2
+Ultima      : J81
+Distribuicao: linhas consecutivas de 2 a 81
+R1C1        : =RC3/R1C10
+A1-PT       : =$C2/$J$1
+A1-EN       : =$C2/$J$1
+
+----------------------------------------------------------------
+Ocorrencias : 80
+Primeira    : K2
+Ultima      : K81
+Distribuicao: linhas consecutivas de 2 a 81
+R1C1        : =RC3/R1C11
+A1-PT       : =$C2/$K$1
+A1-EN       : =$C2/$K$1
+
+----------------------------------------------------------------
+Ocorrencias : 80
+Primeira    : L2
+Ultima      : L81
+Distribuicao: linhas consecutivas de 2 a 81
+R1C1        : =RC3/R1C12
+A1-PT       : =$C2/$L$1
+A1-EN       : =$C2/$L$1
+
+----------------------------------------------------------------
+Ocorrencias : 80
+Primeira    : M2
+Ultima      : M81
+Distribuicao: linhas consecutivas de 2 a 81
+R1C1        : =RC3/R1C13
+A1-PT       : =$C2/$M$1
+A1-EN       : =$C2/$M$1
+
+----------------------------------------------------------------
+Ocorrencias : 80
+Primeira    : N2
+Ultima      : N81
+Distribuicao: linhas consecutivas de 2 a 81
+R1C1        : =RC3/R1C14
+A1-PT       : =$C2/$N$1
+A1-EN       : =$C2/$N$1

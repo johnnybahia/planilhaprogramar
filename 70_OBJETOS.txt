@@ -1,0 +1,27 @@
+================================================================
+OBJETOS DA PLANILHA
+================================================================
+
+## Botoes e formas com macro atribuida
+
+Isto mapeia a interface: qual botao dispara qual macro.
+
+- [PEDIDOS] Button 14 ("1 - criar código")  ->  macro: 'PROGRAMAÇÃO CEARA 27-01-25 - Atualizado.xlsb'!JuntarDados
+- [PEDIDOS] Button 15 ("APAGAR")  ->  macro: 'PROGRAMAÇÃO CEARA 27-01-25 - Atualizado.xlsb'!APAGAR
+- [PEDIDOS] Button 17 ("JUNTAR MM")  ->  macro: 'PROGRAMAÇÃO CEARA 27-01-25 - Atualizado.xlsb'!Juntar
+- [RELATÓRIO TRANÇADEIRAS] Button 1 ("AJUSTAR")  ->  macro: 'PROGRAMAÇÃO CEARA 27-01-25 - Atualizado.xlsb'!ajustaralturalinha
+- [DADOS GERAIS DE PRODUTOS] Button 1 ("Ultima linha")  ->  macro: 'PROGRAMAÇÃO CEARA 27-01-25 - Atualizado.xlsb'!UltimaLinhaColunaC
+- [PESOS DE FIOS] Button 1 ("GERAR ITENS NOVOS")  ->  macro: 'PROGRAMAÇÃO CEARA 27-01-25 - Atualizado.xlsb'!EstaPasta_de_trabalho.copiarDados
+- [PESOS DE FIOS] Button 2 ("Ultima linha")  ->  macro: 'PROGRAMAÇÃO CEARA 27-01-25 - Atualizado.xlsb'!UltimaLinhaColunab
+- [PESOS DE FIOS] Button 4 ("Botão 4")  ->  macro: 'PROGRAMAÇÃO CEARA 27-01-25 - Atualizado.xlsb'!OcultarColunas
+- [DADOS DOS PRODUTOS] Button 3 ("Ultima linha")  ->  macro: 'PROGRAMAÇÃO CEARA 27-01-25 - Atualizado.xlsb'!UltimaLinhaColunab
+- [DADOS DOS PRODUTOS] Button 4 ("Ultima linha")  ->  macro: 'PROGRAMAÇÃO CEARA 27-01-25 - Atualizado.xlsb'!UltimaLinhaColunab
+
+## Tabelas dinamicas
+
+
+## Tabelas nomeadas
+
+- [PESOS DE FIOS] Tabela2  B:K
+
+## Graficos

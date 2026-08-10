@@ -1,0 +1,99 @@
+================================================================
+FORMULAS DA ABA: PEDIDOS
+================================================================
+
+Total de celulas com formula : 4.197.138
+Padroes distintos (R1C1)     : 10
+
+Como ler este arquivo:
+  R1C1  = o padrao da formula. Igual para toda celula copiada.
+          R = linha atual, C = coluna atual. R[-1] = uma linha acima.
+  A1-PT = a formula como aparece no Excel em portugues.
+  A1-EN = a mesma formula com os nomes de funcao em ingles.
+          E esta que serve para o Google Sheets e para programacao.
+
+----------------------------------------------------------------
+Ocorrencias : 1.048.573
+Primeira    : N4
+Ultima      : N1048576
+Distribuicao: linhas consecutivas de 4 a 1048576
+R1C1        : =IFERROR(INDEX(R4C10:R2502C10, SMALL(IF(MATCH(IF(R4C10:R2502C10="","",R4C10:R2502C10), IF(R4C10:R2502C10="","",R4C10:R2502C10),0)= ROW(INDIRECT("1:"&ROWS(R4C10:R2502C10))), MATCH(IF(R4C10:R2502C10="","",R4C10:R2502C10), IF(R4C10:R2502C10="","",R4C10:R2502C10),0),""), ROW(INDIRECT("1:"&ROWS(R4C10:R2502C10))))),"")
+A1-PT       : =SEERRO(ÍNDICE($J$4:$J$2502; MENOR(SE(CORRESP(SE($J$4:$J$2502="";"";$J$4:$J$2502); SE($J$4:$J$2502="";"";$J$4:$J$2502);0)= LIN(INDIRETO("1:"&LINS($J$4:$J$2502))); CORRESP(SE($J$4:$J$2502="";"";$J$4:$J$2502); SE($J$4:$J$2502="";"";$J$4:$J$2502);0);""); LIN(INDIRETO("1:"&LINS($J$4:$J$2502)))));"")
+A1-EN       : =IFERROR(INDEX($J$4:$J$2502, SMALL(IF(MATCH(IF($J$4:$J$2502="","",$J$4:$J$2502), IF($J$4:$J$2502="","",$J$4:$J$2502),0)= ROW(INDIRECT("1:"&ROWS($J$4:$J$2502))), MATCH(IF($J$4:$J$2502="","",$J$4:$J$2502), IF($J$4:$J$2502="","",$J$4:$J$2502),0),""), ROW(INDIRECT("1:"&ROWS($J$4:$J$2502))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 1.048.573
+Primeira    : J4
+Ultima      : J1048576
+Distribuicao: linhas consecutivas de 4 a 1048576
+R1C1        : =IF(RC1="","",VLOOKUP(RC1,'DADOS GERAIS DE PRODUTOS'!R2C2:R49998C4,2,0))
+A1-PT       : =SE($A4="";"";PROCV($A4;'DADOS GERAIS DE PRODUTOS'!$B$2:$D$49998;2;0))
+A1-EN       : =IF($A4="","",VLOOKUP($A4,'DADOS GERAIS DE PRODUTOS'!$B$2:$D$49998,2,0))
+
+----------------------------------------------------------------
+Ocorrencias : 1.048.573
+Primeira    : K4
+Ultima      : K1048576
+Distribuicao: linhas consecutivas de 4 a 1048576
+R1C1        : =IF(RC1="","",VLOOKUP(RC1,'DADOS GERAIS DE PRODUTOS'!R2C2:R50000C6,4,0))
+A1-PT       : =SE($A4="";"";PROCV($A4;'DADOS GERAIS DE PRODUTOS'!$B$2:$F$50000;4;0))
+A1-EN       : =IF($A4="","",VLOOKUP($A4,'DADOS GERAIS DE PRODUTOS'!$B$2:$F$50000,4,0))
+
+----------------------------------------------------------------
+Ocorrencias : 1.048.573
+Primeira    : L4
+Ultima      : L1048576
+Distribuicao: linhas consecutivas de 4 a 1048576
+R1C1        : =IF(RC1="","",VLOOKUP(RC1,'DADOS GERAIS DE PRODUTOS'!R2C2:R50000C4,3,0))
+A1-PT       : =SE($A4="";"";PROCV($A4;'DADOS GERAIS DE PRODUTOS'!$B$2:$D$50000;3;0))
+A1-EN       : =IF($A4="","",VLOOKUP($A4,'DADOS GERAIS DE PRODUTOS'!$B$2:$D$50000,3,0))
+
+----------------------------------------------------------------
+Ocorrencias : 1.556
+Primeira    : Q4
+Ultima      : Q1559
+Distribuicao: linhas consecutivas de 4 a 1559
+R1C1        : =IFERROR(INDEX(R4C3:R2502C3, SMALL(IF(MATCH(IF(R4C3:R2502C3="","",R4C3:R2502C3), IF(R4C3:R2502C3="","",R4C3:R2502C3),0)= ROW(INDIRECT("1:"&ROWS(R4C3:R2502C3))), MATCH(IF(R4C3:R2502C3="","",R4C3:R2502C3), IF(R4C3:R2502C3="","",R4C3:R2502C3),0),""), ROW(INDIRECT("1:"&ROWS(R4C3:R2502C3))))),"")
+A1-PT       : =SEERRO(ÍNDICE($C$4:$C$2502; MENOR(SE(CORRESP(SE($C$4:$C$2502="";"";$C$4:$C$2502); SE($C$4:$C$2502="";"";$C$4:$C$2502);0)= LIN(INDIRETO("1:"&LINS($C$4:$C$2502))); CORRESP(SE($C$4:$C$2502="";"";$C$4:$C$2502); SE($C$4:$C$2502="";"";$C$4:$C$2502);0);""); LIN(INDIRETO("1:"&LINS($C$4:$C$2502)))));"")
+A1-EN       : =IFERROR(INDEX($C$4:$C$2502, SMALL(IF(MATCH(IF($C$4:$C$2502="","",$C$4:$C$2502), IF($C$4:$C$2502="","",$C$4:$C$2502),0)= ROW(INDIRECT("1:"&ROWS($C$4:$C$2502))), MATCH(IF($C$4:$C$2502="","",$C$4:$C$2502), IF($C$4:$C$2502="","",$C$4:$C$2502),0),""), ROW(INDIRECT("1:"&ROWS($C$4:$C$2502))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 1.286
+Primeira    : O1152
+Ultima      : O2437
+Distribuicao: linhas consecutivas de 1152 a 2437
+R1C1        : =SUMIFS(R4C13:R5000C13,R4C10:R5000C10,RC[-1])
+A1-PT       : =SOMASES($M$4:$M$5000;$J$4:$J$5000;N1152)
+A1-EN       : =SUMIFS($M$4:$M$5000,$J$4:$J$5000,N1152)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C2
+Ultima      : C2
+R1C1        : =IF(R[2]C9="","",VLOOKUP(R[2]C9,'CADASTRO CLIENTES'!R2C1:R50C2,2,0))
+A1-PT       : =SE($I4="";"";PROCV($I4;'CADASTRO CLIENTES'!$A$2:$B$50;2;0))
+A1-EN       : =IF($I4="","",VLOOKUP($I4,'CADASTRO CLIENTES'!$A$2:$B$50,2,0))
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : K2
+Ultima      : K2
+R1C1        : =IF(RC1="","",VLOOKUP(RC1,'DADOS GERAIS DE PRODUTOS'!R2C2:R50000C4,2,0))
+A1-PT       : =SE($A2="";"";PROCV($A2;'DADOS GERAIS DE PRODUTOS'!$B$2:$D$50000;2;0))
+A1-EN       : =IF($A2="","",VLOOKUP($A2,'DADOS GERAIS DE PRODUTOS'!$B$2:$D$50000,2,0))
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : L1
+Ultima      : L1
+R1C1        : ='Programação Teares'!RC[1]
+A1-PT       : ='Programação Teares'!M1
+A1-EN       : ='Programação Teares'!M1
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : M1
+Ultima      : M1
+R1C1        : =IF(R[3]C[-2]:R[1272]C[-2]="TEAR","TEAR","NÃO")
+A1-PT       : =SE(K4:K1273="TEAR";"TEAR";"NÃO")
+A1-EN       : =IF(K4:K1273="TEAR","TEAR","NÃO")

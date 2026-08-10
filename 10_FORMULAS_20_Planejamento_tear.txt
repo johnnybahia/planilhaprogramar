@@ -1,0 +1,141 @@
+================================================================
+FORMULAS DA ABA: Planejamento tear
+================================================================
+
+Total de celulas com formula : 138.700
+Padroes distintos (R1C1)     : 16
+
+Como ler este arquivo:
+  R1C1  = o padrao da formula. Igual para toda celula copiada.
+          R = linha atual, C = coluna atual. R[-1] = uma linha acima.
+  A1-PT = a formula como aparece no Excel em portugues.
+  A1-EN = a mesma formula com os nomes de funcao em ingles.
+          E esta que serve para o Google Sheets e para programacao.
+
+----------------------------------------------------------------
+Ocorrencias : 69.300
+Primeira    : C1
+Ultima      : BAI322
+R1C1        : =IF(RC[-1]>1500,1500,IF(RC[-1]<1500,0,1500))
+A1-PT       : =SE(B1>1500;1500;SE(B1<1500;0;1500))
+A1-EN       : =IF(B1>1500,1500,IF(B1<1500,0,1500))
+
+----------------------------------------------------------------
+Ocorrencias : 69.300
+Primeira    : D1
+Ultima      : BAJ322
+R1C1        : =IF(RC[-1]=1500,RC[-2]-RC[-1],0)
+A1-PT       : =SE(C1=1500;B1-C1;0)
+A1-EN       : =IF(C1=1500,B1-C1,0)
+
+----------------------------------------------------------------
+Ocorrencias : 64
+Primeira    : B73
+Ultima      : B322
+R1C1        : ='REALTÓRIO TEARES'!R[172]C
+A1-PT       : ='REALTÓRIO TEARES'!B245
+A1-EN       : ='REALTÓRIO TEARES'!B245
+
+----------------------------------------------------------------
+Ocorrencias : 12
+Primeira    : B25
+Ultima      : B66
+R1C1        : ='REALTÓRIO TEARES'!R[168]C
+A1-PT       : ='REALTÓRIO TEARES'!B193
+A1-EN       : ='REALTÓRIO TEARES'!B193
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B5
+Ultima      : B6
+R1C1        : ='REALTÓRIO TEARES'!R[60]C
+A1-PT       : ='REALTÓRIO TEARES'!B65
+A1-EN       : ='REALTÓRIO TEARES'!B65
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B7
+Ultima      : B8
+R1C1        : ='REALTÓRIO TEARES'!R[78]C
+A1-PT       : ='REALTÓRIO TEARES'!B85
+A1-EN       : ='REALTÓRIO TEARES'!B85
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B9
+Ultima      : B10
+R1C1        : ='REALTÓRIO TEARES'!R[96]C
+A1-PT       : ='REALTÓRIO TEARES'!B105
+A1-EN       : ='REALTÓRIO TEARES'!B105
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B11
+Ultima      : B12
+R1C1        : ='REALTÓRIO TEARES'!R[114]C
+A1-PT       : ='REALTÓRIO TEARES'!B125
+A1-EN       : ='REALTÓRIO TEARES'!B125
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B13
+Ultima      : B14
+R1C1        : ='REALTÓRIO TEARES'!R[132]C
+A1-PT       : ='REALTÓRIO TEARES'!B145
+A1-EN       : ='REALTÓRIO TEARES'!B145
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B15
+Ultima      : B16
+R1C1        : ='REALTÓRIO TEARES'!R[138]C
+A1-PT       : ='REALTÓRIO TEARES'!B153
+A1-EN       : ='REALTÓRIO TEARES'!B153
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B17
+Ultima      : B18
+R1C1        : ='REALTÓRIO TEARES'!R[144]C
+A1-PT       : ='REALTÓRIO TEARES'!B161
+A1-EN       : ='REALTÓRIO TEARES'!B161
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B19
+Ultima      : B20
+R1C1        : ='REALTÓRIO TEARES'!R[150]C
+A1-PT       : ='REALTÓRIO TEARES'!B169
+A1-EN       : ='REALTÓRIO TEARES'!B169
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B21
+Ultima      : B22
+R1C1        : ='REALTÓRIO TEARES'!R[156]C
+A1-PT       : ='REALTÓRIO TEARES'!B177
+A1-EN       : ='REALTÓRIO TEARES'!B177
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B23
+Ultima      : B24
+R1C1        : ='REALTÓRIO TEARES'!R[162]C
+A1-PT       : ='REALTÓRIO TEARES'!B185
+A1-EN       : ='REALTÓRIO TEARES'!B185
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B1
+Ultima      : B2
+R1C1        : ='REALTÓRIO TEARES'!R[24]C
+A1-PT       : ='REALTÓRIO TEARES'!B25
+A1-EN       : ='REALTÓRIO TEARES'!B25
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B3
+Ultima      : B4
+R1C1        : ='REALTÓRIO TEARES'!R[42]C
+A1-PT       : ='REALTÓRIO TEARES'!B45
+A1-EN       : ='REALTÓRIO TEARES'!B45

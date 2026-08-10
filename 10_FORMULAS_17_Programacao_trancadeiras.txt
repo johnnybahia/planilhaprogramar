@@ -1,0 +1,199 @@
+================================================================
+FORMULAS DA ABA: Programação trançadeiras
+================================================================
+
+Total de celulas com formula : 47.754
+Padroes distintos (R1C1)     : 21
+
+Como ler este arquivo:
+  R1C1  = o padrao da formula. Igual para toda celula copiada.
+          R = linha atual, C = coluna atual. R[-1] = uma linha acima.
+  A1-PT = a formula como aparece no Excel em portugues.
+  A1-EN = a mesma formula com os nomes de funcao em ingles.
+          E esta que serve para o Google Sheets e para programacao.
+
+----------------------------------------------------------------
+Ocorrencias : 9.996
+Primeira    : B3
+Ultima      : E2501
+R1C1        : =IFERROR(IF(RC1=PEDIDOS!R[1]C1,PEDIDOS!R[1]C," ")," ")
+A1-PT       : =SEERRO(SE($A3=PEDIDOS!$A4;PEDIDOS!B4;" ");" ")
+A1-EN       : =IFERROR(IF($A3=PEDIDOS!$A4,PEDIDOS!B4," ")," ")
+
+----------------------------------------------------------------
+Ocorrencias : 2.499
+Primeira    : A3
+Ultima      : A2501
+Distribuicao: linhas consecutivas de 3 a 2501
+R1C1        : =IF(PEDIDOS!R[1]C[10]="TRANÇADEIRA",PEDIDOS!R[1]C," ")
+A1-PT       : =SE(PEDIDOS!K4="TRANÇADEIRA";PEDIDOS!A4;" ")
+A1-EN       : =IF(PEDIDOS!K4="TRANÇADEIRA",PEDIDOS!A4," ")
+
+----------------------------------------------------------------
+Ocorrencias : 2.499
+Primeira    : H3
+Ultima      : H2501
+Distribuicao: linhas consecutivas de 3 a 2501
+R1C1        : =IF(R1C16="/2",RC[-6]*RC[-1],IF(R1C6="REPOSIÇÃO",RC[-6]*RC[-1]*2*1.25,RC[-1]*2*RC[-6]))
+A1-PT       : =SE($P$1="/2";B3*G3;SE($F$1="REPOSIÇÃO";B3*G3*2*1,25;G3*2*B3))
+A1-EN       : =IF($P$1="/2",B3*G3,IF($F$1="REPOSIÇÃO",B3*G3*2*1.25,G3*2*B3))
+
+----------------------------------------------------------------
+Ocorrencias : 2.499
+Primeira    : I3
+Ultima      : I2501
+Distribuicao: linhas consecutivas de 3 a 2501
+R1C1        : =IFERROR(INDEX(R3C6:R2501C6, SMALL(IF(MATCH(IF(R3C6:R2501C6="","",R3C6:R2501C6), IF(R3C6:R2501C6="","",R3C6:R2501C6),0)= ROW(INDIRECT("1:"&ROWS(R3C6:R2501C6))), MATCH(IF(R3C6:R2501C6="","",R3C6:R2501C6), IF(R3C6:R2501C6="","",R3C6:R2501C6),0),""), ROW(INDIRECT("1:"&ROWS(R3C6:R2501C6))))),"")
+A1-PT       : =SEERRO(ÍNDICE($F$3:$F$2501; MENOR(SE(CORRESP(SE($F$3:$F$2501="";"";$F$3:$F$2501); SE($F$3:$F$2501="";"";$F$3:$F$2501);0)= LIN(INDIRETO("1:"&LINS($F$3:$F$2501))); CORRESP(SE($F$3:$F$2501="";"";$F$3:$F$2501); SE($F$3:$F$2501="";"";$F$3:$F$2501);0);""); LIN(INDIRETO("1:"&LINS($F$3:$F$2501)))));"")
+A1-EN       : =IFERROR(INDEX($F$3:$F$2501, SMALL(IF(MATCH(IF($F$3:$F$2501="","",$F$3:$F$2501), IF($F$3:$F$2501="","",$F$3:$F$2501),0)= ROW(INDIRECT("1:"&ROWS($F$3:$F$2501))), MATCH(IF($F$3:$F$2501="","",$F$3:$F$2501), IF($F$3:$F$2501="","",$F$3:$F$2501),0),""), ROW(INDIRECT("1:"&ROWS($F$3:$F$2501))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 2.499
+Primeira    : J3
+Ultima      : J2501
+Distribuicao: linhas consecutivas de 3 a 2501
+R1C1        : =SUMIFS(R3C[-2]:R2501C[-2],R3C[-4]:R2501C[-4],RC[-1])
+A1-PT       : =SOMASES(H$3:H$2501;F$3:F$2501;I3)
+A1-EN       : =SUMIFS(H$3:H$2501,F$3:F$2501,I3)
+
+----------------------------------------------------------------
+Ocorrencias : 2.499
+Primeira    : L3
+Ultima      : L2501
+Distribuicao: linhas consecutivas de 3 a 2501
+R1C1        : =IF(RC9="","",VLOOKUP(RC9,'PESOS DE FIOS'!R2C1:R15000C11,2,0))
+A1-PT       : =SE($I3="";"";PROCV($I3;'PESOS DE FIOS'!$A$2:$K$15000;2;0))
+A1-EN       : =IF($I3="","",VLOOKUP($I3,'PESOS DE FIOS'!$A$2:$K$15000,2,0))
+
+----------------------------------------------------------------
+Ocorrencias : 2.499
+Primeira    : M3
+Ultima      : M2501
+Distribuicao: linhas consecutivas de 3 a 2501
+R1C1        : =IF(RC9="","",VLOOKUP(RC9,'PESOS DE FIOS'!R2C1:R15000C11,4,0))
+A1-PT       : =SE($I3="";"";PROCV($I3;'PESOS DE FIOS'!$A$2:$K$15000;4;0))
+A1-EN       : =IF($I3="","",VLOOKUP($I3,'PESOS DE FIOS'!$A$2:$K$15000,4,0))
+
+----------------------------------------------------------------
+Ocorrencias : 2.499
+Primeira    : N3
+Ultima      : N2501
+Distribuicao: linhas consecutivas de 3 a 2501
+R1C1        : =IF(RC9="","",VLOOKUP(RC9,'PESOS DE FIOS'!R2C1:R15000C11,6,0))
+A1-PT       : =SE($I3="";"";PROCV($I3;'PESOS DE FIOS'!$A$2:$K$15000;6;0))
+A1-EN       : =IF($I3="","",VLOOKUP($I3,'PESOS DE FIOS'!$A$2:$K$15000,6,0))
+
+----------------------------------------------------------------
+Ocorrencias : 2.499
+Primeira    : O3
+Ultima      : O2501
+Distribuicao: linhas consecutivas de 3 a 2501
+R1C1        : =IF(RC9="","",VLOOKUP(RC9,'PESOS DE FIOS'!R2C1:R15000C11,8,0))
+A1-PT       : =SE($I3="";"";PROCV($I3;'PESOS DE FIOS'!$A$2:$K$15000;8;0))
+A1-EN       : =IF($I3="","",VLOOKUP($I3,'PESOS DE FIOS'!$A$2:$K$15000,8,0))
+
+----------------------------------------------------------------
+Ocorrencias : 2.499
+Primeira    : Q3
+Ultima      : Q2501
+Distribuicao: linhas consecutivas de 3 a 2501
+R1C1        : =IF(RC9="","",VLOOKUP(RC9,'PESOS DE FIOS'!R2C1:R15000C11,3,0))*RC[-7]
+A1-PT       : =SE($I3="";"";PROCV($I3;'PESOS DE FIOS'!$A$2:$K$15000;3;0))*J3
+A1-EN       : =IF($I3="","",VLOOKUP($I3,'PESOS DE FIOS'!$A$2:$K$15000,3,0))*J3
+
+----------------------------------------------------------------
+Ocorrencias : 2.499
+Primeira    : R3
+Ultima      : R2501
+Distribuicao: linhas consecutivas de 3 a 2501
+R1C1        : =IF(RC9="","",VLOOKUP(RC9,'PESOS DE FIOS'!R2C1:R15000C11,5,0))*RC[-8]
+A1-PT       : =SE($I3="";"";PROCV($I3;'PESOS DE FIOS'!$A$2:$K$15000;5;0))*J3
+A1-EN       : =IF($I3="","",VLOOKUP($I3,'PESOS DE FIOS'!$A$2:$K$15000,5,0))*J3
+
+----------------------------------------------------------------
+Ocorrencias : 2.499
+Primeira    : S3
+Ultima      : S2501
+Distribuicao: linhas consecutivas de 3 a 2501
+R1C1        : =IF(RC9="","",VLOOKUP(RC9,'PESOS DE FIOS'!R2C1:R15000C11,7,0))*RC[-9]
+A1-PT       : =SE($I3="";"";PROCV($I3;'PESOS DE FIOS'!$A$2:$K$15000;7;0))*J3
+A1-EN       : =IF($I3="","",VLOOKUP($I3,'PESOS DE FIOS'!$A$2:$K$15000,7,0))*J3
+
+----------------------------------------------------------------
+Ocorrencias : 2.499
+Primeira    : T3
+Ultima      : T2501
+Distribuicao: linhas consecutivas de 3 a 2501
+R1C1        : =IF(RC9="","",VLOOKUP(RC9,'PESOS DE FIOS'!R2C1:R15000C11,9,0))*RC[-10]
+A1-PT       : =SE($I3="";"";PROCV($I3;'PESOS DE FIOS'!$A$2:$K$15000;9;0))*J3
+A1-EN       : =IF($I3="","",VLOOKUP($I3,'PESOS DE FIOS'!$A$2:$K$15000,9,0))*J3
+
+----------------------------------------------------------------
+Ocorrencias : 2.495
+Primeira    : K3
+Ultima      : K2497
+Distribuicao: linhas consecutivas de 3 a 2497
+R1C1        : =IF(PEDIDOS!R[1]C="TRANÇADEIRA",PEDIDOS!R[1]C[4]," ")
+A1-PT       : =SE(PEDIDOS!K4="TRANÇADEIRA";PEDIDOS!O4;" ")
+A1-EN       : =IF(PEDIDOS!K4="TRANÇADEIRA",PEDIDOS!O4," ")
+
+----------------------------------------------------------------
+Ocorrencias : 1.870
+Primeira    : F632
+Ultima      : F2501
+Distribuicao: linhas consecutivas de 632 a 2501
+R1C1        : =IFERROR(IF(RC1="","",VLOOKUP(RC1,'DADOS GERAIS DE PRODUTOS'!R2C2:R10000C4,2,0)), " ")
+A1-PT       : =SEERRO(SE($A632="";"";PROCV($A632;'DADOS GERAIS DE PRODUTOS'!$B$2:$D$10000;2;0)); " ")
+A1-EN       : =IFERROR(IF($A632="","",VLOOKUP($A632,'DADOS GERAIS DE PRODUTOS'!$B$2:$D$10000,2,0)), " ")
+
+----------------------------------------------------------------
+Ocorrencias : 1.870
+Primeira    : G632
+Ultima      : G2501
+Distribuicao: linhas consecutivas de 632 a 2501
+R1C1        : =IF(RC1="","",VLOOKUP(RC1,'DADOS GERAIS DE PRODUTOS'!R2C2:R10000C4,3,0))
+A1-PT       : =SE($A632="";"";PROCV($A632;'DADOS GERAIS DE PRODUTOS'!$B$2:$D$10000;3;0))
+A1-EN       : =IF($A632="","",VLOOKUP($A632,'DADOS GERAIS DE PRODUTOS'!$B$2:$D$10000,3,0))
+
+----------------------------------------------------------------
+Ocorrencias : 629
+Primeira    : F3
+Ultima      : F631
+Distribuicao: linhas consecutivas de 3 a 631
+R1C1        : =IFERROR(IF(RC1="","",VLOOKUP(RC1,'DADOS GERAIS DE PRODUTOS'!R2C2:R49999C4,2,0)), " ")
+A1-PT       : =SEERRO(SE($A3="";"";PROCV($A3;'DADOS GERAIS DE PRODUTOS'!$B$2:$D$49999;2;0)); " ")
+A1-EN       : =IFERROR(IF($A3="","",VLOOKUP($A3,'DADOS GERAIS DE PRODUTOS'!$B$2:$D$49999,2,0)), " ")
+
+----------------------------------------------------------------
+Ocorrencias : 629
+Primeira    : G3
+Ultima      : G631
+Distribuicao: linhas consecutivas de 3 a 631
+R1C1        : =IF(RC1="","",VLOOKUP(RC1,'DADOS GERAIS DE PRODUTOS'!R2C2:R49999C4,3,0))
+A1-PT       : =SE($A3="";"";PROCV($A3;'DADOS GERAIS DE PRODUTOS'!$B$2:$D$49999;3;0))
+A1-EN       : =IF($A3="","",VLOOKUP($A3,'DADOS GERAIS DE PRODUTOS'!$B$2:$D$49999,3,0))
+
+----------------------------------------------------------------
+Ocorrencias : 275
+Primeira    : V3
+Ultima      : V277
+Distribuicao: linhas consecutivas de 3 a 277
+R1C1        : =LEFT(RC[-13],4)
+A1-PT       : =ESQUERDA(I3;4)
+A1-EN       : =LEFT(I3,4)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : P1
+Ultima      : P1
+R1C1        : =IF(RC[-10]="PAQUETÁ ITAPAJÉ","/2",IF(RC[-10]="PAQUETÁ PENTECOSTE","/2",IF(RC[-10]="PAQUETÁ PROJEÇÃO","/2")))
+A1-PT       : =SE(F1="PAQUETÁ ITAPAJÉ";"/2";SE(F1="PAQUETÁ PENTECOSTE";"/2";SE(F1="PAQUETÁ PROJEÇÃO";"/2")))
+A1-EN       : =IF(F1="PAQUETÁ ITAPAJÉ","/2",IF(F1="PAQUETÁ PENTECOSTE","/2",IF(F1="PAQUETÁ PROJEÇÃO","/2")))
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : F1
+Ultima      : F1
+R1C1        : =PEDIDOS!R[1]C[-2]
+A1-PT       : =PEDIDOS!D2
+A1-EN       : =PEDIDOS!D2

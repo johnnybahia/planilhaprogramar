@@ -1,0 +1,38 @@
+================================================================
+FORMULAS DA ABA: Relação de referencias
+================================================================
+
+Total de celulas com formula : 15.000
+Padroes distintos (R1C1)     : 3
+
+Como ler este arquivo:
+  R1C1  = o padrao da formula. Igual para toda celula copiada.
+          R = linha atual, C = coluna atual. R[-1] = uma linha acima.
+  A1-PT = a formula como aparece no Excel em portugues.
+  A1-EN = a mesma formula com os nomes de funcao em ingles.
+          E esta que serve para o Google Sheets e para programacao.
+
+----------------------------------------------------------------
+Ocorrencias : 12.500
+Primeira    : A1
+Ultima      : AC500
+R1C1        : =#REF!
+A1-PT       : =#REF!
+A1-EN       : =#REF!
+
+----------------------------------------------------------------
+Ocorrencias : 2.000
+Primeira    : J1
+Ultima      : AD500
+R1C1        : =RC[-5]
+A1-PT       : =E1
+A1-EN       : =E1
+
+----------------------------------------------------------------
+Ocorrencias : 500
+Primeira    : O1
+Ultima      : O500
+Distribuicao: linhas consecutivas de 1 a 500
+R1C1        : =RC[-10]
+A1-PT       : =E1
+A1-EN       : =E1

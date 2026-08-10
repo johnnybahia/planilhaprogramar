@@ -1,0 +1,102 @@
+================================================================
+FORMULAS DA ABA: CORES USADAS
+================================================================
+
+Total de celulas com formula : 28.200
+Padroes distintos (R1C1)     : 10
+
+Como ler este arquivo:
+  R1C1  = o padrao da formula. Igual para toda celula copiada.
+          R = linha atual, C = coluna atual. R[-1] = uma linha acima.
+  A1-PT = a formula como aparece no Excel em portugues.
+  A1-EN = a mesma formula com os nomes de funcao em ingles.
+          E esta que serve para o Google Sheets e para programacao.
+
+----------------------------------------------------------------
+Ocorrencias : 12.000
+Primeira    : A1
+Ultima      : U2000
+R1C1        : =#REF!
+A1-PT       : =#REF!
+A1-EN       : =#REF!
+
+----------------------------------------------------------------
+Ocorrencias : 2.000
+Primeira    : AB1
+Ultima      : AB2000
+Distribuicao: linhas consecutivas de 1 a 2000
+R1C1        : =TRIM((RC[-9]))
+A1-PT       : =ARRUMAR((S1))
+A1-EN       : =TRIM((S1))
+
+----------------------------------------------------------------
+Ocorrencias : 2.000
+Primeira    : AC1
+Ultima      : AC2000
+Distribuicao: linhas consecutivas de 1 a 2000
+R1C1        : =TRIM((RC[-6]))
+A1-PT       : =ARRUMAR((W1))
+A1-EN       : =TRIM((W1))
+
+----------------------------------------------------------------
+Ocorrencias : 2.000
+Primeira    : AA1
+Ultima      : AA2000
+Distribuicao: linhas consecutivas de 1 a 2000
+R1C1        : =TRIM((RC[-12]))
+A1-PT       : =ARRUMAR((O1))
+A1-EN       : =TRIM((O1))
+
+----------------------------------------------------------------
+Ocorrencias : 2.000
+Primeira    : B1
+Ultima      : B2000
+Distribuicao: linhas consecutivas de 1 a 2000
+R1C1        : =IFERROR(INDEX(R1C1:R9999C1, SMALL(IF(MATCH(IF(R1C1:R9999C1="","",R1C1:R9999C1), IF(R1C1:R9999C1="","",R1C1:R9999C1),0)= ROW(INDIRECT("1:"&ROWS(R1C1:R9999C1))), MATCH(IF(R1C1:R9999C1="","",R1C1:R9999C1), IF(R1C1:R9999C1="","",R1C1:R9999C1),0),""), ROW(INDIRECT("1:"&ROWS(R1C1:R9999C1))))),"")
+A1-PT       : =SEERRO(ÍNDICE($A$1:$A$9999; MENOR(SE(CORRESP(SE($A$1:$A$9999="";"";$A$1:$A$9999); SE($A$1:$A$9999="";"";$A$1:$A$9999);0)= LIN(INDIRETO("1:"&LINS($A$1:$A$9999))); CORRESP(SE($A$1:$A$9999="";"";$A$1:$A$9999); SE($A$1:$A$9999="";"";$A$1:$A$9999);0);""); LIN(INDIRETO("1:"&LINS($A$1:$A$9999)))));"")
+A1-EN       : =IFERROR(INDEX($A$1:$A$9999, SMALL(IF(MATCH(IF($A$1:$A$9999="","",$A$1:$A$9999), IF($A$1:$A$9999="","",$A$1:$A$9999),0)= ROW(INDIRECT("1:"&ROWS($A$1:$A$9999))), MATCH(IF($A$1:$A$9999="","",$A$1:$A$9999), IF($A$1:$A$9999="","",$A$1:$A$9999),0),""), ROW(INDIRECT("1:"&ROWS($A$1:$A$9999))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 2.000
+Primeira    : F1
+Ultima      : F2000
+Distribuicao: linhas consecutivas de 1 a 2000
+R1C1        : =IFERROR(INDEX(R1C5:R9999C5, SMALL(IF(MATCH(IF(R1C5:R9999C5="","",R1C5:R9999C5), IF(R1C5:R9999C5="","",R1C5:R9999C5),0)= ROW(INDIRECT("1:"&ROWS(R1C5:R9999C5))), MATCH(IF(R1C5:R9999C5="","",R1C5:R9999C5), IF(R1C5:R9999C5="","",R1C5:R9999C5),0),""), ROW(INDIRECT("1:"&ROWS(R1C5:R9999C5))))),"")
+A1-PT       : =SEERRO(ÍNDICE($E$1:$E$9999; MENOR(SE(CORRESP(SE($E$1:$E$9999="";"";$E$1:$E$9999); SE($E$1:$E$9999="";"";$E$1:$E$9999);0)= LIN(INDIRETO("1:"&LINS($E$1:$E$9999))); CORRESP(SE($E$1:$E$9999="";"";$E$1:$E$9999); SE($E$1:$E$9999="";"";$E$1:$E$9999);0);""); LIN(INDIRETO("1:"&LINS($E$1:$E$9999)))));"")
+A1-EN       : =IFERROR(INDEX($E$1:$E$9999, SMALL(IF(MATCH(IF($E$1:$E$9999="","",$E$1:$E$9999), IF($E$1:$E$9999="","",$E$1:$E$9999),0)= ROW(INDIRECT("1:"&ROWS($E$1:$E$9999))), MATCH(IF($E$1:$E$9999="","",$E$1:$E$9999), IF($E$1:$E$9999="","",$E$1:$E$9999),0),""), ROW(INDIRECT("1:"&ROWS($E$1:$E$9999))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 2.000
+Primeira    : J1
+Ultima      : J2000
+Distribuicao: linhas consecutivas de 1 a 2000
+R1C1        : =IFERROR(INDEX(R1C9:R9999C9, SMALL(IF(MATCH(IF(R1C9:R9999C9="","",R1C9:R9999C9), IF(R1C9:R9999C9="","",R1C9:R9999C9),0)= ROW(INDIRECT("1:"&ROWS(R1C9:R9999C9))), MATCH(IF(R1C9:R9999C9="","",R1C9:R9999C9), IF(R1C9:R9999C9="","",R1C9:R9999C9),0),""), ROW(INDIRECT("1:"&ROWS(R1C9:R9999C9))))),"")
+A1-PT       : =SEERRO(ÍNDICE($I$1:$I$9999; MENOR(SE(CORRESP(SE($I$1:$I$9999="";"";$I$1:$I$9999); SE($I$1:$I$9999="";"";$I$1:$I$9999);0)= LIN(INDIRETO("1:"&LINS($I$1:$I$9999))); CORRESP(SE($I$1:$I$9999="";"";$I$1:$I$9999); SE($I$1:$I$9999="";"";$I$1:$I$9999);0);""); LIN(INDIRETO("1:"&LINS($I$1:$I$9999)))));"")
+A1-EN       : =IFERROR(INDEX($I$1:$I$9999, SMALL(IF(MATCH(IF($I$1:$I$9999="","",$I$1:$I$9999), IF($I$1:$I$9999="","",$I$1:$I$9999),0)= ROW(INDIRECT("1:"&ROWS($I$1:$I$9999))), MATCH(IF($I$1:$I$9999="","",$I$1:$I$9999), IF($I$1:$I$9999="","",$I$1:$I$9999),0),""), ROW(INDIRECT("1:"&ROWS($I$1:$I$9999))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 2.000
+Primeira    : N1
+Ultima      : N2000
+Distribuicao: linhas consecutivas de 1 a 2000
+R1C1        : =IFERROR(INDEX(R1C13:R9999C13, SMALL(IF(MATCH(IF(R1C13:R9999C13="","",R1C13:R9999C13), IF(R1C13:R9999C13="","",R1C13:R9999C13),0)= ROW(INDIRECT("1:"&ROWS(R1C13:R9999C13))), MATCH(IF(R1C13:R9999C13="","",R1C13:R9999C13), IF(R1C13:R9999C13="","",R1C13:R9999C13),0),""), ROW(INDIRECT("1:"&ROWS(R1C13:R9999C13))))),"")
+A1-PT       : =SEERRO(ÍNDICE($M$1:$M$9999; MENOR(SE(CORRESP(SE($M$1:$M$9999="";"";$M$1:$M$9999); SE($M$1:$M$9999="";"";$M$1:$M$9999);0)= LIN(INDIRETO("1:"&LINS($M$1:$M$9999))); CORRESP(SE($M$1:$M$9999="";"";$M$1:$M$9999); SE($M$1:$M$9999="";"";$M$1:$M$9999);0);""); LIN(INDIRETO("1:"&LINS($M$1:$M$9999)))));"")
+A1-EN       : =IFERROR(INDEX($M$1:$M$9999, SMALL(IF(MATCH(IF($M$1:$M$9999="","",$M$1:$M$9999), IF($M$1:$M$9999="","",$M$1:$M$9999),0)= ROW(INDIRECT("1:"&ROWS($M$1:$M$9999))), MATCH(IF($M$1:$M$9999="","",$M$1:$M$9999), IF($M$1:$M$9999="","",$M$1:$M$9999),0),""), ROW(INDIRECT("1:"&ROWS($M$1:$M$9999))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 2.000
+Primeira    : R1
+Ultima      : R2000
+Distribuicao: linhas consecutivas de 1 a 2000
+R1C1        : =IFERROR(INDEX(R1C17:R9999C17, SMALL(IF(MATCH(IF(R1C17:R9999C17="","",R1C17:R9999C17), IF(R1C17:R9999C17="","",R1C17:R9999C17),0)= ROW(INDIRECT("1:"&ROWS(R1C17:R9999C17))), MATCH(IF(R1C17:R9999C17="","",R1C17:R9999C17), IF(R1C17:R9999C17="","",R1C17:R9999C17),0),""), ROW(INDIRECT("1:"&ROWS(R1C17:R9999C17))))),"")
+A1-PT       : =SEERRO(ÍNDICE($Q$1:$Q$9999; MENOR(SE(CORRESP(SE($Q$1:$Q$9999="";"";$Q$1:$Q$9999); SE($Q$1:$Q$9999="";"";$Q$1:$Q$9999);0)= LIN(INDIRETO("1:"&LINS($Q$1:$Q$9999))); CORRESP(SE($Q$1:$Q$9999="";"";$Q$1:$Q$9999); SE($Q$1:$Q$9999="";"";$Q$1:$Q$9999);0);""); LIN(INDIRETO("1:"&LINS($Q$1:$Q$9999)))));"")
+A1-EN       : =IFERROR(INDEX($Q$1:$Q$9999, SMALL(IF(MATCH(IF($Q$1:$Q$9999="","",$Q$1:$Q$9999), IF($Q$1:$Q$9999="","",$Q$1:$Q$9999),0)= ROW(INDIRECT("1:"&ROWS($Q$1:$Q$9999))), MATCH(IF($Q$1:$Q$9999="","",$Q$1:$Q$9999), IF($Q$1:$Q$9999="","",$Q$1:$Q$9999),0),""), ROW(INDIRECT("1:"&ROWS($Q$1:$Q$9999))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 200
+Primeira    : V1
+Ultima      : V200
+Distribuicao: linhas consecutivas de 1 a 200
+R1C1        : =IFERROR(INDEX(R1C21:R9999C21, SMALL(IF(MATCH(IF(R1C21:R9999C21="","",R1C21:R9999C21), IF(R1C21:R9999C21="","",R1C21:R9999C21),0)= ROW(INDIRECT("1:"&ROWS(R1C21:R9999C21))), MATCH(IF(R1C21:R9999C21="","",R1C21:R9999C21), IF(R1C21:R9999C21="","",R1C21:R9999C21),0),""), ROW(INDIRECT("1:"&ROWS(R1C21:R9999C21))))),"")
+A1-PT       : =SEERRO(ÍNDICE($U$1:$U$9999; MENOR(SE(CORRESP(SE($U$1:$U$9999="";"";$U$1:$U$9999); SE($U$1:$U$9999="";"";$U$1:$U$9999);0)= LIN(INDIRETO("1:"&LINS($U$1:$U$9999))); CORRESP(SE($U$1:$U$9999="";"";$U$1:$U$9999); SE($U$1:$U$9999="";"";$U$1:$U$9999);0);""); LIN(INDIRETO("1:"&LINS($U$1:$U$9999)))));"")
+A1-EN       : =IFERROR(INDEX($U$1:$U$9999, SMALL(IF(MATCH(IF($U$1:$U$9999="","",$U$1:$U$9999), IF($U$1:$U$9999="","",$U$1:$U$9999),0)= ROW(INDIRECT("1:"&ROWS($U$1:$U$9999))), MATCH(IF($U$1:$U$9999="","",$U$1:$U$9999), IF($U$1:$U$9999="","",$U$1:$U$9999),0),""), ROW(INDIRECT("1:"&ROWS($U$1:$U$9999))))),"")

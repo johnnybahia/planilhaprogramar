@@ -1,0 +1,220 @@
+================================================================
+FORMULAS DA ABA: CONSUMO DIÁRIO
+================================================================
+
+Total de celulas com formula : 5.388
+Padroes distintos (R1C1)     : 25
+
+Como ler este arquivo:
+  R1C1  = o padrao da formula. Igual para toda celula copiada.
+          R = linha atual, C = coluna atual. R[-1] = uma linha acima.
+  A1-PT = a formula como aparece no Excel em portugues.
+  A1-EN = a mesma formula com os nomes de funcao em ingles.
+          E esta que serve para o Google Sheets e para programacao.
+
+----------------------------------------------------------------
+Ocorrencias : 998
+Primeira    : D3
+Ultima      : D1000
+Distribuicao: linhas consecutivas de 3 a 1000
+R1C1        : =IFERROR(INDEX(R3C2:R2501C2, SMALL(IF(MATCH(IF(R3C2:R2501C2="","",R3C2:R2501C2), IF(R3C2:R2501C2="","",R3C2:R2501C2),0)= ROW(INDIRECT("1:"&ROWS(R3C2:R2501C2))), MATCH(IF(R3C2:R2501C2="","",R3C2:R2501C2), IF(R3C2:R2501C2="","",R3C2:R2501C2),0),""), ROW(INDIRECT("1:"&ROWS(R3C2:R2501C2))))),"")
+A1-PT       : =SEERRO(ÍNDICE($B$3:$B$2501; MENOR(SE(CORRESP(SE($B$3:$B$2501="";"";$B$3:$B$2501); SE($B$3:$B$2501="";"";$B$3:$B$2501);0)= LIN(INDIRETO("1:"&LINS($B$3:$B$2501))); CORRESP(SE($B$3:$B$2501="";"";$B$3:$B$2501); SE($B$3:$B$2501="";"";$B$3:$B$2501);0);""); LIN(INDIRETO("1:"&LINS($B$3:$B$2501)))));"")
+A1-EN       : =IFERROR(INDEX($B$3:$B$2501, SMALL(IF(MATCH(IF($B$3:$B$2501="","",$B$3:$B$2501), IF($B$3:$B$2501="","",$B$3:$B$2501),0)= ROW(INDIRECT("1:"&ROWS($B$3:$B$2501))), MATCH(IF($B$3:$B$2501="","",$B$3:$B$2501), IF($B$3:$B$2501="","",$B$3:$B$2501),0),""), ROW(INDIRECT("1:"&ROWS($B$3:$B$2501))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 998
+Primeira    : E3
+Ultima      : E1000
+Distribuicao: linhas consecutivas de 3 a 1000
+R1C1        : =SUMIFS(R3C3:R2000C3,R3C2:R2000C2,RC[-1])
+A1-PT       : =SOMASES($C$3:$C$2000;$B$3:$B$2000;D3)
+A1-EN       : =SUMIFS($C$3:$C$2000,$B$3:$B$2000,D3)
+
+----------------------------------------------------------------
+Ocorrencias : 998
+Primeira    : G3
+Ultima      : G1000
+Distribuicao: linhas consecutivas de 3 a 1000
+R1C1        : =IFERROR(INDEX(R3C1:R2501C1, SMALL(IF(MATCH(IF(R3C1:R2501C1="","",R3C1:R2501C1), IF(R3C1:R2501C1="","",R3C1:R2501C1),0)= ROW(INDIRECT("1:"&ROWS(R3C1:R2501C1))), MATCH(IF(R3C1:R2501C1="","",R3C1:R2501C1), IF(R3C1:R2501C1="","",R3C1:R2501C1),0),""), ROW(INDIRECT("1:"&ROWS(R3C1:R2501C1))))),"")
+A1-PT       : =SEERRO(ÍNDICE($A$3:$A$2501; MENOR(SE(CORRESP(SE($A$3:$A$2501="";"";$A$3:$A$2501); SE($A$3:$A$2501="";"";$A$3:$A$2501);0)= LIN(INDIRETO("1:"&LINS($A$3:$A$2501))); CORRESP(SE($A$3:$A$2501="";"";$A$3:$A$2501); SE($A$3:$A$2501="";"";$A$3:$A$2501);0);""); LIN(INDIRETO("1:"&LINS($A$3:$A$2501)))));"")
+A1-EN       : =IFERROR(INDEX($A$3:$A$2501, SMALL(IF(MATCH(IF($A$3:$A$2501="","",$A$3:$A$2501), IF($A$3:$A$2501="","",$A$3:$A$2501),0)= ROW(INDIRECT("1:"&ROWS($A$3:$A$2501))), MATCH(IF($A$3:$A$2501="","",$A$3:$A$2501), IF($A$3:$A$2501="","",$A$3:$A$2501),0),""), ROW(INDIRECT("1:"&ROWS($A$3:$A$2501))))),"")
+
+----------------------------------------------------------------
+Ocorrencias : 398
+Primeira    : A3
+Ultima      : A400
+Distribuicao: linhas consecutivas de 3 a 400
+R1C1        : ='REALTÓRIO TEARES'!R[497]C[16]
+A1-PT       : ='REALTÓRIO TEARES'!Q500
+A1-EN       : ='REALTÓRIO TEARES'!Q500
+
+----------------------------------------------------------------
+Ocorrencias : 371
+Primeira    : A430
+Ultima      : A800
+Distribuicao: linhas consecutivas de 430 a 800
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[494]C[17]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!R924
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!R924
+
+----------------------------------------------------------------
+Ocorrencias : 200
+Primeira    : B301
+Ultima      : C400
+R1C1        : =IFERROR('REALTÓRIO TEARES'!R[199]C[13],"")
+A1-PT       : =SEERRO('REALTÓRIO TEARES'!O500;"")
+A1-EN       : =IFERROR('REALTÓRIO TEARES'!O500,"")
+
+----------------------------------------------------------------
+Ocorrencias : 200
+Primeira    : B101
+Ultima      : C200
+R1C1        : =IFERROR('REALTÓRIO TEARES'!R[399]C[9],"")
+A1-PT       : =SEERRO('REALTÓRIO TEARES'!K500;"")
+A1-EN       : =IFERROR('REALTÓRIO TEARES'!K500,"")
+
+----------------------------------------------------------------
+Ocorrencias : 200
+Primeira    : B201
+Ultima      : C300
+R1C1        : =IFERROR('REALTÓRIO TEARES'!R[299]C[11],"")
+A1-PT       : =SEERRO('REALTÓRIO TEARES'!M500;"")
+A1-EN       : =IFERROR('REALTÓRIO TEARES'!M500,"")
+
+----------------------------------------------------------------
+Ocorrencias : 196
+Primeira    : B3
+Ultima      : C100
+R1C1        : =IFERROR('REALTÓRIO TEARES'!R[497]C[6],"")
+A1-PT       : =SEERRO('REALTÓRIO TEARES'!H500;"")
+A1-EN       : =IFERROR('REALTÓRIO TEARES'!H500,"")
+
+----------------------------------------------------------------
+Ocorrencias : 142
+Primeira    : B730
+Ultima      : C800
+R1C1        : =IFERROR('RELATÓRIO TRANÇADEIRAS'!R[194]C[14],"")
+A1-PT       : =SEERRO('RELATÓRIO TRANÇADEIRAS'!P924;"")
+A1-EN       : =IFERROR('RELATÓRIO TRANÇADEIRAS'!P924,"")
+
+----------------------------------------------------------------
+Ocorrencias : 142
+Primeira    : B630
+Ultima      : C700
+R1C1        : =IFERROR('RELATÓRIO TRANÇADEIRAS'!R[294]C[12],"")
+A1-PT       : =SEERRO('RELATÓRIO TRANÇADEIRAS'!N924;"")
+A1-EN       : =IFERROR('RELATÓRIO TRANÇADEIRAS'!N924,"")
+
+----------------------------------------------------------------
+Ocorrencias : 138
+Primeira    : B432
+Ultima      : C500
+R1C1        : =IFERROR('RELATÓRIO TRANÇADEIRAS'!R[848]C[26],"")
+A1-PT       : =SEERRO('RELATÓRIO TRANÇADEIRAS'!AB1280;"")
+A1-EN       : =IFERROR('RELATÓRIO TRANÇADEIRAS'!AB1280,"")
+
+----------------------------------------------------------------
+Ocorrencias : 71
+Primeira    : C430
+Ultima      : C600
+R1C1        : =IFERROR('RELATÓRIO TRANÇADEIRAS'!#REF!,"")
+A1-PT       : =SEERRO('RELATÓRIO TRANÇADEIRAS'!#REF!;"")
+A1-EN       : =IFERROR('RELATÓRIO TRANÇADEIRAS'!#REF!,"")
+
+----------------------------------------------------------------
+Ocorrencias : 70
+Primeira    : B531
+Ultima      : B600
+Distribuicao: linhas consecutivas de 531 a 600
+R1C1        : =IFERROR('RELATÓRIO TRANÇADEIRAS'!R[749]C[29],"")
+A1-PT       : =SEERRO('RELATÓRIO TRANÇADEIRAS'!AE1280;"")
+A1-EN       : =IFERROR('RELATÓRIO TRANÇADEIRAS'!AE1280,"")
+
+----------------------------------------------------------------
+Ocorrencias : 58
+Primeira    : B601
+Ultima      : C629
+R1C1        : =IFERROR('RELATÓRIO TRANÇADEIRAS'!R[192]C[12],"")
+A1-PT       : =SEERRO('RELATÓRIO TRANÇADEIRAS'!N793;"")
+A1-EN       : =IFERROR('RELATÓRIO TRANÇADEIRAS'!N793,"")
+
+----------------------------------------------------------------
+Ocorrencias : 58
+Primeira    : B701
+Ultima      : C729
+R1C1        : =IFERROR('RELATÓRIO TRANÇADEIRAS'!R[92]C[14],"")
+A1-PT       : =SEERRO('RELATÓRIO TRANÇADEIRAS'!P793;"")
+A1-EN       : =IFERROR('RELATÓRIO TRANÇADEIRAS'!P793,"")
+
+----------------------------------------------------------------
+Ocorrencias : 57
+Primeira    : B402
+Ultima      : B430
+R1C1        : =IFERROR('RELATÓRIO TRANÇADEIRAS'!R[391]C[7],"")
+A1-PT       : =SEERRO('RELATÓRIO TRANÇADEIRAS'!I793;"")
+A1-EN       : =IFERROR('RELATÓRIO TRANÇADEIRAS'!I793,"")
+
+----------------------------------------------------------------
+Ocorrencias : 57
+Primeira    : B501
+Ultima      : C529
+R1C1        : =IFERROR('RELATÓRIO TRANÇADEIRAS'!R[292]C[10],"")
+A1-PT       : =SEERRO('RELATÓRIO TRANÇADEIRAS'!L793;"")
+A1-EN       : =IFERROR('RELATÓRIO TRANÇADEIRAS'!L793,"")
+
+----------------------------------------------------------------
+Ocorrencias : 29
+Primeira    : A401
+Ultima      : A429
+Distribuicao: linhas consecutivas de 401 a 429
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[392]C[17]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!R793
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!R793
+
+----------------------------------------------------------------
+Ocorrencias : 2
+Primeira    : B431
+Ultima      : C431
+R1C1        : =IFERROR('RELATÓRIO TRANÇADEIRAS'!R[835]C[26],"")
+A1-PT       : =SEERRO('RELATÓRIO TRANÇADEIRAS'!AB1266;"")
+A1-EN       : =IFERROR('RELATÓRIO TRANÇADEIRAS'!AB1266,"")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : F1
+Ultima      : F1
+R1C1        : =PEDIDOS!R[3]C[13]
+A1-PT       : =PEDIDOS!S4
+A1-EN       : =PEDIDOS!S4
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B529
+Ultima      : B529
+R1C1        : =IFERROR('RELATÓRIO TRANÇADEIRAS'!R[292]C[9],"")
+A1-PT       : =SEERRO('RELATÓRIO TRANÇADEIRAS'!K821;"")
+A1-EN       : =IFERROR('RELATÓRIO TRANÇADEIRAS'!K821,"")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B530
+Ultima      : B530
+R1C1        : =IFERROR('RELATÓRIO TRANÇADEIRAS'!R[736]C[29],"")
+A1-PT       : =SEERRO('RELATÓRIO TRANÇADEIRAS'!AE1266;"")
+A1-EN       : =IFERROR('RELATÓRIO TRANÇADEIRAS'!AE1266,"")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : C530
+Ultima      : C530
+R1C1        : =IFERROR('RELATÓRIO TRANÇADEIRAS'!R[394]C[10],"")
+A1-PT       : =SEERRO('RELATÓRIO TRANÇADEIRAS'!M924;"")
+A1-EN       : =IFERROR('RELATÓRIO TRANÇADEIRAS'!M924,"")
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : D1
+Ultima      : D1
+R1C1        : =TODAY()
+A1-PT       : =HOJE()
+A1-EN       : =TODAY()

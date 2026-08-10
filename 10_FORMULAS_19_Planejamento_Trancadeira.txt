@@ -1,0 +1,2221 @@
+================================================================
+FORMULAS DA ABA: Planejamento Trançadeira
+================================================================
+
+Total de celulas com formula : 151.385
+Padroes distintos (R1C1)     : 276
+
+Como ler este arquivo:
+  R1C1  = o padrao da formula. Igual para toda celula copiada.
+          R = linha atual, C = coluna atual. R[-1] = uma linha acima.
+  A1-PT = a formula como aparece no Excel em portugues.
+  A1-EN = a mesma formula com os nomes de funcao em ingles.
+          E esta que serve para o Google Sheets e para programacao.
+
+----------------------------------------------------------------
+Ocorrencias : 75.624
+Primeira    : C1
+Ultima      : APM137
+R1C1        : =IF(RC[-1]>RC[-2],RC[-2],IF(RC[-1]<RC[-2],0,RC[-2]))
+A1-PT       : =SE(B1>A1;A1;SE(B1<A1;0;A1))
+A1-EN       : =IF(B1>A1,A1,IF(B1<A1,0,A1))
+
+----------------------------------------------------------------
+Ocorrencias : 75.487
+Primeira    : D1
+Ultima      : APL137
+R1C1        : =IF(RC[-1]=RC[-3],RC[-2]-RC[-1],0)
+A1-PT       : =SE(C1=A1;B1-C1;0)
+A1-EN       : =IF(C1=A1,B1-C1,0)
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A1
+Ultima      : A1
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[18]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q19
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q19
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B1
+Ultima      : B1
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[18]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D19
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D19
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A2
+Ultima      : A2
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[23]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q25
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q25
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B2
+Ultima      : B2
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[23]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D25
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D25
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A3
+Ultima      : A3
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[28]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q31
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q31
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B3
+Ultima      : B3
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[28]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D31
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D31
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A4
+Ultima      : A4
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[33]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q37
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q37
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B4
+Ultima      : B4
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[33]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D37
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D37
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A5
+Ultima      : A5
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[38]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q43
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q43
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B5
+Ultima      : B5
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[38]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D43
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D43
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A6
+Ultima      : A6
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[43]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q49
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q49
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B6
+Ultima      : B6
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[43]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D49
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D49
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A7
+Ultima      : A7
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[48]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q55
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q55
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B7
+Ultima      : B7
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[48]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D55
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D55
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A8
+Ultima      : A8
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[53]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q61
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q61
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B8
+Ultima      : B8
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[53]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D61
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D61
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A9
+Ultima      : A9
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[58]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q67
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q67
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B9
+Ultima      : B9
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[58]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D67
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D67
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A10
+Ultima      : A10
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[63]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q73
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q73
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B10
+Ultima      : B10
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[63]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D73
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D73
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A11
+Ultima      : A11
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[68]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q79
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q79
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B11
+Ultima      : B11
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[68]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D79
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D79
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A12
+Ultima      : A12
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[73]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q85
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q85
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B12
+Ultima      : B12
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[73]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D85
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D85
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A13
+Ultima      : A13
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[78]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q91
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q91
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B13
+Ultima      : B13
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[78]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D91
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D91
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A14
+Ultima      : A14
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[83]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q97
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q97
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B14
+Ultima      : B14
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[83]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D97
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D97
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A15
+Ultima      : A15
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[88]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q103
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q103
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B15
+Ultima      : B15
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[88]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D103
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D103
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A16
+Ultima      : A16
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[93]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q109
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q109
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B16
+Ultima      : B16
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[93]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D109
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D109
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A17
+Ultima      : A17
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[98]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q115
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q115
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B17
+Ultima      : B17
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[98]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D115
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D115
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A18
+Ultima      : A18
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[103]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q121
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q121
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B18
+Ultima      : B18
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[103]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D121
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D121
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A19
+Ultima      : A19
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[108]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q127
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q127
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B19
+Ultima      : B19
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[108]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D127
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D127
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A20
+Ultima      : A20
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[113]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q133
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q133
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B20
+Ultima      : B20
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[113]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D133
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D133
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A21
+Ultima      : A21
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[118]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q139
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q139
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B21
+Ultima      : B21
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[118]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D139
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D139
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A22
+Ultima      : A22
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[123]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q145
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q145
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B22
+Ultima      : B22
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[123]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D145
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D145
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A23
+Ultima      : A23
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[128]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q151
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q151
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B23
+Ultima      : B23
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[128]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D151
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D151
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A24
+Ultima      : A24
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[133]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q157
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q157
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B24
+Ultima      : B24
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[133]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D157
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D157
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A25
+Ultima      : A25
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[138]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q163
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q163
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B25
+Ultima      : B25
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[138]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D163
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D163
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A26
+Ultima      : A26
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[143]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q169
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q169
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B26
+Ultima      : B26
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[143]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D169
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D169
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A27
+Ultima      : A27
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[148]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q175
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q175
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B27
+Ultima      : B27
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[148]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D175
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D175
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A28
+Ultima      : A28
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[153]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q181
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q181
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B28
+Ultima      : B28
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[153]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D181
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D181
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A29
+Ultima      : A29
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[158]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q187
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q187
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B29
+Ultima      : B29
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[158]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D187
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D187
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A30
+Ultima      : A30
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[163]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q193
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q193
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B30
+Ultima      : B30
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[163]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D193
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D193
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A31
+Ultima      : A31
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[168]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q199
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q199
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B31
+Ultima      : B31
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[168]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D199
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D199
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A32
+Ultima      : A32
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[173]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q205
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q205
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B32
+Ultima      : B32
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[173]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D205
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D205
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A33
+Ultima      : A33
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[178]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q211
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q211
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B33
+Ultima      : B33
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[178]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D211
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D211
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A34
+Ultima      : A34
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[183]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q217
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q217
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B34
+Ultima      : B34
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[183]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D217
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D217
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A35
+Ultima      : A35
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[188]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q223
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q223
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B35
+Ultima      : B35
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[188]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D223
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D223
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A36
+Ultima      : A36
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[193]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q229
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q229
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B36
+Ultima      : B36
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[193]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D229
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D229
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A37
+Ultima      : A37
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[198]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q235
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q235
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B37
+Ultima      : B37
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[198]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D235
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D235
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A38
+Ultima      : A38
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[203]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q241
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q241
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B38
+Ultima      : B38
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[203]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D241
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D241
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A39
+Ultima      : A39
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[208]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q247
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q247
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B39
+Ultima      : B39
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[208]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D247
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D247
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A40
+Ultima      : A40
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[213]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q253
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q253
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B40
+Ultima      : B40
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[213]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D253
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D253
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A41
+Ultima      : A41
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[218]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q259
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q259
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B41
+Ultima      : B41
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[218]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D259
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D259
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A42
+Ultima      : A42
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[223]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q265
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q265
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B42
+Ultima      : B42
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[223]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D265
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D265
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A43
+Ultima      : A43
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[228]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q271
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q271
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B43
+Ultima      : B43
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[228]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D271
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D271
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A44
+Ultima      : A44
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[233]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q277
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q277
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B44
+Ultima      : B44
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[233]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D277
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D277
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A45
+Ultima      : A45
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[238]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q283
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q283
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B45
+Ultima      : B45
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[238]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D283
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D283
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A46
+Ultima      : A46
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[243]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q289
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q289
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B46
+Ultima      : B46
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[243]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D289
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D289
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A47
+Ultima      : A47
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[248]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q295
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q295
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B47
+Ultima      : B47
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[248]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D295
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D295
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A48
+Ultima      : A48
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[253]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q301
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q301
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B48
+Ultima      : B48
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[253]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D301
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D301
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A49
+Ultima      : A49
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[258]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q307
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q307
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B49
+Ultima      : B49
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[258]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D307
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D307
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A50
+Ultima      : A50
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[263]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q313
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q313
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B50
+Ultima      : B50
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[263]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D313
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D313
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A51
+Ultima      : A51
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[268]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q319
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q319
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B51
+Ultima      : B51
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[268]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D319
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D319
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A52
+Ultima      : A52
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[273]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q325
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q325
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B52
+Ultima      : B52
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[273]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D325
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D325
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A53
+Ultima      : A53
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[278]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q331
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q331
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B53
+Ultima      : B53
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[278]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D331
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D331
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A54
+Ultima      : A54
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[283]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q337
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q337
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B54
+Ultima      : B54
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[283]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D337
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D337
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A55
+Ultima      : A55
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[288]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q343
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q343
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B55
+Ultima      : B55
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[288]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D343
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D343
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A56
+Ultima      : A56
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[293]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q349
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q349
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B56
+Ultima      : B56
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[293]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D349
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D349
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A57
+Ultima      : A57
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[298]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q355
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q355
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B57
+Ultima      : B57
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[298]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D355
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D355
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A58
+Ultima      : A58
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[303]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q361
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q361
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B58
+Ultima      : B58
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[303]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D361
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D361
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A59
+Ultima      : A59
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[308]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q367
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q367
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B59
+Ultima      : B59
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[308]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D367
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D367
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A60
+Ultima      : A60
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[313]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q373
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q373
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B60
+Ultima      : B60
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[313]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D373
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D373
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A61
+Ultima      : A61
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[318]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q379
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q379
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B61
+Ultima      : B61
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[318]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D379
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D379
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A62
+Ultima      : A62
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[323]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q385
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q385
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B62
+Ultima      : B62
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[323]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D385
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D385
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A63
+Ultima      : A63
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[328]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q391
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q391
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B63
+Ultima      : B63
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[328]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D391
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D391
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A64
+Ultima      : A64
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[333]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q397
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q397
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B64
+Ultima      : B64
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[333]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D397
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D397
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A65
+Ultima      : A65
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[338]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q403
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q403
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B65
+Ultima      : B65
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[338]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D403
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D403
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A66
+Ultima      : A66
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[343]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q409
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q409
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B66
+Ultima      : B66
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[343]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D409
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D409
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A67
+Ultima      : A67
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[348]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q415
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q415
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B67
+Ultima      : B67
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[348]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D415
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D415
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A68
+Ultima      : A68
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[353]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q421
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q421
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B68
+Ultima      : B68
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[353]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D421
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D421
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A69
+Ultima      : A69
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[358]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q427
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q427
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B69
+Ultima      : B69
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[358]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D427
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D427
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A70
+Ultima      : A70
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[363]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q433
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q433
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B70
+Ultima      : B70
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[363]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D433
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D433
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A71
+Ultima      : A71
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[368]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q439
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q439
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B71
+Ultima      : B71
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[368]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D439
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D439
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A72
+Ultima      : A72
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[373]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q445
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q445
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B72
+Ultima      : B72
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[373]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D445
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D445
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A73
+Ultima      : A73
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[378]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q451
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q451
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B73
+Ultima      : B73
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[378]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D451
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D451
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A74
+Ultima      : A74
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[383]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q457
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q457
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B74
+Ultima      : B74
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[383]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D457
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D457
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A75
+Ultima      : A75
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[388]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q463
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q463
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B75
+Ultima      : B75
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[388]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D463
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D463
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A76
+Ultima      : A76
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[393]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q469
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q469
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B76
+Ultima      : B76
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[393]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D469
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D469
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A77
+Ultima      : A77
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[398]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q475
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q475
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B77
+Ultima      : B77
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[398]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D475
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D475
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A78
+Ultima      : A78
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[403]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q481
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q481
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B78
+Ultima      : B78
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[403]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D481
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D481
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A79
+Ultima      : A79
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[408]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q487
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q487
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B79
+Ultima      : B79
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[408]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D487
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D487
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A80
+Ultima      : A80
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[413]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q493
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q493
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B80
+Ultima      : B80
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[413]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D493
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D493
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A81
+Ultima      : A81
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[418]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q499
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q499
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B81
+Ultima      : B81
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[418]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D499
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D499
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A82
+Ultima      : A82
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[423]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q505
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q505
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B82
+Ultima      : B82
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[423]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D505
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D505
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A83
+Ultima      : A83
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[428]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q511
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q511
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B83
+Ultima      : B83
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[428]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D511
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D511
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A84
+Ultima      : A84
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[433]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q517
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q517
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B84
+Ultima      : B84
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[433]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D517
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D517
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A85
+Ultima      : A85
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[438]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q523
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q523
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B85
+Ultima      : B85
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[438]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D523
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D523
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A86
+Ultima      : A86
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[443]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q529
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q529
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B86
+Ultima      : B86
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[443]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D529
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D529
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A87
+Ultima      : A87
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[448]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q535
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q535
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B87
+Ultima      : B87
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[448]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D535
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D535
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A88
+Ultima      : A88
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[453]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q541
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q541
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B88
+Ultima      : B88
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[453]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D541
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D541
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A89
+Ultima      : A89
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[458]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q547
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q547
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B89
+Ultima      : B89
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[458]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D547
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D547
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A90
+Ultima      : A90
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[463]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q553
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q553
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B90
+Ultima      : B90
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[463]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D553
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D553
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A91
+Ultima      : A91
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[468]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q559
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q559
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B91
+Ultima      : B91
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[468]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D559
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D559
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A92
+Ultima      : A92
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[473]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q565
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q565
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B92
+Ultima      : B92
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[473]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D565
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D565
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A93
+Ultima      : A93
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[478]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q571
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q571
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B93
+Ultima      : B93
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[478]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D571
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D571
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A94
+Ultima      : A94
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[483]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q577
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q577
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B94
+Ultima      : B94
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[483]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D577
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D577
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A95
+Ultima      : A95
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[488]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q583
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q583
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B95
+Ultima      : B95
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[488]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D583
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D583
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A96
+Ultima      : A96
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[493]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q589
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q589
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B96
+Ultima      : B96
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[493]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D589
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D589
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A97
+Ultima      : A97
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[498]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q595
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q595
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B97
+Ultima      : B97
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[498]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D595
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D595
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A98
+Ultima      : A98
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[503]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q601
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q601
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B98
+Ultima      : B98
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[503]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D601
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D601
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A99
+Ultima      : A99
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[508]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q607
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q607
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B99
+Ultima      : B99
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[508]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D607
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D607
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A100
+Ultima      : A100
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[513]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q613
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q613
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B100
+Ultima      : B100
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[513]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D613
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D613
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A101
+Ultima      : A101
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[518]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q619
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q619
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B101
+Ultima      : B101
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[518]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D619
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D619
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A102
+Ultima      : A102
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[523]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q625
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q625
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B102
+Ultima      : B102
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[523]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D625
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D625
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A103
+Ultima      : A103
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[528]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q631
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q631
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B103
+Ultima      : B103
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[528]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D631
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D631
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A104
+Ultima      : A104
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[533]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q637
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q637
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B104
+Ultima      : B104
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[533]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D637
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D637
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A105
+Ultima      : A105
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[538]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q643
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q643
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B105
+Ultima      : B105
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[538]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D643
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D643
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A106
+Ultima      : A106
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[543]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q649
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q649
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B106
+Ultima      : B106
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[543]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D649
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D649
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A107
+Ultima      : A107
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[548]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q655
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q655
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B107
+Ultima      : B107
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[548]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D655
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D655
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A108
+Ultima      : A108
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[553]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q661
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q661
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B108
+Ultima      : B108
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[553]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D661
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D661
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A109
+Ultima      : A109
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[558]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q667
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q667
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B109
+Ultima      : B109
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[558]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D667
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D667
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A110
+Ultima      : A110
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[563]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q673
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q673
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B110
+Ultima      : B110
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[563]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D673
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D673
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A111
+Ultima      : A111
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[568]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q679
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q679
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B111
+Ultima      : B111
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[568]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D679
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D679
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A112
+Ultima      : A112
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[573]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q685
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q685
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B112
+Ultima      : B112
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[573]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D685
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D685
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A113
+Ultima      : A113
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[578]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q691
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q691
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B113
+Ultima      : B113
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[578]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D691
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D691
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A114
+Ultima      : A114
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[583]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q697
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q697
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B114
+Ultima      : B114
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[583]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D697
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D697
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A115
+Ultima      : A115
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[588]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q703
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q703
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B115
+Ultima      : B115
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[588]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D703
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D703
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A116
+Ultima      : A116
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[593]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q709
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q709
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B116
+Ultima      : B116
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[593]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D709
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D709
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A117
+Ultima      : A117
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[598]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q715
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q715
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B117
+Ultima      : B117
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[598]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D715
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D715
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A118
+Ultima      : A118
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[603]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q721
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q721
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B118
+Ultima      : B118
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[603]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D721
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D721
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A119
+Ultima      : A119
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[608]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q727
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q727
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B119
+Ultima      : B119
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[608]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D727
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D727
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A120
+Ultima      : A120
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[613]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q733
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q733
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B120
+Ultima      : B120
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[613]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D733
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D733
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A121
+Ultima      : A121
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[618]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q739
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q739
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B121
+Ultima      : B121
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[618]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D739
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D739
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A122
+Ultima      : A122
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[623]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q745
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q745
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B122
+Ultima      : B122
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[623]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D745
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D745
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A123
+Ultima      : A123
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[628]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q751
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q751
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B123
+Ultima      : B123
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[628]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D751
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D751
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A124
+Ultima      : A124
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[633]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q757
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q757
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B124
+Ultima      : B124
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[633]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D757
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D757
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A125
+Ultima      : A125
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[638]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q763
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q763
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B125
+Ultima      : B125
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[638]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D763
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D763
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A126
+Ultima      : A126
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[643]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q769
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q769
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B126
+Ultima      : B126
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[643]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D769
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D769
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A127
+Ultima      : A127
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[648]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q775
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q775
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B127
+Ultima      : B127
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[648]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D775
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D775
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A128
+Ultima      : A128
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[653]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q781
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q781
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B128
+Ultima      : B128
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[653]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D781
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D781
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A129
+Ultima      : A129
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[658]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q787
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q787
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B129
+Ultima      : B129
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[658]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D787
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D787
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A130
+Ultima      : A130
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[663]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q793
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q793
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B130
+Ultima      : B130
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[663]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D793
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D793
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A131
+Ultima      : A131
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[668]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q799
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q799
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B131
+Ultima      : B131
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[668]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D799
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D799
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A132
+Ultima      : A132
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[673]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q805
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q805
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B132
+Ultima      : B132
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[673]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D805
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D805
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A133
+Ultima      : A133
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[678]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q811
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q811
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B133
+Ultima      : B133
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[678]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D811
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D811
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A134
+Ultima      : A134
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[683]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q817
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q817
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B134
+Ultima      : B134
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[683]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D817
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D817
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A135
+Ultima      : A135
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[688]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q823
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q823
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B135
+Ultima      : B135
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[688]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D823
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D823
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A136
+Ultima      : A136
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[693]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q829
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q829
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B136
+Ultima      : B136
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[693]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D829
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D829
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : A137
+Ultima      : A137
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[787]C[16]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!Q924
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!Q924
+
+----------------------------------------------------------------
+Ocorrencias : 1
+Primeira    : B137
+Ultima      : B137
+R1C1        : ='RELATÓRIO TRANÇADEIRAS'!R[787]C[2]
+A1-PT       : ='RELATÓRIO TRANÇADEIRAS'!D924
+A1-EN       : ='RELATÓRIO TRANÇADEIRAS'!D924

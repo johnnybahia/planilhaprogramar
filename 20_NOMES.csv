@@ -1,0 +1,21 @@
+﻿nome;refere_a;escopo;visivel
+CONSUMO!_FilterDatabase;=CONSUMO!$A$2:$T$895;CONSUMO;nao
+'CONSUMO DIÁRIO'!_FilterDatabase;='CONSUMO DIÁRIO'!$A$2:$G$1000;CONSUMO DIÁRIO;nao
+'DADOS DOS PRODUTOS'!_FilterDatabase;='DADOS DOS PRODUTOS'!$A$1:$R$5931;DADOS DOS PRODUTOS;nao
+'DADOS GERAIS DE PRODUTOS'!_FilterDatabase;='DADOS GERAIS DE PRODUTOS'!$C:$C;DADOS GERAIS DE PRODUTOS;nao
+PEDIDOS!_FilterDatabase;=PEDIDOS!$A$1:$S$2437;PEDIDOS;nao
+'PESOS DE FIOS'!_FilterDatabase;='PESOS DE FIOS'!$A$1:$A$5836;PESOS DE FIOS;nao
+'Programação Teares'!_FilterDatabase;='Programação Teares'!$A$2:$U$2;Programação Teares;nao
+'Programação trançadeiras'!_FilterDatabase;='Programação trançadeiras'!$G$3:$G$14;Programação trançadeiras;nao
+'REALTÓRIO TEARES'!_FilterDatabase;='REALTÓRIO TEARES'!$F$23:$P$1135;REALTÓRIO TEARES;nao
+'REALTÓRIO TEARES NOVO'!_FilterDatabase;='REALTÓRIO TEARES NOVO'!$B$23:$P$1092;REALTÓRIO TEARES NOVO;nao
+'RELATÓRIO TRANÇADEIRAS'!_FilterDatabase;='RELATÓRIO TRANÇADEIRAS'!$A$18:$S$1266;RELATÓRIO TRANÇADEIRAS;nao
+_xlfn.SINGLE;=#NAME?;pasta de trabalho;nao
+'CONSUMO DIÁRIO'!Extract;='CONSUMO DIÁRIO'!$D$3;CONSUMO DIÁRIO;sim
+'PESOS DE FIOS'!Extract;='PESOS DE FIOS'!$A$1;PESOS DE FIOS;sim
+'Programação Teares'!Extract;='Programação Teares'!$I$3;Programação Teares;sim
+'Programação trançadeiras'!Extract;='Programação trançadeiras'!$I$3;Programação trançadeiras;sim
+'REALTÓRIO TEARES'!Extract;='REALTÓRIO TEARES'!$H$13;REALTÓRIO TEARES;sim
+'REALTÓRIO TEARES NOVO'!Extract;='REALTÓRIO TEARES NOVO'!$H$13;REALTÓRIO TEARES NOVO;sim
+'RELATÓRIO TRANÇADEIRAS'!Extract;='RELATÓRIO TRANÇADEIRAS'!#REF!;RELATÓRIO TRANÇADEIRAS;sim
+'DADOS GERAIS DE PRODUTOS'!Database;='DADOS GERAIS DE PRODUTOS'!$B:$F;DADOS GERAIS DE PRODUTOS;sim
