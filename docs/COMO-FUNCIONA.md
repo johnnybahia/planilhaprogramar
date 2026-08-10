@@ -1101,3 +1101,51 @@ recebe as mesmas voltas em todos os grupos de espulas, porque não tem fator cad
 por escrito, a quatro linhas de distância da lista que o corrigiria.
 
 Reforça o requisito do R6: campo obrigatório com aviso, em vez de silêncio.
+
+## 6.6 O ciclo fechado — e o que é um "período"
+
+As colunas de entrada do `Planejamento Trançadeira` têm fórmula, uma por linha:
+
+```excel
+Planejamento!A1 = 'RELATÓRIO TRANÇADEIRAS'!Q19     ← capacidade
+Planejamento!B1 = 'RELATÓRIO TRANÇADEIRAS'!D19     ← demanda
+Planejamento!A2 = 'RELATÓRIO TRANÇADEIRAS'!Q25
+Planejamento!B2 = 'RELATÓRIO TRANÇADEIRAS'!D25
+```
+
+E já sabemos o que são `Q` e `D` no relatório:
+
+| Origem | É | Vira |
+|---|---|---|
+| `RELATÓRIO!Q` | **voltas na espula** (da ficha técnica) | capacidade do planejamento |
+| `RELATÓRIO!D` | `(Q × metros) ÷ produção` = **voltas totais** | demanda do planejamento |
+
+**Portanto: um "período" do planejamento é literalmente uma espula.** A pergunta aberta
+desde a Parte 1 está respondida — a simulação conta quantas espulas o pedido consome, e
+a sobra do `MENOR` é o quanto resta na última.
+
+Isso também explica os 276 padrões dessa aba: são `137 + 137` ligações individuais
+(uma por linha, para `A` e `B`) mais as **2 fórmulas de simulação** de fato. A proporção
+de 6 linhas do relatório para 1 do planejamento faz cada ligação ser única em R1C1, o
+que impede qualquer agrupamento.
+
+### O ciclo completo
+
+```
+Programação!J (metros)
+      ↓
+RELATÓRIO!C = metros
+RELATÓRIO!D = (Q×C)/R = voltas totais ───┐
+RELATÓRIO!Q = voltas na espula ──────┐   │
+                                     ↓   ↓
+                     Planejamento!A ─┘   └─ Planejamento!B
+                                 ↓
+                    Planejamento!C:APM  (simulação, 551 períodos)
+                                 ↓
+              RELATÓRIO!W = CONT.SE  (períodos completos, olha C:APM)
+              RELATÓRIO!H = MENOR    (a sobra,          olha C:FJ) ⚠️
+```
+
+Com o ciclo fechado, **o lado das trançadeiras está inteiramente mapeado**: entrada,
+cadastros, cálculo de metros, consumo de fio, conversão para voltas, simulação,
+alinhamento de espulas e montagem do relatório.
