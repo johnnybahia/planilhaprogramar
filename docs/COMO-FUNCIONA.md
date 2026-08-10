@@ -407,3 +407,186 @@ esses itens entram marcados como inativos, preservando o histórico sem poluir a
    nesses casos — vale saber se isso já foi notado.
 4. **`CÓD. CLIENTE` identifica a filial** (Itapajé, Pentecoste, Projeção são filiais da
    Paquetá). Confirma que o cadastro deve ser por filial, e não por empresa?
+
+---
+
+# Parte 3 — A ficha técnica e a cadeia completa
+
+## 3.1 A resposta curta
+
+Sim, dá para ler a construção de um item de ponta a ponta. A cadeia tem **sete etapas** e
+**duas chaves de ligação diferentes** — e é essa troca de chave no meio do caminho que
+explica boa parte da fragilidade do sistema.
+
+```
+1  PEDIDOS                       código único = CÓD. MARFIM + TAMANHO
+        │  PROCV pelo CÓDIGO
+        ▼
+2  DADOS GERAIS DE PRODUTOS      → referência · máquina · tamanho em metros
+        │
+        │  ⚠️ A CHAVE MUDA: daqui para baixo tudo se liga pela DESCRIÇÃO
+        │
+        ├──── PROCV pela REFERÊNCIA ────┐
+        ▼                               ▼
+3  PESOS DE FIOS                   4  DADOS DOS PRODUTOS
+   cores + peso kg/m                  ficha técnica: espulas,
+        │                             fios por espula, produção
+        │                               │
+        └───────────┬───────────────────┘
+                    ▼
+5  Programação (trançadeiras / teares)
+   filtra por máquina · metros = qtd × tamanho × fator
+   agrupa por referência · metros × peso = consumo kg
+                    │
+                    ▼
+6  Planejamento                    simula período a período
+                    │
+                    ▼
+7  RELATÓRIO                       períodos completos + sobra do último
+```
+
+## 3.2 ⚠️ A descrição do produto é usada como chave
+
+Nas etapas 1 e 2 a ligação é pelo **código**. A partir da etapa 3, é pela **descrição**
+(`ATAC 11628 100 7MM`). Ou seja: **um texto digitado à mão virou chave primária.**
+
+Consequência direta: um espaço a mais, um zero à esquerda diferente ou uma letra trocada
+na descrição **rompe silenciosamente** a ligação com os pesos de fio e com a ficha
+técnica. O `PROCV` devolve `#N/A`, o `SEERRO` converte em vazio, e o consumo de fio
+daquele item simplesmente não aparece.
+
+É exatamente o mesmo mecanismo do problema da `Relação de referencias` (ver Análise), e a
+mesma razão pela qual `paquetá  pentecoste` com dois espaços nunca casa.
+
+**A própria planilha já sabe disso.** As colunas O, P e Q de `DADOS DOS PRODUTOS` são
+verificadores automáticos:
+
+```excel
+O2 = SE(SEERRO(LOCALIZAR(L2;A2);0);"OK";"ERRADO")   ← a cor está na descrição?
+P2 = SE(SEERRO(LOCALIZAR(M2;A2);0);"OK";"ERRADO")   ← o modelo está na descrição?
+Q2 = SE(SEERRO(LOCALIZAR(N2;A2);0);"OK";"ERRADO")   ← a largura está na descrição?
+```
+
+Isso confirma, escrito na própria planilha, a regra de composição da descrição que
+deduzimos na Parte 2.6: **descrição = modelo + cor + largura**.
+
+> **Mas o verificador foi parcialmente desligado.** Na amostra, 168 células respondem
+> `OK`, e **6 tiveram a fórmula substituída por texto digitado à mão** — `570` e
+> `CONFERIDO 05/08/2020`. Nessas linhas a verificação deixou de existir: a célula mostra
+> um texto tranquilizador, mas não confere mais nada.
+
+## 3.3 A ficha técnica
+
+`DADOS DOS PRODUTOS` guarda, por referência, **quais fios entram no item, em que
+quantidade, e quanto a máquina produz**. Exemplo real da exportação:
+
+```
+A  ATAC 11628 100 7MM     ← referência (chave)
+B  40                     ← quantidade
+C  100                    ← cor
+M  11628                  ← modelo
+N  7MM                    ← largura
+O  OK   P  OK   Q  OK     ← verificadores
+```
+
+Outro item, com espulas:
+
+```
+A  ATAC 3000 158 3MM
+B  16                     ← nº de espulas
+C  2                      ← fios por espula   → 16 × 2 = 32 fios
+D  158                    ← cor
+H  3000                   ← modelo
+N  1200                   ← produção
+```
+
+O relatório consome essa ficha por `PROCV`, puxando as colunas **B a I, K a M e P**.
+
+### Duas disposições de coluna na mesma aba
+
+Como você disse, a aba tem dados de tear **e** de trançadeira — e as duas famílias
+**usam colunas diferentes para a mesma informação**:
+
+| Informação | Numa família | Na outra |
+|---|---|---|
+| Cor | `C` | `D` |
+| Modelo | `M` | `H` |
+| Conteúdo de `N` | largura (`7MM`) | produção (`1200`) |
+
+Na amostra de 59 linhas: 56 na primeira disposição, 3 na segunda. É por isso que o
+cabeçalho parece desalinhado — **ele descreve uma das duas disposições, não as duas**.
+
+No modelo novo, tear e trançadeira ganham **campos próprios e nomeados**, e nada depende
+de qual coluna a informação ocupa.
+
+## 3.4 ⚠️ A ligação com `PESOS DE FIOS` é posicional, e escorregou 23 vezes
+
+`DADOS DOS PRODUTOS` não busca a referência em `PESOS DE FIOS` — ele **copia por
+posição**:
+
+```excel
+A2   = 'PESOS DE FIOS'!A2       desvio 0
+A40  = 'PESOS DE FIOS'!A41      desvio +1
+A43  = 'PESOS DE FIOS'!A45      desvio +2
+A140 = 'PESOS DE FIOS'!A145     desvio +5
+A240 = 'PESOS DE FIOS'!A251     desvio +11
+...
+```
+
+São **24 trechos distintos**, com desvios de **0 a 23 — todos os inteiros da sequência**.
+
+A leitura é direta: alguém inseriu uma linha em `PESOS DE FIOS` sem inserir a
+correspondente aqui, o alinhamento quebrou dali para baixo, e a fórmula foi remendada a
+partir daquele ponto. **Isso aconteceu 23 vezes.**
+
+Enquanto os remendos estiverem certos, funciona. Mas cada nova inserção em
+`PESOS DE FIOS` desalinha tudo abaixo dela, e o sintoma é a ficha técnica de um produto
+aparecer associada ao **produto errado** — sem nenhum erro na tela.
+
+No modelo novo isso desaparece: as duas informações passam a viver na **mesma tabela de
+produto**, ligadas por identificador, não por posição de linha.
+
+## 3.5 A outra metade do cálculo de tempo
+
+Na Parte 2 vimos o `MENOR(...)`, que devolve a **sobra do último período**. Faltava a
+outra metade, que está na coluna `W` do relatório:
+
+```excel
+=CONT.SE('Planejamento Trançadeira'!C30:APM30; 'Planejamento Trançadeira'!A30)
+```
+
+Conta quantas células da linha de planejamento são **iguais à capacidade** — ou seja,
+**quantos períodos completos** a máquina roda antes de sobrar o resto.
+
+```
+tempo total = (períodos completos)  +  (a fração do último)
+                    CONT.SE                    MENOR
+```
+
+Com a fórmula de módulo proposta na Parte 2, as duas saem de uma vez:
+
+```js
+const periodosCompletos = Math.floor(metrosTotal / capacidade);
+const sobra             = metrosTotal % capacidade;
+```
+
+> Aqui também há desalinhamento: `W67` lê a linha 9 e `W193` lê a linha 30 — ambos
+> batem com a regra de 6 linhas por bloco. Mas `W451` deveria ler a linha 73 e lê a
+> **81**. O relatório e o planejamento também escorregaram um em relação ao outro.
+
+## 3.6 O que consegui e o que não consegui rastrear
+
+**Consegui:** a cadeia inteira no nível da estrutura — cada `PROCV`, cada chave, cada
+coluna consumida —, e dados reais de um item (`ATAC 11628 100 7MM`) em
+`PESOS DE FIOS` e `DADOS DOS PRODUTOS`.
+
+**Não consegui:** seguir **um único item** por todas as sete etapas com dados reais. As
+amostras exportadas cobrem só as **60 primeiras linhas** de cada aba, e as abas estão
+ordenadas de formas diferentes — nenhum item aparece nas sete ao mesmo tempo. O item do
+relatório (`ATAC M15101 5334`) não está nas 60 primeiras de `PESOS DE FIOS` nem de
+`DADOS DOS PRODUTOS`.
+
+Para fechar o rastreamento com números reais, basta exportar de novo com
+`LINHAS_AMOSTRA = 400` em `ferramentas/ExportarPlanilha.bas`. Aí dá para conferir o
+cálculo completo de um item contra o que a planilha mostra hoje — que é o teste que
+prova a migração.
