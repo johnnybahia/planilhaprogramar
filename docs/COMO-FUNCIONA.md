@@ -167,11 +167,177 @@ A coluna some da importação e vira um campo derivado, sempre correto.
 
 ## Perguntas desta parte
 
-1. **Pares ou peças** — como o sistema sabe qual é qual? Se "par" significa duas unidades,
-   isso **dobra o consumo** de metros e de fio. É a informação de maior impacto no cálculo,
-   e hoje não vi nada na planilha que faça essa distinção.
+1. ~~**Pares ou peças**~~ — **respondido na Parte 2.**
 2. **`PRAZO`** — confirma que é "dias restantes na data da extração"? E concorda em
    calculá-lo ao vivo no sistema novo?
 3. **`CÓD. FILIAL`** — é a filial do cliente ou o próprio cliente?
 4. **Peso do fio** — `0,0031` está em que unidade? Quilos por metro de produto?
 5. **"JUNTAR MM"** — os produtos em CM ficarem sem o tamanho na descrição é intencional?
+
+---
+
+# Parte 2 — O cálculo de metros e o consumo de fio
+
+Esta é a parte que justifica o sistema inteiro. Encontrei a cadeia completa nas abas
+`Programação trançadeiras` e `Programação Teares`, e ela confirma exatamente a descrição
+do usuário.
+
+## 2.1 A fórmula central
+
+Na coluna **H** das duas abas de programação:
+
+```excel
+=SE($P$1="/2";        B3*G3;           ← peças:     quantidade × tamanho
+ SE($F$1="REPOSIÇÃO"; B3*G3*2*1,25;    ← reposição: quantidade × tamanho × 2 × 1,25
+                      G3*2*B3))        ← padrão:    quantidade × tamanho × 2
+```
+
+Onde `B` = quantidade do pedido e `G` = tamanho em metros (vindo do `PROCV` em
+`DADOS GERAIS DE PRODUTOS`).
+
+Em forma limpa:
+
+```
+metros_da_linha = quantidade × tamanho_m × fator
+
+fator = 2      → padrão: pedido em PARES (cada par são duas peças)
+      = 1      → cliente que compra em PEÇAS
+      = 2,5    → REPOSIÇÃO (2 × 1,25 — 25% a mais)
+```
+
+## 2.2 Da linha ao consumo de fio
+
+```
+    PEDIDOS (linha do pedido)
+        │  quantidade × tamanho × fator
+        ▼
+    H = metros da linha
+        │  SOMASES(H; F; I)   agrupa por referência
+        ▼
+    J = metros totais da referência
+        │  × peso de cada cor  (PROCV em PESOS DE FIOS)
+        ▼
+    Q, R, S, T = consumo em kg de cada cor
+```
+
+As colunas se organizam assim nas duas abas de programação:
+
+| Col | Conteúdo | Origem |
+|---|---|---|
+| `F` | Referência do item | `PROCV` em `DADOS GERAIS DE PRODUTOS` |
+| `G` | Tamanho em metros | `PROCV` em `DADOS GERAIS DE PRODUTOS` |
+| `H` | **Metros da linha** | a fórmula de 2.1 |
+| `I` | Lista de referências únicas | fórmula matricial |
+| `J` | **Metros totais por referência** | `=SOMASES(H$3:H$2501; F$3:F$2501; I3)` |
+| `L, M, N, O` | Nome das cores 1 a 4 | `PROCV` em `PESOS DE FIOS`, colunas 2/4/6/8 |
+| `Q, R, S, T` | **Consumo em kg das cores 1 a 4** | `PROCV` colunas 3/5/7/9 **× J** |
+
+É exatamente a descrição do usuário: quantidade de pares × o dobro do tamanho → metros;
+metros × peso de cada cor → consumo de fio em kg por cor por item.
+
+## 2.3 ⚠️ Onde está hoje a lista de "clientes que usam peças"
+
+O usuário pediu **um lugar para cadastrar os clientes que compram em peças**. Vale saber
+onde essa informação mora hoje: **em três fórmulas diferentes, em três células
+diferentes, com três grafias diferentes.**
+
+| Aba | Célula | Fórmula |
+|---|---|---|
+| `Programação trançadeiras` | `P1` | `=SE(F1="PAQUETÁ ITAPAJÉ";"/2";SE(F1="PAQUETÁ PENTECOSTE";"/2";SE(F1="PAQUETÁ PROJEÇÃO";"/2")))` |
+| `Programação Teares` | `M1` | `=SE(I1="paquetá itapajé";"2";SE(I1="PAQUETÁ PENTECOSTE";"2";SE(I1="PAQUETÁ PROJEÇÃO";"2")))` |
+| `Programação Teares` | `Z4` | `=SE(S4="paquetá itapajé";"/2";SE(S4="paquetá  pentecoste";"/2";SE(S4="PAQUETÁ PROJEÇÃO";"/2")))` |
+
+São três clientes: **PAQUETÁ ITAPAJÉ, PAQUETÁ PENTECOSTE e PAQUETÁ PROJEÇÃO**.
+
+Três problemas concretos:
+
+1. **`Z4` tem `"paquetá  pentecoste"` com dois espaços.** O Excel ignora maiúsculas na
+   comparação, mas **não ignora espaço**. Esse ramo nunca casa.
+2. **Incluir um quarto cliente exige editar fórmula em três lugares.** É o tipo de
+   alteração que se faz em dois e se esquece do terceiro.
+3. **O interruptor é global do lote, não por linha.** `P1`, `M1` e `Z4` são células
+   únicas que valem para a aba inteira. Se um lote misturar Paquetá com outro cliente,
+   **todos são calculados do mesmo jeito**.
+
+### E as duas linhas ligam o interruptor de formas diferentes
+
+| Aba | Lê de | Conteúdo na exportação |
+|---|---|---|
+| `Programação Teares` | `I1 = PEDIDOS!C2` | `DAKOTA` — `C2` tem `PROCV` no `CADASTRO CLIENTES`, é automático |
+| `Programação trançadeiras` | `F1 = PEDIDOS!D2` | **vazio** — `D2` não tem fórmula, é digitação manual |
+
+Ou seja: nos **teares** o modo peças é detectado sozinho a partir do cliente do primeiro
+pedido. Nas **trançadeiras** ele depende de alguém digitar o nome do cliente (ou a palavra
+`REPOSIÇÃO`) na célula `D2`, que estava vazia na exportação.
+
+**O risco operacional:** se um pedido Paquetá for para trançadeira e ninguém preencher
+`D2`, o cálculo usa o fator 2 em vez de 1 — **o dobro dos metros e o dobro do consumo de
+fio**. E nada na tela avisa.
+
+> O relatório de teares mostra o modo em `E7`:
+> `=SE(PEDIDOS!L1="2";"PAQUETA OK PEÇAS";"PEDIDO EM PARES")`. O de trançadeiras não tem
+> equivalente.
+
+### Ramo morto
+
+Na aba `Programação Teares`, a fórmula testa `SE($M$1="reposição";…)`, mas `M1` é a
+própria fórmula acima, que só pode devolver `"2"` ou `FALSO` — **nunca** `"reposição"`.
+Esse ramo é inalcançável: **reposição não funciona nos teares**, só nas trançadeiras.
+
+## 2.4 Como isso fica no sistema novo
+
+A resposta ao pedido do usuário é uma **tabela de clientes com a unidade de compra**:
+
+| campo | exemplo |
+|---|---|
+| `codigo` | 133 |
+| `nome` | PAQUETÁ ITAPAJÉ |
+| `unidade` | `PECA` (padrão: `PAR`) |
+
+E a regra passa a ser avaliada **por linha de pedido**, usando o `CÓD. CLIENTE` que já
+vem na importação:
+
+```js
+const fator = pedido.reposicao          ? 2.5
+            : cliente.unidade === 'PECA' ? 1
+            :                              2;
+
+const metros = pedido.quantidade * produto.tamanho_m * fator;
+```
+
+O que isso resolve de uma vez:
+
+- cadastrar um novo cliente vira **uma linha numa tabela**, não três fórmulas;
+- some a possibilidade de grafias divergentes — a ligação é pelo **código** do cliente,
+  não pelo nome digitado;
+- um lote **pode misturar clientes**, porque cada linha decide sozinha;
+- `REPOSIÇÃO` passa a ser um campo do pedido e funciona nas duas linhas de produção.
+
+## 2.5 Limite latente: a quinta cor
+
+`PESOS DE FIOS` comporta **5 pares cor/peso** (colunas B/C, D/E, F/G, H/I, **J/K**). As
+fórmulas de programação leem apenas as colunas 2/4/6/8 e 3/5/7/9 — ou seja, as
+**4 primeiras**. As colunas `J` e `K` nunca são lidas.
+
+Na amostra, nenhum produto usa a quinta cor (o máximo são 3), então **hoje isso não
+causa erro**. Mas o dia em que alguém cadastrar um produto com 5 cores, o consumo sairá
+subestimado sem aviso. No modelo novo, cores viram uma tabela filha, sem limite.
+
+## 2.6 Itens sem código
+
+Confirmado pelo usuário: os itens sem código em `DADOS GERAIS DE PRODUTOS` são
+**antigos e descontinuados**. Não é um defeito a corrigir — é histórico. Na migração
+esses itens entram marcados como inativos, preservando o histórico sem poluir a busca.
+
+---
+
+## Perguntas desta parte
+
+1. **O fator de reposição `1,25`** — os 25% a mais são perda de processo, margem de
+   segurança, ou outra coisa? E ele varia por produto ou é fixo?
+2. **Reposição hoje só funciona nas trançadeiras** (o ramo dos teares é inalcançável).
+   Isso é uma limitação conhecida ou um defeito que passou despercebido?
+3. **Um lote pode misturar clientes?** Se sim, o cálculo global de hoje já está errando
+   nesses casos — vale saber se isso já foi notado.
+4. **`CÓD. CLIENTE` identifica a filial** (Itapajé, Pentecoste, Projeção são filiais da
+   Paquetá). Confirma que o cadastro deve ser por filial, e não por empresa?
