@@ -919,3 +919,69 @@ que é verdade na amostra, onde todo `M15101` usa 24×2 + 24×1.
 
 **Isso é garantido?** Se dois produtos do mesmo modelo puderem ter distribuições
 diferentes, eles precisariam de fatores diferentes e hoje receberiam o mesmo.
+
+---
+
+## 5.5 Anatomia completa do bloco (lida das fórmulas)
+
+Com as fórmulas à vista, o bloco de 6 linhas fica inteiramente decifrado.
+Notação: `C`=Metros · `D`=Voltas · `E`=Máq. · `G`=N° Máquinas · `H`=Voltas ·
+`J`=N° espulas · `Q`=voltas na espula · `R`=produção em metros · `W`=`CONT.SE`.
+
+### As três colunas de cabeçalho do item
+
+```excel
+C25 = 'Programação trançadeiras'!J4      ← metros totais da referência
+D25 = (Q25*C25)/R25                      ← voltas
+E25 = D25/Q25                            ← máquinas
+```
+
+`D = (Q × C) ÷ R` é **literalmente** a conversão deduzida na Parte 3.6
+(`voltas = metros × voltas_na_espula ÷ produção`). Conferido: `(1200 × 4233,6) ÷ 470 =
+10.809,1914893617`, e `E = D ÷ Q = 9,00765957446808`. Ambos batem com a planilha.
+
+### As 6 linhas
+
+| Linha | `G` — N° Máquinas | `H` — Voltas |
+|---|---|---|
+| 25 | `=SE(H25<Q25;1;W25)` | `=SE(D25>Q25;Q25;SE(D25<Q25;D25;D25))` |
+| 26 | `=SE(J26>0;G25;" ")` | `=SE(M25=$C$2;QUOCIENTE(H25;0,833);…)` |
+| 27 | `=SE(J27>0;G26;" ")` | cascata sobre `H26` |
+| 28 | `=SE(H28>0;1;" ")` | `=MENOR('Planejamento Trançadeira'!C2:FJ2;CONT.SE(…)+1)` |
+| 29 | `=SE(J29>0;G28;" ")` | cascata sobre `H28` |
+| 30 | `=SE(J30>0;G29;" ")` | cascata sobre `H29` |
+
+Ou seja:
+
+- **Linha 25** — as máquinas cheias. `H25` é o **mínimo entre as voltas totais e a
+  capacidade da espula**: se o pedido inteiro couber em menos de uma espula, usa o
+  próprio pedido; senão, enche a espula. `G25` é `1` quando o pedido cabe numa espula,
+  e `W25` (o `CONT.SE`, número de períodos completos) quando não cabe.
+- **Linha 28** — a última máquina, com a sobra do `MENOR`. `G28` é sempre `1`.
+- **Linhas 26, 27, 29, 30** — os demais grupos de espulas, com a cascata de fator.
+
+> **Correção.** Na Parte 5.2 eu descrevi `H25 = 1.200` como "o valor base vindo da ficha".
+> Está mais preciso dizer que é `MÍNIMO(voltas totais; voltas na espula)`. No exemplo dá
+> 1.200 porque o pedido é grande; num pedido pequeno daria o próprio pedido.
+
+### Duas simplificações à vista
+
+**1. Um `SE` com os dois ramos idênticos.**
+
+```excel
+=SE(D25>Q25; Q25; SE(D25<Q25; D25; D25))
+                        ↑ verdadeiro e falso devolvem a MESMA coisa
+```
+
+O `SE` interno é inútil: some qualquer que seja a comparação. A fórmula equivale a
+`=MÍNIMO(D25;Q25)`.
+
+**2. A guarda existe numa coluna e falta na outra.**
+
+`G26 = SE(J26>0; G25; " ")` só mostra o número de máquinas **se o grupo tiver espulas**.
+A coluna `H` não tem guarda equivalente — por isso, na linha 27 do exemplo,
+`G` sai em branco (grupo vazio, corretamente) mas `H` mostra **1.875 voltas** para um
+grupo de **0 espulas**.
+
+A lógica de "não mostrar grupo vazio" já existe na planilha; só não foi aplicada à
+coluna que mais importa para o espulador.
