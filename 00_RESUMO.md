@@ -1,12 +1,12 @@
 # Resumo da planilha
 
-Gerado por `ExportarPlanilha.bas` em 2026-08-10 11:35
+Gerado por `ExportarPlanilha.bas` em 2026-08-10 16:55
 
 | Item | Valor |
 |---|---|
 | Arquivo | PROGRAMAÇÃO CEARA 27-01-25 - Atualizado.xlsb |
 | Pasta | C:\Users\juy\Downloads\programar |
-| Tamanho | 36,1 MB |
+| Tamanho | 36,0 MB |
 | Versao do Excel | 16.0 |
 | Modo de calculo | manual |
 | Planilhas | 23 |
@@ -19,7 +19,7 @@ Gerado por `ExportarPlanilha.bas` em 2026-08-10 11:35
 | 1 | RELAÇÃO DE CONSUMOS | A1 | (vazia) | 0 | 0 | sim | nao |
 | 2 | REALTÓRIO TEARES NOVO | A1:VQ1095 | K867 | 9.770 | 281 | NAO | nao |
 | 3 | CADASTRO CLIENTES | A1:B27 | B27 | 0 | 49 | sim | nao |
-| 4 | PEDIDOS | A:S | Q1048576 | 4.197.151 | 1.050.585 | sim | nao |
+| 4 | PEDIDOS | A:S | Q1048576 | 4.197.151 | 1.049.739 | sim | nao |
 | 5 | RELATÓRIO TRANÇADEIRAS | A1:AH1859 | AB1859 | 16.662 | 1.013 | sim | nao |
 | 6 | REALTÓRIO TEARES | A1:XFC1168 | I947 | 13.485 | 1.468 | sim | nao |
 | 7 | DADOS GERAIS DE PRODUTOS | A:L | L15824 | 0 | 87.020 | sim | nao |
