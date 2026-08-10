@@ -470,10 +470,12 @@ Q2 = SE(SEERRO(LOCALIZAR(N2;A2);0);"OK";"ERRADO")   ← a largura está na descr
 Isso confirma, escrito na própria planilha, a regra de composição da descrição que
 deduzimos na Parte 2.6: **descrição = modelo + cor + largura**.
 
-> **Mas o verificador foi parcialmente desligado.** Na amostra, 168 células respondem
-> `OK`, e **6 tiveram a fórmula substituída por texto digitado à mão** — `570` e
-> `CONFERIDO 05/08/2020`. Nessas linhas a verificação deixou de existir: a célula mostra
-> um texto tranquilizador, mas não confere mais nada.
+> **Correção.** Eu havia escrito aqui que o verificador "foi desligado" em 6 linhas, onde
+> aparecem `570` e `CONFERIDO 05/08/2020` no lugar de `OK`. **Isso estava errado.** Essas
+> linhas são de trançadeira, e nelas as mesmas colunas guardam outra coisa: `570` é a
+> **produção em metros**, não um verificador destruído. A explicação está na Parte 4 —
+> a aba usa duas disposições de coluna diferentes. O verificador existe nas linhas de
+> tear e simplesmente **não existe** nas de trançadeira.
 
 ## 3.3 A ficha técnica
 
@@ -679,3 +681,140 @@ O que ainda não sei é o nome físico: cada "período" de 1.200 voltas é **uma
 consumida** ou **uma máquina rodando um turno** que produz 470 m? O relatório rotula a
 coluna como `Máq.` e `N° Máquinas`, o que sugere máquinas; mas o divisor é literalmente
 as voltas de uma espula.
+
+---
+
+# Parte 4 — A ficha técnica serve a duas pessoas diferentes
+
+Esta é a chave que faltava para entender `DADOS DOS PRODUTOS`. A aba não tem "duas
+disposições de coluna" por desorganização: ela descreve **dois processos de fabricação
+diferentes**, e cada relatório vai para **um profissional diferente**.
+
+| Máquina | Relatório vai para | O que essa pessoa precisa saber |
+|---|---|---|
+| Trançadeira | **espulador** | quantas espulas encher, de cada cor |
+| Tear | **urdidor** | em que ordem montar os fios na urdidura |
+
+São necessidades distintas, e por isso a mesma coluna `B` guarda coisas distintas.
+
+## 4.1 Trançadeira — espulas por cor
+
+As máquinas têm **16, 32 ou 48 fusos** hoje, e novos modelos podem surgir.
+
+Um produto pode distribuir as cores entre os fusos de qualquer maneira: uma cor pode
+ocupar metade das espulas, outra apenas 1, 2 ou 3, ou uma única cor pode ocupar todas.
+Por isso a ficha tem **um trio de colunas por cor**:
+
+```
+ATAC 3000 158 3MM      B=16    C=2     D=158    H=3000   N=1200   O=570
+                       ↑       ↑       ↑        ↑        ↑        ↑
+                    espulas  fios   cor 1    modelo   voltas   produção
+                            por                       na       em metros
+                          espula                    espula
+```
+
+| Coluna | Conteúdo |
+|---|---|
+| `B` | **nº de espulas** dessa cor |
+| `C` | nº de fios em cada espula |
+| `D` | a cor |
+| `E`, `F`, `G` | o mesmo trio para a segunda cor |
+| `H` | modelo |
+| `N` | **voltas na espula** (1.200) |
+| `O` | **produção em metros** (470/570) |
+
+São `N` e `O` que alimentam a conversão descoberta na Parte 3.6:
+`voltas = metros × N ÷ O`. **Elas vêm da ficha técnica, logo variam por produto.**
+
+## 4.2 Tear — a sequência da urdidura
+
+Aqui a coluna `B` não conta espulas: ela **descreve a estrutura do item**, como duas
+listas paralelas.
+
+```
+ATAC 6ALF 212/100 6MM     B = 1 . 52 . 3        C = 212 . 100 . 212
+                              └─┬─┘  └┬┘ └┬┘        └─┬─┘  └─┬─┘  └┬┘
+                                1     52   3          212    100   212
+```
+
+Lê-se: **1 fio da cor 212, depois 52 fios da cor 100, depois 3 fios da cor 212.**
+Total de 56 fios.
+
+**A ordem carrega informação.** A cor `212` aparece duas vezes, em posições diferentes —
+não é uma soma por cor, é a **sequência de montagem da urdidura**, da borda ao centro da
+fita. É exatamente o que o urdidor precisa para montar a máquina.
+
+Isso distingue radicalmente as duas fichas:
+
+| | Trançadeira | Tear |
+|---|---|---|
+| Estrutura | **conjunto** — quantas espulas por cor | **sequência ordenada** de fios |
+| A mesma cor repete? | não | **sim**, em posições diferentes |
+| Colunas | um trio por cor | duas listas paralelas em `B` e `C` |
+
+### ⚠️ A notação não é padronizada
+
+Nas 9 linhas amostradas com sequência, **os separadores variam**:
+
+| Produto | Quantidades | Cores | Separadores |
+|---|---|---|---|
+| `ATAC 6ALF 100/460 6MM` | `1 - 52 - 3` | `100 , 460 , 100` | hífen / vírgula |
+| `ATAC M10030 100/222 6MM` | `10 . 4 . 10 . 4 . 14` | `100 , 222 , 100 , 222 , 100` | ponto / vírgula |
+| `ATAC 14163 148/100 6MM` | `1 . 52 . 3` | `148 . 100 . 148` | ponto / ponto |
+
+Três separadores em uso — `.`, `,` e `-` —, às vezes diferentes na mesma linha. Como é
+texto livre, nada impede uma quarta variação amanhã.
+
+O que **está** consistente: as duas listas sempre têm o mesmo número de elementos (9 de 9
+na amostra). A estrutura é sólida; só a escrita é que não é.
+
+Há ainda divergência de zero à esquerda entre abas: `ATAC 6ALF 100/038 6MM` registra a
+cor como `038` aqui e como `38` em `PESOS DE FIOS`.
+
+## 4.3 ⚠️ A coluna "Confirmado" do relatório está quebrada em 645 células
+
+```excel
+=SE($B$19="";"";PROCV($B$19;'DADOS DOS PRODUTOS'!$A$1:$O$9999;16;0))
+```
+
+Dois defeitos na mesma fórmula:
+
+1. **O intervalo `A:O` tem 15 colunas, e a fórmula pede a 16ª.** Isso devolve erro
+   sempre, em toda linha. Confirmado na amostra: a coluna `S` do relatório mostra `#ERRO`
+   em **todas** as linhas conferidas.
+2. **`$B$19` está travado na linha 19.** As outras fórmulas da mesma família usam `$B19`,
+   que acompanha a linha. Mesmo que o intervalo fosse corrigido, as 645 células buscariam
+   todas **o mesmo produto** — o da linha 19 — em vez de cada uma o seu.
+
+A coluna provavelmente pretendia trazer o `OK`/`ERRADO` do verificador de
+`DADOS DOS PRODUTOS`, que fica na coluna `O` (índice 15). Trocar `16` por `15` e `$B$19`
+por `$B19` faria a checagem de consistência aparecer no relatório — que é justamente
+onde ela seria útil.
+
+## 4.4 O que isso muda no sistema novo
+
+A ficha técnica deixa de ser "colunas que significam coisas diferentes conforme a linha"
+e passa a ter **duas formas explícitas**, escolhidas pelo tipo de máquina:
+
+**Trançadeira** — lista de cores, cada uma com sua quantidade de espulas:
+
+| cor | espulas | fios por espula |
+|---|---|---|
+| 158 | 16 | 2 |
+
+Mais os campos `voltas_na_espula` e `producao_metros`, que hoje moram em `N` e `O`.
+
+**Tear** — lista **ordenada** de segmentos:
+
+| ordem | cor | fios |
+|---|---|---|
+| 1 | 212 | 1 |
+| 2 | 100 | 52 |
+| 3 | 212 | 3 |
+
+Vira uma tabela de verdade, com ordem explícita. Some o texto livre, somem os três
+separadores, e o total de fios passa a ser calculado — não digitado.
+
+E como as máquinas de 16, 32 e 48 fusos podem mudar, o número de fusos vira **cadastro de
+máquina**, não número fixo em fórmula. Um modelo novo de 64 fusos entra como um registro,
+sem tocar em cálculo nenhum.
