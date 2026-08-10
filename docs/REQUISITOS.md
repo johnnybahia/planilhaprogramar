@@ -160,6 +160,67 @@ Para um relatório que orienta compra de fio, essa diferença não pode depender
 
 ---
 
+## R3 — Cores e pesos sem limite de quantidade
+
+**Decidido nesta rodada.**
+
+Hoje há **dois tetos**, um por cima do outro:
+
+| Onde | Limite |
+|---|---|
+| `PESOS DE FIOS` | 5 pares cor/peso, nas colunas B/C, D/E, F/G, H/I, J/K |
+| Fórmulas de programação | leem apenas **4** — as colunas `J` e `K` nunca são consultadas |
+
+Ou seja, mesmo cadastrando a quinta cor ela seria ignorada, sem aviso. Hoje isso não
+causa erro porque nenhum produto passa de 3 cores — é um limite latente.
+
+### O modelo novo
+
+Cores deixam de ser colunas e viram **linhas de uma tabela filha**. Sem limite.
+
+**Tabela `produto_fios`**
+
+| campo | tipo | observação |
+|---|---|---|
+| `referencia` | texto | liga ao produto |
+| `ordem` | número | 1, 2, 3… — a ordem do fio na construção |
+| `tipo` | `COR` \| `ESTRUTURAL` | ver 2.6 do `COMO-FUNCIONA.md` |
+| `codigo` | texto | `100`, `58`, `ENCHIMENTO`, `BORRACHA PRETA 28` |
+| `qualificador` | texto | opcional: `RECICLADO`, `LAVADO`, `(30-2)` |
+| `peso_kg_por_m` | decimal | ex.: `0,0031` |
+
+O campo `tipo` preserva uma distinção que hoje existe só implicitamente: fio de cor
+(cujo código aparece na descrição) versus material estrutural (enchimento, borracha).
+Isso permite, por exemplo, somar o consumo de borracha separado do consumo de fio
+colorido — hoje impossível, porque tudo está na mesma fila de colunas.
+
+### O cálculo
+
+Deixa de ser quatro `PROCV` fixos e passa a ser uma soma sobre todas as linhas:
+
+```js
+const consumo = produto.fios.map(fio => ({
+  codigo:     fio.codigo,
+  qualificador: fio.qualificador,
+  tipo:       fio.tipo,
+  base:       metrosBase      * fio.peso_kg_por_m,
+  adicional:  metrosAdicional * fio.peso_kg_por_m,
+  total:      metrosTotal     * fio.peso_kg_por_m,
+}));
+```
+
+Um produto com 12 cores funciona igual a um com 1.
+
+### Na migração
+
+Ao importar `PESOS DE FIOS`, cada par cor/peso preenchido vira uma linha, com `ordem`
+seguindo a posição da coluna. O `tipo` é deduzido assim: `ENCHIMENTO` e tudo que começa
+com `BORRACHA` viram `ESTRUTURAL`; o resto vira `COR`. **A lista de estruturais precisa
+ser confirmada** — foi deduzida da amostra de 59 produtos e pode haver outros materiais
+nas 6.043 linhas completas.
+
+---
+
 ## Pendências que afetam estes requisitos
 
 - **O que são os 25%?** Perda de processo, margem de segurança ou decisão comercial.

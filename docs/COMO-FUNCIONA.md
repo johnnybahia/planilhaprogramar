@@ -323,7 +323,73 @@ Na amostra, nenhum produto usa a quinta cor (o máximo são 3), então **hoje is
 causa erro**. Mas o dia em que alguém cadastrar um produto com 5 cores, o consumo sairá
 subestimado sem aviso. No modelo novo, cores viram uma tabela filha, sem limite.
 
-## 2.6 Itens sem código
+## 2.6 Como as cores se relacionam com a descrição
+
+Testado contra as 59 linhas da amostra de `PESOS DE FIOS`, cobrindo 98 entradas de cor.
+**A regra se confirma em 97 delas.**
+
+Cada entrada de cor é um **fio usado no produto**, e a ordem das colunas reproduz a
+**ordem dos fios na construção**. São dois tipos:
+
+### (A) Fios de cor — o código está na descrição
+
+Os códigos aparecem na descrição, **na mesma ordem**, separados por `/` quando há mais de
+um:
+
+| Descrição | cor 1 | cor 2 | cor 3 |
+|---|---|---|---|
+| `ATAC M10046 100 6MM` | `100` | ENCHIMENTO | |
+| `ATAC 6ALF 100/460 6MM` | `100` | `460` | ENCHIMENTO |
+| `ATAC M10030 278/102 6MM` | `278` | `102` | ENCHIMENTO |
+| `ATAC 14163 199/100 6MM` | `199` | `100` | ENCHIMENTO |
+
+Verificado: em **100% das linhas com duas ou mais cores**, a ordem das colunas bate com a
+ordem em que os códigos aparecem na descrição.
+
+Dois detalhes de escrita:
+
+- **O zero à esquerda cai.** A descrição escreve o código com 3 dígitos; a coluna de cor
+  guarda o número puro.
+
+  | Descrição | Cor cadastrada |
+  |---|---|
+  | `ATAC 14163 0**58** 6MM` | `58` |
+  | `ATAC 3000 0**04** 3MM` | `4` |
+  | `ATAC 6ALF 100/0**38** 6MM` | `38` |
+
+- **Pode haver qualificador** depois do código — mesmo código de cor, acabamento ou
+  título de fio diferente, e por isso **peso diferente**:
+  `102 LAVADO` · `2001 (30-2)` · `821/1 RECICLADO`
+
+### (B) Materiais estruturais — nunca estão na descrição
+
+Vêm sempre **depois** dos fios de cor, e não aparecem na descrição porque não são cor:
+são construção.
+
+| Material | Onde aparece |
+|---|---|
+| `ENCHIMENTO` | 22 ocorrências, em quase todo produto trançado |
+| `BORRACHA PRETA 28` · `BORRACHA REVESTIDA PRETA` · `BORRACHA PRETA 38` | nos elásticos |
+
+### Duas inconsistências encontradas nesta conferência
+
+**1. Uma cor que não bate com a descrição.**
+
+| Descrição | Cor cadastrada | Esperado pela regra |
+|---|---|---|
+| `FITA M12116 0**96**/LUREX PRATA 7MM` | `96` | `96` ✅ |
+| `FITA M12116 **100**/LUREX PRATA 7MM` | `58` | `100` ❌ |
+
+O produto irmão segue a regra exatamente. Tem cara de digitação trocada — vale conferir
+se esse produto realmente usa a cor 58 ou se deveria ser 100.
+
+**2. O LUREX não está sendo pesado.**
+
+Os dois produtos acima têm `LUREX PRATA` na descrição, mas **`LUREX` nunca aparece como
+fio cadastrado** em nenhuma linha da amostra. Se o lurex é um fio metálico de verdade que
+entra na trama, o consumo dele não está sendo calculado em lugar nenhum.
+
+## 2.7 Itens sem código
 
 Confirmado pelo usuário: os itens sem código em `DADOS GERAIS DE PRODUTOS` são
 **antigos e descontinuados**. Não é um defeito a corrigir — é histórico. Na migração
